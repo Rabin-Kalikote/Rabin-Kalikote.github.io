@@ -1,0 +1,126 @@
+@font-face { font-family:rabin; src: url('fonts/ace/ace.ttf');}
+@font-face { font-family:spefont; src: url('fonts/cartoon/Cartoon.ttf');}
+@font-face { font-family:spfont; src: url('fonts/national/National.ttf');}
+@font-face { font-family:nepfont; src: url('fonts/nepali/bikrant_40.ttf');}
+html{
+    overflow-y:scroll;
+}
+#body_of_index {
+    background-image: url("../img/Bgofindex.jpg");
+    background-size:cover;
+}
+#body_of_interests {
+    background-image: url("../img/Additionaltointerests.jpg");
+    background-size:cover;
+}
+#bg_image{
+    background-image: url("../img/bgofcontact.jpg");
+    background-size:75%;
+}
+#bgimg{
+    background-image: url("../img/bgofprofle2.jpg");
+    background-size:cover;
+    }
+h1{ 
+    font-size:65px; 
+	color:red;
+    font-family:spfont;
+}
+
+h2{color:purple;
+   font-family: rabin;
+   font-size:70px;
+}
+#nepali_font{
+    font-family: nepfont;
+}
+#sp{
+	color:yellow;
+    border:none;
+    font-size:75px;
+    font-family:spfont;
+}
+#text_p{
+    color:gray;
+    font-size:20px;
+}
+#text_p_im{
+    color:black;
+    font-size:21px;
+}
+#text_p_imp{
+    color:gray;
+    font-size:30px;
+}
+#text_p_im_r{
+    color:black;
+    font-size:28px;
+    font-family:spefont;
+}
+#text_pare{
+    color:gray;
+    font-size:17px;
+    font: bold;
+}
+#today_text{
+    color:gray;
+    font-size:50px;
+    font: bold;
+}
+#carousel-example-generic {
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+#abc{
+     font-size:40px;
+}
+#bgcolor{
+    background-color:gray; 
+}
+.navbar-brand {
+    font-family:spfont; 
+    font-size:30px;       
+}
+.carousel-caption {
+     font-size:30px;   
+}
+.centered {
+	text-align:center;
+}
+.selected { background-color:purple;}
+
+nav a:hover {
+    background-color: #00FFFF !important;
+}
+    
+
+.active {
+    background-color: #4CAF50;
+}
+
+.navbar-default .navbar-collapse {
+    background-color: #00FFFF;
+    border-color: #333;
+    font-size:20px;
+
+}
+/*
+ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
