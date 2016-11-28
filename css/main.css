@@ -1,7 +1,7 @@
-@font-face { font-family:rabin; src: url('fonts/ace/ace.ttf');}
+@font-face { font-family:rabin; src: url('fonts/ace/Ace.ttf');}
 @font-face { font-family:spefont; src: url('fonts/cartoon/Cartoon.ttf');}
 @font-face { font-family:spfont; src: url('fonts/national/National.ttf');}
-@font-face { font-family:nepfont; src: url('fonts/nepali/bikrant_40.ttf');}
+@font-face { font-family:nepfont; src: url('fonts/nepali/bikrant_40.TTF');}
 html{
     overflow-y:scroll;
 }
