@@ -22,6 +22,7 @@ html{
     background-size:cover;
     }
 h1{ 
+    margin-top:0px;
     font-size:65px; 
 	color:red;
     font-family:spfont;
@@ -78,6 +79,10 @@ h2{color:purple;
 #bgcolor{
     background-color:gray; 
 }
+#about{
+    background-image: url("../img/bgofprofle2.JPG");
+    background-size:cover;
+}
 .navbar-brand {
     font-family:spfont; 
     font-size:30px;       
@@ -89,6 +94,10 @@ h2{color:purple;
 	text-align:center;
 }
 .selected { background-color:purple;}
+.cloud_bg {
+    background-image: url("../img/bgofprofle2.JPG");
+    background-size:cover;
+}
 
 nav a:hover {
     background-color: #00FFFF !important;
@@ -98,12 +107,16 @@ nav a:hover {
 .active {
     background-color: #4CAF50;
 }
+.block{
+    min-height:700px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
 
 .navbar-default .navbar-collapse {
     background-color: #00FFFF;
     border-color: #333;
     font-size:20px;
-
 }
 /*
 ul {
