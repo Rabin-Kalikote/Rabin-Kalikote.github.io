@@ -21,6 +21,16 @@ html{
     background-image: url("../img/bgofprofle2.JPG");
     background-size:cover;
     }
+    *{ margin: 0 auto;}
+
+
+body {
+    background:white; 
+    margin: 0 auto; 
+    font-family:georgia, times,serif; 
+    height:105vh;
+    }
+
 h1{ 
     margin-top:0px;
     font-size:65px; 
@@ -46,7 +56,7 @@ h2{color:purple;
     font-size:20px;
 }
 #text_p_im{
-    color:black;
+    color:orange;
     font-size:21px;
 }
 #text_p_imp{
@@ -82,6 +92,75 @@ h2{color:purple;
 #about{
     background-image: url("../img/bgofprofle2.JPG");
     background-size:cover;
+}
+#page1 {
+    min-height:110vh;
+    width:100%;
+    background-image: url("../img/Bgofindex.jpg");
+    background-size:cover;
+    padding-top:110px;
+    }
+    
+#page2 {
+    height:110vh;
+    width:100%;
+    background-image: url("../img/bgofprofle2.JPG");
+    background-size:cover;
+    padding-top:100px;
+    }
+    
+#page3 {
+    height:110vh;
+    width:100%;
+    background-image: url("../img/bgofprofle2.JPG");
+    background-size:cover;
+    padding-top:100px;
+    }
+#page4 {
+    height:110vh;
+    width:100%;
+    background-image: url("../img/bgofprofle2.JPG");
+    background-size:cover;    
+    padding-top:100px;
+    }
+#page5 {
+    height:110vh;
+    width:100%;
+    background-image: 
+        linear-gradient(
+            rgba(0,0,0,.4),
+            rgba(0,0,0,.4)
+            ),
+        url("../img/Additionaltointerests.jpg");
+    background-size:cover;
+    padding-top:100px;
+    }
+    
+#page6 {
+    height:110vh;
+    width:100%;
+    background-image: url("../img/bgofprofle2.JPG");
+    background-size:cover;
+    padding-top:100px;
+    }
+    
+#page7 {
+    height:1100px;
+    width:100%;
+    background:#9b70c0;
+    padding-top:100px;
+    }
+#header {
+    position:fixed;
+    height:50px;
+    top:0px;
+    left:0px;
+    background:#666; 
+    width:100%;
+    z-index:999;
+    }
+.tab-pane {
+    background-color: rgba(0,255,0,.2) !important;
 }
 .navbar-brand {
     font-family:spfont; 
@@ -137,3 +216,64 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }*/
+@media screen and (max-width: 768px) {
+    #sp{
+        font-size: 25px;
+    }
+    #bg_image{
+    background-image: url("../img/bgofcontact.jpg");
+    background-size:37%;
+    }
+    h1{ 
+    margin-top:0px;
+    font-size:32px; 
+    color:red;
+    font-family:spfont;
+    }
+
+h2{color:purple;
+   font-family: rabin;
+   font-size:35px;
+    }
+   #text_p{
+    color:gray;
+    font-size:10px;
+    }
+    #text_p_im{
+        color:orange;
+        font-size:10px;
+    }
+    #text_p_imp{
+        color:gray;
+        font-size:15px;
+    }
+    #text_p_im_r{
+        color:black;
+        font-size:14px;
+        font-family:spefont;
+    }
+    #text_pare{
+        color:gray;
+        font-size:8px;
+        font: bold;
+    }
+    #today_text{
+        color:gray;
+        font-size:25px;
+        font: bold;
+    } 
+    #abc{
+     font-size:20px;
+    }
+    #describing_height {
+        max-height: 180px;
+        max-width: 75%;
+    }
+    .navbar-brand {
+    font-family:spfont; 
+    font-size:15px;       
+    }
+    .carousel-caption {
+         font-size:15px;   
+    }
+}
