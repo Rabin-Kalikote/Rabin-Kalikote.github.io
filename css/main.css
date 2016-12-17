@@ -73,6 +73,14 @@ h2{color:purple;
     font-size:17px;
     font: bold;
 }
+#text_pare_updates{
+    color:gray;
+    font-size:15px;
+}
+#missing{
+    font-family:spefont; 
+    font-size:30px;       
+}
 #today_text{
     color:gray;
     font-size:50px;
