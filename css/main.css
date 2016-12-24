@@ -1,7 +1,8 @@
-@font-face { font-family:rabin; src: url('fonts/ace/Ace.ttf');}
-@font-face { font-family:spefont; src: url('fonts/cartoon/Cartoon.ttf');}
-@font-face { font-family:spfont; src: url('fonts/national/National.ttf');}
-@font-face { font-family:nepfont; src: url('fonts/nepali/bikrant_40.TTF');}
+@font-face { font-family:ace; src: url('fonts/ace/Ace.ttf');}
+@font-face { font-family:cartoon; src: url('fonts/cartoon/Cartoon.ttf');}
+@font-face { font-family:national; src: url('fonts/national/National.ttf');}
+@font-face { font-family:bikrant; src: url('fonts/nepali/bikrant_40.TTF');}
+@font-face { font-family:berlin; src: url('fonts/berlin/abc.TTF');}
 html{
     overflow-y:scroll;
 }
@@ -35,21 +36,22 @@ h1{
     margin-top:0px;
     font-size:65px; 
 	color:red;
-    font-family:spfont;
+    font-family:national;
 }
 
 h2{color:purple;
-   font-family: rabin;
+   font-family: ace;
    font-size:70px;
 }
 #nepali_font{
-    font-family: nepfont;
+    font-size: 17px;
+    font-family:bikrant;
 }
 #sp{
 	color:yellow;
     border:none;
     font-size:75px;
-    font-family:spfont;
+    font-family:national;
 }
 #text_p{
     color:gray;
@@ -66,7 +68,7 @@ h2{color:purple;
 #text_p_im_r{
     color:black;
     font-size:28px;
-    font-family:spefont;
+    font-family:cartoon;
 }
 #text_pare{
     color:gray;
@@ -78,13 +80,22 @@ h2{color:purple;
     font-size:15px;
 }
 #missing{
-    font-family:spefont; 
+    font-family:cartoon; 
     font-size:30px;       
+}
+#header_of_details{
+	font-family:berlin; 
+	color:blue;
 }
 #today_text{
     color:gray;
     font-size:50px;
     font: bold;
+}
+#text_updates{
+	font-family:berlin;
+	font-size:25px;
+	color:grey;
 }
 #carousel-example-generic {
     width:50%;
@@ -167,12 +178,17 @@ h2{color:purple;
     width:100%;
     z-index:999;
     }
+.text_of_details{
+	font-family:berlin; 
+	color:grey;
+	font-size:30px;
+}
 .tab-pane {
     background-color: rgba(0,255,0,.2) !important;
 }
 .navbar-brand {
-    font-family:spfont; 
-    font-size:30px;       
+    font-family:berlin; 
+    font-size:25px;       
 }
 .carousel-caption {
      font-size:30px;   
@@ -199,6 +215,7 @@ nav a:hover {
     margin-top:0px;
     margin-bottom: 0px;
 }
+
 
 .navbar-default .navbar-collapse {
     background-color: #00FFFF;
@@ -236,11 +253,11 @@ li a {
     margin-top:0px;
     font-size:32px; 
     color:red;
-    font-family:spfont;
+    font-family:national;
     }
 
 h2{color:purple;
-   font-family: rabin;
+   font-family:ace;
    font-size:35px;
     }
    #text_p{
@@ -258,7 +275,7 @@ h2{color:purple;
     #text_p_im_r{
         color:black;
         font-size:14px;
-        font-family:spefont;
+        font-family:cartoon;
     }
     #text_pare{
         color:gray;
@@ -278,7 +295,7 @@ h2{color:purple;
         max-width: 75%;
     }
     .navbar-brand {
-    font-family:spfont; 
+    font-family:national; 
     font-size:15px;       
     }
     .carousel-caption {
