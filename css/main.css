@@ -1,30 +1,41 @@
+/* creates different font family */
 @font-face { font-family:ace; src: url('fonts/ace/Ace.ttf');}
 @font-face { font-family:cartoon; src: url('fonts/cartoon/Cartoon.ttf');}
 @font-face { font-family:national; src: url('fonts/national/National.ttf');}
 @font-face { font-family:bikrant; src: url('fonts/nepali/bikrant_40.TTF');}
 @font-face { font-family:berlin; src: url('fonts/berlin/abc.TTF');}
+
+/* gives vertical scroll bar always in different pages */
 html{
     overflow-y:scroll;
 }
+
+/* gives background to home page */
 #body_of_index {
     background-image: url("../img/Bgofindex.jpg");
     background-size:cover;
 }
+
+/* gives background to interest page */
 #body_of_interests {
     background-image: url("../img/Additionaltointerests.jpg");
     background-size:cover;
 }
+
+/* gives right image to contact page */
 #bg_image{
     background-image: url("../img/bgofcontact.jpg");
     background-size:75%;
 }
+
+/* givescloud background to different pages */
 #bgimg{
     background-image: url("../img/bgofprofle2.JPG");
     background-size:cover;
     }
     *{ margin: 0 auto;}
 
-
+/* gives details information about body of each page */
 body {
     background:white; 
     margin: 0 auto; 
@@ -32,6 +43,7 @@ body {
     height:105vh;
     }
 
+/* describes about h1 */
 h1{ 
     margin-top:0px;
     font-size:65px; 
@@ -39,79 +51,126 @@ h1{
     font-family:national;
 }
 
+/* describes about h2 */
 h2{color:purple;
    font-family: ace;
    font-size:70px;
 }
+
+/* gives font to the text of page 'my poems'/second options. */
 #nepali_font{
     font-size: 17px;
     font-family:bikrant;
 }
+/* gives style to the text of home page that bounce from right. */
 #sp{
 	color:yellow;
     border:none;
     font-size:75px;
     font-family:national;
 }
-#text_p{
+
+/* gives small font size for different text */
+#small_font_size{
     color:gray;
     font-size:20px;
 }
-#text_p_im{
+
+/* gives small font size for text of contact page */
+#small_font_size_contact{
+    color:#3090C7;
+    font-size:20px;
+}
+
+/* gives medium font size for different text */
+#medium_font_size{
     color:orange;
     font-size:21px;
 }
-#text_p_imp{
+
+/* gives bigger font size for different text */
+#bigger_font_size{
     color:gray;
     font-size:30px;
 }
-#text_p_im_r{
+
+/* gives big font size for different text */
+#big_fomt_size{
     color:black;
     font-size:28px;
     font-family:cartoon;
 }
-#text_pare{
+
+/* gives smaller font size for different text */
+#smaller_font_size{
     color:gray;
     font-size:17px;
     font: bold;
 }
-#text_pare_updates{
+
+/* gives smallest font size for different text */
+#smallest_font_size{
     color:gray;
     font-size:15px;
 }
+
+/* gives font style for thr text of page 'thank you matt sir' /below 3rd paregraph */
 #missing{
     font-family:cartoon; 
     font-size:30px;       
 }
+
+/* gives style to header text of details page */
 #header_of_details{
 	font-family:berlin; 
 	color:blue;
 }
+
+/* gives style to the text of page 'my text/library'. */
 #today_text{
     color:gray;
     font-size:50px;
     font: bold;
 }
+
+/* gives style to the text of page 'New Updates/library'. */
 #text_updates{
 	font-family:berlin;
 	font-size:25px;
 	color:grey;
 }
+
+/* gives style to the carousel. */
 #carousel-example-generic {
     width:50%;
     margin-right: auto;
     margin-left: auto;
 }
+
+/* gives style to the carousel. */
+#carousel2 {
+    width:50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* gives style to the text of home page.*/
 #abc{
      font-size:40px;
 }
+
+/* gives background color to necessary background. */
 #bgcolor{
     background-color:gray; 
 }
+
+/* gives background color to background of about . */
 #about{
     background-image: url("../img/bgofprofle2.JPG");
     background-size:cover;
 }
+
+/* gives style to page1. */
 #page1 {
     min-height:110vh;
     width:100%;
@@ -119,7 +178,8 @@ h2{color:purple;
     background-size:cover;
     padding-top:110px;
     }
-    
+
+/* gives style to page2. */
 #page2 {
     height:110vh;
     width:100%;
@@ -127,7 +187,8 @@ h2{color:purple;
     background-size:cover;
     padding-top:100px;
     }
-    
+
+/* gives style to page3. */    
 #page3 {
     height:110vh;
     width:100%;
@@ -135,6 +196,8 @@ h2{color:purple;
     background-size:cover;
     padding-top:100px;
     }
+
+/* gives style to page4. */
 #page4 {
     height:110vh;
     width:100%;
@@ -142,6 +205,8 @@ h2{color:purple;
     background-size:cover;    
     padding-top:100px;
     }
+
+/* gives style to page5. */
 #page5 {
     height:110vh;
     width:100%;
@@ -154,7 +219,8 @@ h2{color:purple;
     background-size:cover;
     padding-top:100px;
     }
-    
+
+/* gives style to page6. */
 #page6 {
     height:110vh;
     width:100%;
@@ -162,13 +228,16 @@ h2{color:purple;
     background-size:cover;
     padding-top:100px;
     }
-    
+
+/* gives style to page7. */    
 #page7 {
     height:1100px;
     width:100%;
     background:#9b70c0;
     padding-top:100px;
     }
+
+/* describes about the header. */
 #header {
     position:fixed;
     height:50px;
@@ -178,45 +247,65 @@ h2{color:purple;
     width:100%;
     z-index:999;
     }
+
+/* gives the styles to the text of 'details'. */
 .text_of_details{
 	font-family:berlin; 
 	color:grey;
 	font-size:30px;
 }
+
+/* describes the color of background of each page ot library tabs. */
 .tab-pane {
     background-color: rgba(0,255,0,.2) !important;
 }
+
+/* describes about navbar brand */
 .navbar-brand {
     font-family:berlin; 
     font-size:25px;       
 }
+
+/* gives the font size to the text of carousel captain. */
 .carousel-caption {
-     font-size:30px;   
+     font-size:20px;
+     font-color:#F62217 ! important;   
 }
+
+/* make the text with class 'centered' in the center. */
 .centered {
 	text-align:center;
 }
-.selected { background-color:purple;}
+
+/*gives color for selected background in navbar*/
+.selected { 
+    background-color:#38ACEC;
+}
+
+/*gives cloud backgroung to different pages*/
 .cloud_bg {
     background-image: url("../img/bgofprofle2.JPG");
     background-size:cover;
 }
 
+/* gives background color to the hover(links selected by pointing) in the nav bar. */
 nav a:hover {
     background-color: #00FFFF !important;
 }
     
-
+/* describes the background color of active links. */
 .active {
     background-color: #4CAF50;
 }
+
+/* describes about the different blocks. */
 .block{
     min-height:700px;
     margin-top:0px;
     margin-bottom: 0px;
 }
 
-
+/* gives back ground color and border color to the nav bar. */
 .navbar-default .navbar-collapse {
     background-color: #00FFFF;
     border-color: #333;
@@ -241,64 +330,159 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }*/
+
+/* resize the texts and pictures if the pages are viewed in small screen. */
 @media screen and (max-width: 768px) {
+	/* resize the text size of home page 'Here Is Your Lucky Guy Rabin'.*/
     #sp{
         font-size: 25px;
     }
-    #bg_image{
-    background-image: url("../img/bgofcontact.jpg");
-    background-size:37%;
-    }
-    h1{ 
-    margin-top:0px;
-    font-size:32px; 
-    color:red;
-    font-family:national;
-    }
 
-h2{color:purple;
-   font-family:ace;
-   font-size:35px;
-    }
-   #text_p{
-    color:gray;
-    font-size:10px;
-    }
-    #text_p_im{
+    /* Resize the background size of 'contact' page. */
+    #bg_image{
+	    background-image: url("../img/bgofcontact.jpg");
+	    background-size:37%;
+	}
+
+	/* Resize the h1. */
+    h1{ 
+	    margin-top:0px;
+	    font-size:32px; 
+	    color:red;
+	    font-family:national;
+	}
+
+	/* resize the h2. */
+	h2{
+		color:purple;
+	    font-family:ace;
+	    font-size:35px;
+	}
+
+	/* resize the font with small font size. */
+    #small_font_size{
+	    color:gray;
+	    font-size:10px;
+	}
+
+	/* resize the font with medium font size. */
+    #medium_font_size{
         color:orange;
         font-size:10px;
-    }
-    #text_p_imp{
+   	}
+
+   	/* resize the font with bigger font size. */
+    #bigger_font_size{
         color:gray;
         font-size:15px;
     }
-    #text_p_im_r{
+
+    /* resize the font with big font size. */
+    #big_fomt_size{
         color:black;
         font-size:14px;
         font-family:cartoon;
     }
-    #text_pare{
+
+    /* resize the font with smaller font size. */
+    #smaller_font_size{
         color:gray;
         font-size:8px;
         font: bold;
     }
+
+    /* resize the font with smallest font size. */
+    #smallest_font_size{
+	    color:gray;
+	    font-size:8px;
+	}
+
+	/* resize the font size of missing fonts. */
+	#missing{
+	    font-family:cartoon; 
+	    font-size:15px;       
+	}
+
+    /* resize the text with id'today text'. */
     #today_text{
         color:gray;
         font-size:25px;
         font: bold;
-    } 
-    #abc{
-     font-size:20px;
     }
+
+    /* resize the text with id'abc'. */ 
+    #abc{
+     	font-size:20px;
+    }
+
+    /* resize the height 
     #describing_height {
         max-height: 180px;
         max-width: 75%;
-    }
+    } */
+
+    /* resize the text of navbar. */
     .navbar-brand {
-    font-family:national; 
-    font-size:15px;       
+	    font-family:berlin; 
+	    font-size:15px;       
     }
+
+    /* resize the font size of carousal captain. */
     .carousel-caption {
          font-size:15px;   
+    }
+
+    /* resize the text with id'text updates'. */
+    #text_updates{
+		font-family:berlin;
+		font-size:12px;
+		color:grey;
+	}
+
+	/* resize the text of header of dtails. */
+	#header_of_details{
+		font-size:30px;
+		font-family:berlin; 
+		color:blue;
+	}
+
+	/* resize the text of paregraph of dtails. */
+	.text_of_details{
+		font-family:berlin; 
+		color:grey;
+		font-size:15px;
+	}
+
+    /* resize the texts of names of library tabs */
+    .library_tabs{
+        font-size: 15px;
+    }
+
+	/* resize background picture of home page*/
+	#body_of_index {
+	    background-image: url("../img/Bgofindex.jpg");
+	    background-size:cover;
+	}
+
+	/* resize the side image of every page */	
+	.side-image{
+		max-width:35%;
+	}
+
+	/* resize the side image of fix page */
+	.side-image1{
+		max-width:20%;
+	}
+
+	/* resizing font of extra poems for entertainment.*/
+	#nepali_font{
+	    font-size: 8px;
+	    font-family:bikrant;
+	}
+
+    /* resizing font of 'contact' page.*/
+    #small_font_size_contact{
+        color:#3090C7;
+        font-size:10px;
     }
 }
