@@ -159,6 +159,14 @@ h2{color:purple;
      font-size:40px;
 }
 
+/* gives design for footer . */
+#footer{
+    font-color:blue;
+    background-color: #EBF4FA;
+    font-family: berlin;
+    padding-top:0px;
+}
+
 /* gives background color to necessary background. */
 #bgcolor{
     background-color:gray; 
