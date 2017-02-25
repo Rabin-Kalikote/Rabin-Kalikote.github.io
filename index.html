@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-         <title>
-			Rabin's Website
-		</title>
-	<link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
+	<title>
+		Rabin Kalikote
+	</title>
+	<!-- meta -->
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- JQuery Libraries -->
+	<script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/jquery.smooth-scroll.js"></script>
     <script src="js/wow.js"></script>
+
+    <!-- Boostrap -->
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+
+    <!-- fontAwesome stuff -->
+    <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
+
+    <!-- Use of wow animation -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Custom css -->
     <link rel="stylesheet" href="css/main.css">
-	</head>
+
+    <!-- Custom js -->
+    <script src="js/main.js"></script>
+</head>
 <body>
-	
 
-
+<!-- Codes for navbar -->
 <div id="header">
-	<nav class="navbar navbar-default" style="background-color:#00FFFF; font-size:20px" >
+	<nav id="navbar" class="navbar navbar-default navbar-inverse navbar-fixed-top hidden">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -29,7 +44,7 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="details.html">Rabin Kalikote</a>
+	      <a class="navbar-brand" href="#page1">Rabin Kalikote</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,31 +65,44 @@
 	</nav>
 </div>
 
+
 <div id="page-wrap">
 
-
-	
-
-	<div id="page1">
+	<div id="page1" class="box-shadow">
+		<header>
+			<div class="nav-container">
+				<div class="logo-name">
+					<h3><a href="#">Rabin Kalikote</a></h3>
+				</div>
+				<div>
+					<ul class="home-navbar">
+						<li class="active"><a href="#page1">Home</a></li>
+				        <li><a href="#page2">About</a></li>
+				        <li><a href="#page3">Profile</a></li>
+			          	<li><a href="#page4">Library</a></li>	        
+				        <li><a href="#page5">Interests</a></li>
+				        <li><a href="#page6">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
 
 		<a name="home"></a>
 		<div class="page-padding"></div>
 		<div class= "container">
             <div class="row">
-            	<i><h2 class="centered wow slideInDown ">Rabin K. Kalikote</h2></i>
-            	<h1 class="centered wow slideInDown " id="abc">
+            	<i><h2 class="centered wow fadeIn">Rabin K. Kalikote</h2></i>
+            	<h4 id="welcome-text" class="centered wow fadeIn XLpx nationalFont" style="color: red">
             		Welcome To My Website
-            	</h1>
+            	</h4>
             </div>
             <div class ="row">
-                <div class="col-md-5">
-                    
-                    <img src= "img/Additionalforindex.jpg" width="75%" class="centered wow slideInLeft side-image img-thumbnail">
-                   
+                <div class="col-md-5" style="padding-top: 20px">
+                    <img src= "img/+home.jpg" width="65%" id="home-image" class="centered wow fadeIn side-image img-thumbnail img-padding center">
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-7" style="padding-top: 20px">
                     <i>             
-                        <p class="centered wow slideInRight" id="sp">
+                        <p id="side-text" class="centered wow fadeIn nationalFont LXXpx" style="color:yellow">
                         Here Is Me<br>Your Lucky Guy<br> RABIN
                         </p> 
                     </i>
@@ -84,57 +112,55 @@
 
 	</div> <!--END page1-->
 	
-	<div id="page2">
+	<div id="page2" class="section box-shadow">
 		<a name="about"></a>
 		<div class="page-padding"></div>
 		<div class= "container">
             <div class="row">
-            	    <h1 class="centered wow slideInDown ">About Me</h1>
+            	    <h1 class="centered wow fadeIn ">About Me</h1>
             </div>
             <div class ="row">
                 <div class="col-md-7">
                   <i>             
-                        <p class="wow slideInLeft" id="smaller_font_size">
-                        Hello everybody! I'm Rabin. I was born on May 2, 2001 AD. I'm from Syabun, Sankhuwasabha that is a beautiful village of Nepal. During my childhood I was in the same place playing and enjoying with the nature of my beautiful Village. I used to go school with my sister there. I was studying in grade two. Then we decided to be in Khandbari for our study. I wasn't willing to leave my village but also I had to. Lastly we came to khandbari.<br>
-                        I didn't know what we would be doing there. I was admitted in Surya Sec Boarding School. I didn't know why I was there but when I studied there for some years I realized that what I can do. I continiously learn in the same school. Now I a'm the student of grade Nine of Surya Secondary Boarding School. During my some year of learing, I have learned many things in the diverse subjects. Among them arts, science and computer are my favourites.<br>
+                        <p class="wow slideInUp airstreamFont XXpx">
+                        Hello everybody! I'm Rabin. I was born on May 2, 2001 AD. I'm from Syabun, Sankhuwasabha that is a beautiful village of Nepal. During my childhood I was in the same place playing and enjoying with the nature of my beautiful Village. I used to go school with my sister there. I was studying in grade two. Then we decided to be in Khandbari for our study. I wasn't willing to leave my village but also I had to. Lastly we came to khandbari.<br><br>
+                        I didn't know what we would be doing there. I was admitted in Surya Sec Boarding School. I didn't know why I was there but when I studied there for some years I realized that what I can do. I continiously learn in the same school. Now I a'm the student of grade Nine of Surya Secondary Boarding School. During my some year of learing, I have learned many things in the diverse subjects. Among them arts, science and computer are my favourites.<br><br>
                         Though I left my beautiful village, I a'm not so sad because I got many things being in Khandbari. I was able to write a story book expressed all by poems (Jindagiko Baato) that is my own creation. I have learned a lot about scientifical experiences and facts. In the other side computer programming is equally exciting. So, I'm much excited with my student life.
                         </p> 
                     </i>   
                    
                 </div>
-                <div class="col-md-5">
-                     <img src= "img/Bgofabout.jpg" width="100%" class="centered wow slideInRight side-image img-thumbnail">
-
+                <div class="col-md-5" style="padding-left: 80px">
+                     <img src= "img/about.jpg" width="100%" class="centered wow slideInUp side-image img-thumbnail">
                </div>
             </div>
         </div>
 	</div> <!--END page2-->
 
-	<div id="page3">
+		<div id="page3">
 		<a name="profile"></a> 
 		<div class="page-padding"></div>
 		<div class= "container">
             <div class="row">
-                <h1 class="centered wow slideInDown">Profile</h1>
+                <h1 class="centered wow fadeIn">Profile</h1>
             </div>
             <div class ="row">
                 <div class="col-md-7">
                   <i>             
-                        <p class="wow slideInLeft" id="small_font_size">
+                        <p class="wow slideInUp airstreamFont XXpx">
                          Welcome to you all !<br>
                          Hello! I'm the student of Surya Sec. Boarding School. I'm continiously studying here. I'm working hard for my future. I have a great interest in science, arts and computer. So I'm doing my best to learn diverse knowledge regarding this subjects.<br>
                          I think life is a valueable opportunity to do the great things that can make great contributions for the welfare of others. So, we must be dealing with our life in a good way enjoying and exciting with it. <br>
                          Hopefully, I'm also doing a bit better these days because I have interest to learn. And learning with interest is again interesting.<br>
                          I'm the one who wants to play with nature and get some inspirations from them. I love nature very much. I want to realize the connections of nature with science and of science with computer technology.<br>
-                         As I'm from Nepal(One of the beautiful country of the Earth), I got many chances to be with the Nature.
+                         As I'm from Nepal (One of the beautiful country of the Earth), I got many chances to be with the Nature.
                          Because of this also, I have deep interest to learn nature. So I'm woking hard to do something in my future that describes Nepal in the world. 
                         </p> 
                     </i>   
                    
                 </div>
-                <div class="col-md-5">
-                     <img src= "img/Bgofprofile.jpg" width="100%" class="centered wow slideInRight side-image img-thumbnail">
-
+                <div class="col-md-5" style="padding-left: 80px">
+                     <img src= "img/profile.jpg" width="90%" class="centered wow slideInUp side-image img-thumbnail">
                </div>
             </div>
         </div>	
@@ -145,470 +171,532 @@
     <div class="page-padding"></div>
     <div class= "container">
             <div class="row">
-                   <h1 class="centered wow slideInDown">My Library</h1>
+                   <h1 class="centered wow fadeIn">My Library</h1>
             </div>
             <div class ="row">
                   <div>
+<div class="position">
+  <div class="tab wow slideInUp">
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'poems')">My Poems</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'texts')">My Texts</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'arts')">My Arts</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'creations')">My Creations</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'games')">My Games</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'thanks')">Thank you Matt Sir</a>
+    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'updates')">New Updates</a>
+  </div>
+</div>
 
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs library_tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#poems" aria-controls="home" role="tab" data-toggle="tab">My poems</a></li>
-                    <li role="presentation"><a href="#texts" aria-controls="profile" role="tab" data-toggle="tab">My Texts</a></li>
-                    <li role="presentation"><a href="#arts" aria-controls="messages" role="tab" data-toggle="tab">My Arts</a></li>
-                    <li role="presentation"><a href="#creations" aria-controls="settings" role="tab" data-toggle="tab">My Creations</a></li>
-                    <li role="presentation"><a href="#thank_you_matt_sir" aria-controls="thanks" role="tab" data-toggle="tab">Thank you Matt sir</a></li>
-                     <li role="presentation"><a href="#updates" aria-controls="updates" role="tab" data-toggle="tab">New Updates</a></li>
-                  </ul>
-
-                  <!-- Tab panes -->
-                  <div class="tab-content">
-                  <!-- First Tab -->
-                    <div role="tabpanel" class="tab-pane active" id="poems">
-                    <div class= "container">
-                        <br>
-				            <div class ="row">
-				                <div class="col-md-7">
-				                  <i>             
-				                      <p id="small_font_size">
-				                      Welcome to my library to you all. Here are my special gifts for you all which you all can enjoy a lot.
-				                      </p><br>
-				                  </i>
-				                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					                    <div class="panel panel-default">
-					                        <div class="panel-heading" role="tab" id="headingOne">
-					                          <h4 class="panel-title">
-					                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="small_font_size">
-					                            <i>Books</i>
-					                            </a>
-					                          </h4>
-					                        </div>
-					                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-					                          <div class="panel-body" id="smaller_font_size">
-					                            <i>
-					                              I have written the special book that is found everywhere in the market. Again, it is specially for you all! So everybody please try reading it. You will belive how much exciting it is.
-					                              <br>
-					                              It is the collection of different and diverse stories based on a single and complete story that is all expressed with different sweet poems. It is my special creation in the feild of arts for you all. So, try finding it in the market, read it and get the different inspirations of happiness and sadness. Don't forget that it is the book that can bring great and positive change in your attitide!
-					                            </i>
-					                          </div>
-					                        </div>
-					                    </div>
-					                    <div class="panel panel-default">
-					                        <div class="panel-heading" role="tab" id="headingTwo">
-						                        <h4 class="panel-title">
-						                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="small_font_size">
-						                              <i>Extra poems for entertainment</i>
-						                            </a>
-						                        </h4>
-					                        </div>
-					                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-						                        <div class="panel-body" id="smaller_font_size">
-						                            <i>I will be writing on !</i><br>
-						                              	<P id="nepali_font">
-						                                  	!_ afcfdfaf6 agfO{ 6f9f k7fpg' x'Fb}g,
-						                                  	;fg} 5 5f]/f vf]nf / 8fF8f s6fpg x'Fb}g .<br>
-						                                  	@_ x] d]/f] 5f]/f zx/ ltdL hfg' g} kg{]5,
-						                                  	 k'?if dfG5] kl;gf kf]vL kf}/v ug]{5 .<br>
-						                                    #_ x] ;fyL d}n] :s'n 5f8\g afWotf kl/uf],
-						                                    ;kgf d]/f] :s'n k9\g] kftem}F eml/uf] .<br>
-						                                  	$_ tF ;Fu k};f 5f]Og eg] ck|]zg\ x'Fb}g,
-						                                 	Tof] k};f lagf 8fS6/ s'g} la/fdL 5F'b}g .<br>
-						                                  	%_ casf] lbg Tof] cfFvf lagf s;/L latfpg],
-						                                  	d]/f] nflu t eof] lg ca hLGbuL lgbfpg].<br>
-						                                  	^_ sfF8fdf klg km"Nb5 km"n a;Gt ;Dem]/,
-						                                  	/ftdf klg lx8\b5 jL/ cufl8 nDs]/ .
-						                              	</P>
-						                            	<p id="nepali_font" style="text-align:right">
-						                            		;fef/  -lhGbuLsf] af6f]_
-						                          		</p>
-						                        </div>
-					                        </div>
-					                    </div>
-				                    </div>   
-				                                       
-				                </div>
-				                <div class="col-md-5">
-				                     <img src= "img/Bgoflibrary.jpg" width="100%" class="centered side-image img-thumbnail">
-
-				               </div>
-				            </div>
-				        </div>
+<div id="poems" class="tabcontent">
+  <div class= "container">
+      <br>
+        <div class ="row">
+            <div class="col-md-7">
+                <i>             
+                  <p class="airstreamFont XXVpx">
+                    Welcome to my library to you all. Here are my special gifts for you all.
+                  </p><br>
+                </i>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="small_font_size">
+                            <i class="airstreamFont XXVpx">Books</i>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body XVpx">
+                        <i><b>
+                            I have written the special book that is found everywhere in the market. Again, it is specially for you all! So everybody please try reading it. You will belive how much exciting it is.
+                                <br>
+                            It is the collection of different and diverse stories based on a single and complete story that is all expressed with different sweet poems. It is my special creation in the feild of arts for you all. So, try finding it in the market, read it and get the different inspirations of happiness and sadness. Don't forget that it is the book that can bring great and positive change in your attitide!
+                        </b></i>
                     </div>
-
-                  <!-- second Tab -->  
-                    <div role="tabpanel" class="tab-pane" id="texts">
-				        <div class= "container">
-				            <br>
-				            <div class ="row">
-				                <div class="col-md-7">
-				                  <i>             
-				                        <p id="small_font_size">
-				                        Welcome to my library to you all. Here are my special gifts for you all which you all can enjoy a lot.</p><br>
-				                        <br>
-				                        <p id="today_text">
-				                        Don't run after Success, Make success run after you!
-				                        </p> 
-				                    </i>   
-				                   
-				                </div>
-				                <div class="col-md-5">
-				                     <img src= "img/bgoftexts2.jpg" width="100%" class="centered side-image img-thumbnail">
-
-				               </div>
-				            </div>
-				        </div>
+                </div>
+                </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="small_font_size">
+                                    <i class="airstreamFont XXVpx">Extra poems for entertainment</i>
+                                </a>
+                              </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                  <i><b>I will be writing on !</b></i><br>
+                                      <p class="bikrantFont XVpx">
+                                          !_ afcfdfaf6 agfO{ 6f9f k7fpg' x'Fb}g,
+                                          ;fg} 5 5f]/f vf]nf / 8fF8f s6fpg x'Fb}g .<br>
+                                          @_ x] d]/f] 5f]/f zx/ ltdL hfg' g} kg{]5,
+                                           k'?if dfG5] kl;gf kf]vL kf}/v ug]{5 .<br>
+                                          #_ x] ;fyL d}n] :s'n 5f8\g afWotf kl/uf],
+                                          ;kgf d]/f] :s'n k9\g] kftem}F eml/uf] .<br>
+                                          $_ tF ;Fu k};f 5f]Og eg] ck|]zg\ x'Fb}g,
+                                          Tof] k};f lagf 8fS6/ s'g} la/fdL 5F'b}g .<br>
+                                          %_ casf] lbg Tof] cfFvf lagf s;/L latfpg],
+                                          d]/f] nflu t eof] lg ca hLGbuL lgbfpg].<br>
+                                          ^_ sfF8fdf klg km"Nb5 km"n a;Gt ;Dem]/,
+                                          /ftdf klg lx8\b5 jL/ cufl8 nDs]/ .
+                                      </p>
+                                      <p class="bikrantFont XVpx" style="text-align:right">
+                                            ;fef/  -lhGbuLsf] af6f]_
+                                      </p>
+                            </div>
+                        </div>
                     </div>
+              </div>   
+                                               
+          </div>
+          <div class="col-md-5 library-div">
+              <img src= "img/library/poem.jpg" width="100%" class="centered side-image img-thumbnail">
+          </div>
+      </div>
+  </div>
+</div>
 
-                  <!-- Third Tab -->
-                    <div role="tabpanel" class="tab-pane" id="arts">
-		                    <br>
-			                  	<i>             
-			                        <p class="centered " id="smaller_font_size">
-			                        Welcome to my library to you all.<br> Here are my special gifts for you all which you all can enjoy a lot.
-			                        </p>
-			                         <br>
-			                    </i>   
-		                   
-		                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		                        <!-- Indicators -->
-			                        <ol class="carousel-indicators">
-			                          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-			                          <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+<div id="texts" class="tabcontent">
+  <!-- second Tab -->  
+  <div role="tabpanel" class="tab-pane" id="texts">
+      <div class= "container">
+            <br>
+        <div class ="row">
+            <div class="col-md-7">
+                <i>             
+                    <p class="airstreamFont XXVpx">
+                      Welcome to my library to you all. Here are my special gifts for you all.
+                    </p><br <br>
+                    <p class="sportFont XXXpx">
+                      Don't run after Success, Make success run after you!
+                    </p> 
+                </i>   
+            </div>
+            <div class="col-md-5 library-div">
+                <img src= "img/library/texts.jpg" width="100%" class="centered side-image img-thumbnail">
+            </div>
+        </div>
+      </div>
+  </div>
+</div> <!-- end of 2nd tab-->
 
-			                        </ol>
+<div id="arts" class="tabcontent">
+  <!-- Third Tab -->
+  <div role="tabpanel" class="tab-pane" id="arts">
+      <br>
+          <i>             
+              <p class="centered airstreamFont XXVpx">
+                  Welcome to my library to you all. Here are my special gifts for you all.
+              </p>
+              <br>
+          </i>
 
-		                        <!-- Wrapper for slides -->
-		                        <div class="carousel-inner" role="listbox">
-		                          <div class="item active">
-		                            <img src="img/creations.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Let's begin !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art2.png" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art3.png" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Great !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art4.png" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Unbelievable !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art5.png" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art6.png" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Nice !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art7.png" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Best !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/art/art1.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          ...
-		                        </div>
+          <!-- Carousel for arts tab -->             
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+              <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+              </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="img/library/creations.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Let's begin !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art2.png" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art3.png" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Great !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art4.png" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Unbelievable !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art5.png" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art6.png" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Nice !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art7.png" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Best !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/art/art1.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              ...
+                            </div>
 
-		                        <!-- Controls -->
-		                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		                          <span class="sr-only">Previous</span>
-		                        </a>
-		                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		                          <span class="sr-only">Next</span>
-		                        </a>
-		                      </div>
-		                      <br>
+                            <!-- Controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+        <br>
+    </div>
+</div>
+
+<div id="creations" class="tabcontent">
+  <!-- Fourth Tab -->  
+  <div role="tabpanel" class="tab-pane">
+      <div class= "container">
+            <br>
+      <div class ="row">
+          <div class="col-md-8">
+              <i>             
+                  <p class="airstreamFont XXVpx">
+                      Welcome to my library to you all. Here is my special gifts for you all.<br>
+                      Creation for today is again text.
+                  </p>
+                  <br><br>
+                  <p class="sportFont XXXpx">
+                    Love is not possible without heart, likewise Students are not possible without teachers !
+                  </p> 
+              </i>   
+                           
+          </div>
+          <div class="col-md-4 library-div">
+              <img src= "img/library/creations.jpg" width="100%" class="centered side-image img-thumbnail">
+          </div>
+      </div>
+      </div>
+  </div>
+</div>
+
+<div id="games" class="tabcontent">
+  <!-- Fourth Tab -->  
+  <div role="tabpanel" class="tab-pane">
+      <div class= "container">
+            <br>
+      	<div class ="row">
+    		<div class="col-md-8">
+	      		<center>
+	        	<canvas id="game-canvas" width="600" height="400">
+	        	</canvas>
+	       	 	</center>
+    		</div>
+    		<div class="col-md-4" style="padding-left: 50px">
+    		<!-- Game controls (buttons). -->
+    			<!-- Description button -->
+    			<div class="description" data-toggle="tooltip" data-placement="bottom" title="It's the first game coded by me. I hope you will enjoy it. You should try to find the position of each figure clicking it to move. Model at right top would be helpful for you. You could also press 'Enter' or click 'Help' below for more help. Good Luck for your success.">
+	      			<button class="game-button">Description</button>
+      			</div><br>
+
+      			<!-- Change movement speed. -->
+      			<div data-toggle="tooltip" data-placement="bottom" title="Note: You need unit speed to get axact pixels of position">
+      			<button class="game-button" onclick="speed();">Change Movement Speed</button>
+      			<input type="number" id="myNumber" value="1">
+      			</div><br>
+
+      			<!-- Move up -->
+      			<button class="game-button" onclick="moveup();">Move Up (W)</button><br><br>
+
+      			<!-- Move left -->
+      			<button class="game-button" onclick="moveleft();">Move Left (A)</button><br><br>
+
+      			<!-- Move down -->
+      			<button class="game-button" onclick="movedown();">Move Down (S)</button><br><br>
+
+      			<!-- Move right -->
+      			<button class="game-button" onclick="moveright();">Move Right (D)</button><br><br>
+
+      			<!-- Help -->
+      			<button class="game-button" onclick="help();">Help (Enter)</button><br><br>
+
+      			<!-- Notice division -->
+      			<div class="row score-container">
+      			<button class="game-button" style="float: left;" onclick="score();">Score :</button>
+      			<div id="score-shower" style="float: right;"></div>
+      			</div>
+      			<br>
+
+      			<!-- Selection division -->
+      			<div class="row selection-container">
+      			<button class="game-button" style="float: left;" onclick="selection();">Selection :</button>
+      			<div id="selection-shower" style="float: right;"></div>
+      			</div>
+    		</div>
+      	</div>
+      </div>
+  </div>
+</div>
+
+<div id="thanks" class="tabcontent">
+  <!-- Sixth Tab -->
+      <div role="tabpanel" class="tab-pane">
+          <div class= "container">
+              <br>
+          <div class ="row">
+              <div class="col-md-8">
+                  <div class="col-md-6">
+                      <i>             
+                        <p class="XVpx">
+                        1. I was unknown that you would be here,<br>
+                        I heard the first day, Matt Sir appear !<br>
+                        I asked my sister, who is the Matt Sir,<br>
+                        She replied to me, god as a teacher !<br>
+                        The first day you come in our class,<br>
+                        Class became so clear, like a mirror glass!<br>
+                            The days I learn with you together,<br>
+                          Will be missing for me forever !
+                          <br><br>
+
+                        3. The  days we sat on the chair together,<br>
+                        Helps me to make my computer site better !<br>
+                        Those happy days with we two programmer,<br>
+                        I gonna miss you very much Matt Sir !<br>
+                        You showed a seed of happy computer ,<br>
+                        This seed will germinate and will give a flower !!<br>
+                          The days I played with you together,<br>
+                          Will be very sweet  for me forever !!
+                                </p> 
+                            </i>   
+                             
+                          </div>
+                        <div class="col-md-6">
+                            <i>             
+                                <p class="XVpx">
+                                  2. The trips with you was so enjoyable,<br>
+                        From the traces box to connective cable!<br>
+                        Laptops with power, robert with some love,<br>
+                        Friday with frizbee , fun with the art club !<br>
+                        Sometime picnic making friend nature,<br>
+                        We worked together brightening future !<br>
+                          The days I enjoyed with you together,<br>
+                          Will be memorable  for me forever !!
+                                </p> 
+                                <br><br>
+                                <p class="cartoonFont XXXpx" style="color:#202020">
+                                I'm missing you so much Matt Sir!
+                                </p>
+                            </i>  
+                        </div>
+                        </div>
+                        <div class="col-md-4 extra-library-div">
+                             <img src="img/library/mattsir.JPG" width="100%" class="centered side-image img-thumbnail">
+                        </div>
                     </div>
+                </div>
+            </div>
+</div>
 
-                  <!-- Fourth Tab -->  
-                    <div role="tabpanel" class="tab-pane" id="creations">
-                    	<div class= "container">
-				            <br>
-				            <div class ="row">
-				                <div class="col-md-8">
-				                    <i>             
-				                        <p id="small_font_size">
-				                        Welcome to my library to you all. Here is my special gifts for you all which you all can enjoy a lot. Creation for today is again text.
-				                        </p>
-				                        <br><br>
-				                        <p id="today_text">
-				                          Love is not possible without heart, likewise Students are not possible without teachers !
-				                        </p> 
-				                    </i>   
-				                   
-				                </div>
-				                <div class="col-md-4">
-				                     <img src= "img/creations.jpg" width="100%" class="centered side-image img-thumbnail">
+<div id="updates" class="tabcontent">
+  <!-- Seventh Tab -->
+  <div role="tabpanel" class="tab-pane">
+      <br>
+          <i>             
+              <p class="centered airstreamFont XXVpx">
+                  It was so enjoyable time. Vist to chainpur and <br>
+                  baaneshower. It's celebrating time! Let's enjoy!
+              </p>
+          </i>   
+                       
+                            <div id="carousel2" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel2" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel2" data-slide-to="1"></li>
+                                <li data-target="#carousel2" data-slide-to="2"></li>
+                                <li data-target="#carousel2" data-slide-to="3"></li>
+                                <li data-target="#carousel2" data-slide-to="4"></li>
+                                <li data-target="#carousel2" data-slide-to="5"></li>
+                                <li data-target="#carousel2" data-slide-to="6"></li>
+                                <li data-target="#carousel2" data-slide-to="7"></li>
+                                <li data-target="#carousel2" data-slide-to="8"></li>
+                                <li data-target="#carousel2" data-slide-to="9"></li>
+                                <li data-target="#carousel2" data-slide-to="10"></li>
+                                <li data-target="#carousel2" data-slide-to="11"></li>
+                                <li data-target="#carousel2" data-slide-to="12"></li>
+                                <li data-target="#carousel2" data-slide-to="13"></li>
+                                <li data-target="#carousel2" data-slide-to="14"></li>
+                                <li data-target="#carousel2" data-slide-to="15"></li>
+                                <li data-target="#carousel2" data-slide-to="16"></li>
+                                <li data-target="#carousel2" data-slide-to="17"></li>
+                                <li data-target="#carousel2" data-slide-to="18"></li>
+                                <li data-target="#carousel2" data-slide-to="19"></li>
 
-				               </div>
-				            </div>
-				        </div>
-                    </div>
+                              </ol>
 
-                  <!-- Fifth Tab -->
-                  	<div role="tabpanel" class="tab-pane" id="thank_you_matt_sir">
-                    	<div class= "container">
-				            <br>
-				            <div class ="row">
-					            <div class="col-md-8">
-					                    
-					                <div class="col-md-6">
-						                <i>             
-						                    <p id="smallest_font_size">
-						                    	1. I was unknown that you would be here,<br>
-												I heard the first day, Matt Sir appear !<br>
-												I asked my sister, who is the Matt Sir,<br>
-												She replied to me, god as a teacher !<br>
-												The first day you come in our class,<br>
-												Class became so clear, like a mirror glass!<br>
-												    The days I learn with you together,<br>
-													Will be missing for me forever !
-													<br><br>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                              <div class="item active">
+                                <img src="img/updates/updates1.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Let's begin !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates2.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  First selfie click !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates3.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  It was Great !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates4.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  It was Unbelievable !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates5.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                 Way heading siddhakali !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates6.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Enjoyed the snaps!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates7.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Enjoyed the snaps!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates8.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates9.jpg" alt="..." style="width:50%">
+                                <div class="carousel-caption">
+                                  Climbing tower to have a nice view !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates10.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates11.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates12.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow! Awesome to be with friends!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates13.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  With a small temple!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates14.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates15.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Wow! My hero friend!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates16.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  Worshiped with god !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates17.jpg" alt="..." style="width:50%">
+                                <div class="carousel-caption">
+                                  Wow !
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates18.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  It was nice pond!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates19.jpg" alt="..." style="width:75%">
+                                <div class="carousel-caption">
+                                  With my close friend!
+                                </div>
+                              </div>
+                              <div class="item">
+                                <img src="img/updates/updates20.jpg" alt="..." style="width:50%">
+                                <div class="carousel-caption">
+                                  We enjoyed the event!
+                                </div>
+                              </div>
+                              
+                              ...
+                            </div>
 
-												3. The  days we sat on the chair together,<br>
-												Helps me to make my computer site better !<br>
-												Those happy days with we two programmer,<br>
-												I gonna miss you very much Matt Sir !<br>
-												You showed a seed of happy computer ,<br>
-												This seed will germinate and will give a flower !!<br>
-													The days I played with you together,<br>
-													Will be very sweet  for me forever !!
-						                    </p> 
-						                </i>   
-					                   
-					                </div>
-						            <div class="col-md-6">
-						                <i>             
-						                    <p id="smallest_font_size">
-						                    	2. The trips with you was so enjoyable,<br>
-												From the traces box to connective cable!<br>
-												Laptops with power, robert with some love,<br>
-												Friday with frizbee , fun with the art club !<br>
-												Sometime picnic making friend nature,<br>
-												We worked together brightening future !<br>
-													The days I enjoyed with you together,<br>
-													Will be memorable  for me forever !!
-						                    </p> 
-						                    <br><br>
-						                    <p id="missing">
-						                    I'm missing you so much Matt Sir!
-
-
-						                    </p>
-						                </i>  
-
-						            </div>
-				                </div>
-				                <div class="col-md-4">
-				                     <img src= "img/mattsir.jpg" width="100%" class="centered side-image1 img-thumbnail">
-				                </div>
-				            </div>
-				        </div>
-                    </div>
-
-                   <!-- Sixth Tab -->
-                    <div role="tabpanel" class="tab-pane" id="updates">
-                    	<br>
-			                  	<i>             
-			                        <p class="centered " id="text_updates">
-			                        	It was so enjoyable time. Vist to chainpur and <br>
-			                        	baaneshower. It's celebrating time! Let's enjoy!
-			                        </p>
-			                    </i>   
-		                   
-		                       	<div id="carousel2" class="carousel slide" data-ride="carousel">
-		                        <!-- Indicators -->
-			                        <ol class="carousel-indicators">
-			                          <li data-target="#carousel2" data-slide-to="0" class="active"></li>
-			                          <li data-target="#carousel2" data-slide-to="1"></li>
-			                          <li data-target="#carousel2" data-slide-to="2"></li>
-			                          <li data-target="#carousel2" data-slide-to="3"></li>
-			                          <li data-target="#carousel2" data-slide-to="4"></li>
-			                          <li data-target="#carousel2" data-slide-to="5"></li>
-			                          <li data-target="#carousel2" data-slide-to="6"></li>
-			                          <li data-target="#carousel2" data-slide-to="7"></li>
-			                          <li data-target="#carousel2" data-slide-to="8"></li>
-			                          <li data-target="#carousel2" data-slide-to="9"></li>
-			                          <li data-target="#carousel2" data-slide-to="10"></li>
-			                          <li data-target="#carousel2" data-slide-to="11"></li>
-			                          <li data-target="#carousel2" data-slide-to="12"></li>
-			                          <li data-target="#carousel2" data-slide-to="13"></li>
-			                          <li data-target="#carousel2" data-slide-to="14"></li>
-			                          <li data-target="#carousel2" data-slide-to="15"></li>
-			                          <li data-target="#carousel2" data-slide-to="16"></li>
-			                          <li data-target="#carousel2" data-slide-to="17"></li>
-			                          <li data-target="#carousel2" data-slide-to="18"></li>
-			                          <li data-target="#carousel2" data-slide-to="19"></li>
-
-			                        </ol>
-
-		                        <!-- Wrapper for slides -->
-		                        <div class="carousel-inner" role="listbox">
-		                          <div class="item active">
-		                            <img src="img/updates/updates1.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Let's begin !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates2.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              First selfie click !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates3.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              It was Great !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates4.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              It was Unbelievable !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates5.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                             Way heading siddhakali !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates6.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Enjoyed the snaps!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates7.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Enjoyed the snaps!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates8.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates9.jpg" alt="..." style="width:50%">
-		                            <div class="carousel-caption">
-		                              Climbing tower to have a nice view !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates10.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates11.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates12.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow! Awesome to be with friends!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates13.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              With a small temple!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates14.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates15.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Wow! My hero friend!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates16.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              Worshiped with god !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates17.jpg" alt="..." style="width:50%">
-		                            <div class="carousel-caption">
-		                              Wow !
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates18.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              It was nice pond!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates19.jpg" alt="..." style="width:75%">
-		                            <div class="carousel-caption">
-		                              With my close friend!
-		                            </div>
-		                          </div>
-		                          <div class="item">
-		                            <img src="img/updates/updates20.jpg" alt="..." style="width:50%">
-		                            <div class="carousel-caption">
-		                              We enjoyed the event!
-		                            </div>
-		                          </div>
-		                          
-		                          ...
-		                        </div>
-
-		                        <!-- Controls -->
-		                        <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
-		                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		                          <span class="sr-only">Previous</span>
-		                        </a>
-		                        <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
-		                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		                          <span class="sr-only">Next</span>
-		                        </a>
-		                      </div>
-		                      <br>
-                    </div>
-                    </div>
+                            <!-- Controls -->
+              <a class="left carousel-control" href="#carousel2" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel2" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+              </div>
+              <br>
+            </div>
+          	</div>
+        	</div>
+      		</div>
+    		</div>
+  			</div>
+		</div>
 
                   </div>
               </div>
@@ -621,130 +709,100 @@
 		<div class="page-padding"></div>
 		<div class= "container">
             <div class="row">
-                    <h1 class="centered wow slideInDown">My Interests</h1>
+                    <h1 class="centered wow fadeIn">My Interests</h1>
             </div>
             <div class ="row">
                 <div class="col-md-7">
 	                <i>             
-	                    <p class=" wow slideInLeft" id="medium_font_size">
+	                    <p class=" wow slideInUp airstreamFont XXpx">
 	                            
-	                        I'm highly interested in my study and arts. I want my lisure time to be utilized for creating different arts, poems, essays, stories,etc. I'm equally interested in Computer programming also. I like to identify the new scientifical facts because I enjoy with it. The setup of programing has already been the part of my mind. I like to study different things without any limitations, just not to pass certain degrees.<br> More in other side, I want to be closed to Nature, get some inspirations from them. I like to visit different beautiful places decorated with beautiful natures having great cultural and natural importance. I like to know the different species of bio-diversity. Likewise I'm interested to learn the different arts and get the diverse ideas from them. Therefore learning by having great  interest is really interesting.
+	                        I'm highly interested in my study and arts. I want my lisure time to be utilized for creating different arts, poems, essays, stories,etc. I'm equally interested in Computer programming also. I like to identify the new scientifical facts because I enjoy with it. The setup of programing has already been the part of my mind. I like to study different things without any limitations, just not to pass certain degrees.<br><br>
+	                        More in other side, I want to be closed to Nature, get some inspirations from them. I like to visit different beautiful places decorated with beautiful natures having great cultural and natural importance. I like to know the different species of bio-diversity. Likewise I'm interested to learn the different arts and get the diverse ideas from them. Therefore learning by having great  interest is really interesting.
 	                           
 	                    </p>
 	                </i> 
                 </div>
-                <div class="col-md-5">
-                	<img src= "img/Bgofintreasts.jpg" width="100%" class="centered wow slideInRight side-image img-thumbnail">
+                <div class="col-md-5" style="padding-left: 80px">
+                	<img src= "img/interests.jpg" width="100%" class="centered wow slideInUp side-image img-thumbnail">
                 </div>
             </div>
         </div>
     </div> <!--END page5-->
 
-    <div id="page6">
+    <footer id="page6">
+    	<div class="footer">
         <a name="contact"></a> 
         <div class="page-padding"></div>
         <div class= "container">
             <div class="row">
-                        <h1 class="centered wow slideInDown ">Contact</h1>
-            </div>
-            <div class ="row">
-                <div class="col-md-7">
-                   <i>             
-                        <p class="wow slideInLeft" id= "big_fomt_size">
-                            <b>
-                        Hello Everybody! If you wanna contact me, You can use the following medium.
-                        </b>
-                        </p>
-                        <p class="wow slideInLeft" id= "small_font_size_contact">
-                          <i class="fa fa-phone-square fa-2x"></i>
-                        Phone   : 
-                        (+977)9811014014<br>
-                        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                        <a href="mailto:rabinkalikote33@gmail.com">Mail    :rabinkalikote33@gmail.com</a><br>
-                        <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                        <a href="http://www.facebook.com/KalikoteRabin">Facebook:Lucky Rabin/Luckyrabin33@gmail.com</a><br>
-                        <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
-                        <a href="http://www.github.com/Rabin-Kalikote">Github:github.com/Rabin-Kalikote</a>                        
-                        </p>
-                    </i> 
-                   
+            	<div class="col-md-8">
+            		<div class="col-md-6" style="padding-top: 50px">
+                        <h4 class="wow fadeIn title"><b>CONTACT ME</b></h4>
+                        <div id="e-mail" class="wow fadeIn">
+		                    <a href="mailto:rabinkalikote33@gmail.com"  data-toggle="tooltip" data-placement="top" title="Gmail">
+		                       	rabinkalikote33@gmail.com
+		                    </a>
+	                    </div>
+	                    <div id="phone" class="wow fadeIn">
+		                    <p style="margin-right:40%"  data-toggle="tooltip" data-placement="top" title="Phone">
+		                    	(+977) 9811014014
+		                    </p>
+		                </div>
+                    </div>
+                    <div class="col-md-6 contact-section">
+                    	<div>
+	                    	<a href="#page1" class="back-icon">
+	                    		<i class="fa fa-arrow-circle-up fa-3x fa-center" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Back to Top"></i>
+	                    	</a>
+                    	</div>
+                    </div>
                 </div>
-                <div class="col-md-5">
-                    <img src= "img/Bgofcontact.gif" width="100%" class="centered wow slideInRight side-image img-thumbnail">
-               </div>
+                <div class="col-md-4 contact-section">
+                	<div class="col-md-8">
+                		<div class="col-md-6">
+		                	<div class="wow fadeIn">
+			                	<a href="http://www.facebook.com/KalikoteRabin" class="facebook">
+			                		<i class="fa fa-facebook-square fa-3x fa-center" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Facebook"></i><br>
+			                		<p class="centered icon-name">Facebook</p>
+			                	</a>
+		                	</div>
+		                </div>
+		                <div class="col-md-6">
+		                	<div class="wow fadeIn">
+			                	<a href="http://www.github.com/Rabin-Kalikote" class="github">
+			                	<i class="fa fa-github fa-3x fa-center" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Github"></i><br>
+			                	<p class="centered icon-name">Git-Hub</p>
+			                	</a>
+		                	</div>
+		                </div>
+	                </div>
+	                <div class="col-md-4">
+	                	<div class="wow fadeIn">
+		                	<a href="mailto:rabinkalikote33@gmail.com" class="mail">
+		                	<i class="fa fa-envelope-square fa-3x fa-center" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Mail"></i><br>
+		                	<p class="centered icon-name">Mail</p>
+		                	</a>
+	                	</div>
+	                </div>
+                </div>
             </div>
         </div>
-    </div> <!--END page6-->
-	
-</div> <!--END page-wrap-->
-
-	<footer id = "footer" >
-	    <p class="centered wow slideInDown">
-	      Copyright : Rabin Kalikote (All right reserved)
-	    </p>
-  	</footer>
-
-
-
-<script type="text/javascript">
-  new WOW().init(); // activation of wow.js
-  // activate dropdown for navbar
-  $(document).ready(function(){
-    $('dropdown-toggle').dropdown()
-   $('body').smoothScroll({
-    delegateSelector: 'ul.nav.main_links a '
-  });
-  
-  //Change the link color in the navbar to the location of the page after clicked.
-  $('ul.main_links li a[href^="#"]').on('click', function (e) {
-     e.preventDefault();
-        $(document).off("scroll");
-     // alert("Thanks for Visiting")
-      $('a').each(function () {
-    
-            $(this).parent('li').removeClass('selected');
-          })
-
-     $(this).parent('li').addClass('selected'); 
-     var target = this.hash,
-            menu = target;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
-        }, 500, 'swing', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
-  })
-
-//Change the link color in the navbar to the location of the page after scrolling.
-  function onScroll(event){
-    var scrollPos = $(document).scrollTop();
-   $('ul.main_links li a[href^="#"]').each(function () {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('navbar-nav ul li ').removeClass("selected");
-            currLink.parent('li').addClass("selected");
-        }
-        else{
-            currLink.parent('li').removeClass("selected");
-        }
-  })
- }
-
-  $(document).on("scroll", onScroll);
-
-   //Making the library tab work.
-  $('.library_tabs a').click(function (e) {
-
-    e.preventDefault()
-    $(this).tab('show')
-  })
-
-
-  }); 
-
-</script>	
+        	<div class="footer-bar">
+        		<div class="col-md-6 wow fadeIn">
+            		<p id="footer-text">&copy Copyright 2016 Rabin K. Kalikote</p>
+            	</div>
+            	<div class="col-md-6">
+					<ul class="footer-navbar wow fadeIn">
+				        <li><a href="#page2" data-toggle="tooltip" data-placement="top" title="Goto About">About /</a></li>
+				        <li><a href="#page3" data-toggle="tooltip" data-placement="top" title="Goto Profile"> Profile /</a></li>
+			          	<li><a href="#page4" data-toggle="tooltip" data-placement="top" title="Goto Library"> Library /</a></li>
+			          	<li><a href="#page5" data-toggle="tooltip" data-placement="top" title="Goto Interests"> Interests</a></li>
+					</ul>
+				</div>
+            </div>
+        </div>
+    </footer> <!--END page6-->
+    <!-- Js codes for game -->    
+    <script src="js/game.js"></script>
 </body>
 </html>
