@@ -517,19 +517,15 @@
 
       if (lefteyedist < lefteyeballdist && lefteyedist < righteyedist && lefteyedist < righteyeballdist && lefteyedist < nosedist && lefteyedist < mouthdist){
         currentfig = "lefteye";
-        alert('You have selected left eye.');
       }
       else if (lefteyeballdist < lefteyedist && lefteyeballdist < righteyedist && lefteyeballdist < righteyeballdist && lefteyeballdist < nosedist && lefteyeballdist < mouthdist){
         currentfig = "lefteyeball";
-        alert('You have selected left eye ball.');
       }
       else if (righteyedist < lefteyeballdist && righteyedist < lefteyedist && righteyedist < righteyeballdist && righteyedist < nosedist && righteyedist < mouthdist){
         currentfig = "righteye";
-        alert('You have selected right eye.');
       }
       else if(righteyeballdist < lefteyedist && righteyeballdist < righteyedist && righteyeballdist < lefteyeballdist && righteyeballdist < nosedist && righteyeballdist < mouthdist){
         currentfig = "righteyeball";
-        alert('You have selected right eye ball.');
       }
       else if(nosedist < lefteyeballdist && nosedist < righteyedist && nosedist < righteyeballdist && nosedist < lefteyedist && nosedist < mouthdist){
         currentfig = "nose";
