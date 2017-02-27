@@ -5,7 +5,7 @@
     //global variables.
     var canvas = document.getElementById("game-canvas");
     var c = canvas.getContext("2d");
-    var currentfig = "empty";
+    var currentfig = "None";
 
     // register event handler 
     document.addEventListener("keydown", keyPressedHandler, false);
@@ -514,6 +514,13 @@
       var nosedist = distancefmla(hero.nrandX, hero.nrandY, clickx, clicky);
       var mouthdist = distancefmla(hero.mrandX, hero.mrandY, clickx, clicky);
 
+      console.log('lefteye ' +lefteyedist);
+      console.log('lefteyeball ' +lefteyeballdist);
+      console.log('righteye ' +righteyedist);
+      console.log('righteyeball ' +righteyeballdist);
+      console.log('nose ' +nosedist);
+      console.log('mouth ' +mouthdist);
+
 
       if (lefteyedist < lefteyeballdist && lefteyedist < righteyedist && lefteyedist < righteyeballdist && lefteyedist < nosedist && lefteyedist < mouthdist){
         currentfig = "lefteye";
@@ -542,8 +549,8 @@
       var Xvalue = x2 - x1;
       var Yvalue = y2 - y1;
 
-      var sqX = Math.pow(Xvalue,2);
-      var sqY = Math.pow(Yvalue,2);
+      var sqX = Xvalue^2;
+      var sqY = Yvalue^2;
 
       var totlsq = sqY + sqX;
 

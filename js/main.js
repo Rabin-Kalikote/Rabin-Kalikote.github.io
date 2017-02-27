@@ -56,6 +56,15 @@
     e.preventDefault()
     $(this).tab('show')
   })
+
+  // Making the page scrolling when the link is clicked.
+   $('.scroll-link').on('click', function(event){
+       // prevent the default thing from happening 
+        event.preventDefault();
+        // Instead, we’ll do this. 
+        // Animation on the body of the html, that is a scroll to “this” thing (the id). Take 750 milliseconds to move there. 
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 750);
+    });
   });
 
   // Making navbar shown only below home page.
