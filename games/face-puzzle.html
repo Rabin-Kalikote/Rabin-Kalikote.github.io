@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    Rabin's Games
+  </title>
+    <!-- title logo -->
+    <link rel="icon" type="image/ico" href="../img/icons/title.ico">
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery Libraries -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/wow.js"></script>
+
+    <!-- Boostrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../library/bootstrap/css/bootstrap.min.css">
+
+    <!-- fontAwesome stuff -->
+    <link rel="stylesheet" href="../library/font-awesome/css/font-awesome.min.css">
+
+    <!-- Use of wow animation -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Custom js -->
+    <script src="../js/main.js"></script>
+</head>
+
+<body style="background-color:#E5E4E2">
+
+      <br><br>
+    <header>
+      <div class="nav-container">
+        <div class="puzzle-left-header" data-toggle="tooltip" data-placement="top" title="Back">
+            <a href="../index.html">
+          <i class="fa fa-arrow-circle-left fa-3x fa-center"></i>
+            </a>
+        </div>
+        <div class="puzzle-right-header">
+          <!-- is empty -->
+        </div>
+      </div>
+    </header>
+
+
+
+    <div class ="row" style="background-color:#CCCCCC; margin-left:50px; margin-right:50px; border-radius:30px;padding-top:50px; padding-bottom:50px">
+    		<div class="col-md-8">
+	      		<center>
+	        	<canvas id="game-canvas" width="600" height="400">
+	        	</canvas>
+	       	 	</center>
+    		</div>
+    		<div class="col-md-4" style="padding-left: 50px">
+    		<!-- Game controls (buttons). -->
+    			<!-- Description button -->
+    			<div class="description" data-toggle="tooltip" data-placement="bottom" title="It's the first game coded by me. I hope you will enjoy it. You should try to find the position of each figure clicking it to move. Model at right top would be helpful for you. You could also press 'Enter' or click 'Help' below for more help. Good Luck for your success.">
+	      			<button class="puzzle-button">Description</button>
+      			</div><br>
+
+      			<!-- Change movement speed. -->
+      			<div data-toggle="tooltip" data-placement="bottom" title="Note: You need unit speed to get exact pixels of position">
+      			<button class="puzzle-button" onclick="speed();">Change Movement Speed</button>
+      			<input type="number" id="myNumber" value="1">
+      			</div><br>
+
+      			<!-- Move up -->
+      			<button class="puzzle-button" onclick="moveup();">Move Up (W)</button><br><br>
+
+      			<!-- Move left -->
+      			<button class="puzzle-button" onclick="moveleft();">Move Left (A)</button><br><br>
+
+      			<!-- Move down -->
+      			<button class="puzzle-button" onclick="movedown();">Move Down (S)</button><br><br>
+
+      			<!-- Move right -->
+      			<button class="puzzle-button" onclick="moveright();">Move Right (D)</button><br><br>
+
+      			<!-- Help -->
+      			<button class="puzzle-button" onclick="help();">Help (Enter)</button><br><br>
+
+      			<!-- Notice division -->
+      			<div class="row score-container">
+      			<button class="puzzle-button" style="float: left;" onclick="score();">Score :</button>
+      			<div id="score-shower" style="float: right;"></div>
+      			</div>
+      			<br>
+
+      			<!-- Selection division -->
+      			<div class="row selection-container">
+      			<button class="puzzle-button" style="float: left;" onclick="selection();">Selection :</button>
+      			<div id="selection-shower" style="float: right;"></div>
+      			</div>
+    		</div>
+    </div>
+    <!-- Js codes for game -->    
+  <script src="../js/game-puzzle.js"></script>
+</body>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    Rabin's Games
+  </title>
+    <!-- title logo -->
+    <link rel="icon" type="image/ico" href="../img/icons/title.ico">
+
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery Libraries -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/wow.js"></script>
+
+    <!-- Boostrap -->
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../library/bootstrap/css/bootstrap.min.css">
+
+    <!-- fontAwesome stuff -->
+    <link rel="stylesheet" href="../library/font-awesome/css/font-awesome.min.css">
+
+    <!-- Use of wow animation -->
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../css/main.css">
+
+    <!-- Custom js -->
+    <script src="../js/main.js"></script>
+</head>
+
+<body style="background-color:#E5E4E2">
+
+      <br><br>
+    <header>
+      <div class="nav-container">
+        <div class="puzzle-left-header" data-toggle="tooltip" data-placement="top" title="Back">
+            <a href="../index.html">
+          <i class="fa fa-arrow-circle-left fa-3x fa-center"></i>
+            </a>
+        </div>
+        <div class="puzzle-right-header">
+          <!-- is empty -->
+        </div>
+      </div>
+    </header>
+
+
+
+    <div class ="row" style="background-color:#CCCCCC; margin-left:50px; margin-right:50px; border-radius:30px;padding-top:50px; padding-bottom:50px">
+    		<div class="col-md-8">
+	      		<center>
+              <canvas id="canvas" width="500" height="500">
+              </canvas>
+            </center>
+    		</div>
+    		<div class="col-md-4" style="padding-left: 50px">
+    		<!-- Game controls (buttons). -->
+    			<!-- Description button -->
+    			<div class="description" data-toggle="tooltip" data-placement="bottom" title="It's the second game coded by me. I hope you will enjoy it. You should try to catch the falling apples. One apple is epual to 5 score. If you score 300 before you miss 25 apples, you are great. Good Luck for your success.">
+	      		<button class="puzzle-button">Description</button>
+      		</div><br>
+
+          <!-- Start game -->
+          <div>
+            <button class="puzzle-button" onclick="startjs();">Start Game..</button><br><br>
+          </div>
+    		</div>
+    </div>
+    <!-- Js codes for game -->    
+  <script src="../js/game-apple.js"></script>
+</body>

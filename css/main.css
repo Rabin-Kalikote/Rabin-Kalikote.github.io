@@ -109,8 +109,19 @@ html{
     overflow-y:scroll;
 }
 
-/* gives design to navbar */
+/* makes the background image changing/fading */
+.image-fader{
+    top: 0px;
+    left: 0px;
+    height: 120%;
+    width: 100%;
+    position: absolute;    
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
 
+/* gives design to navbar */
 .navbar{
     background-color: rgba(0,0,0,0.6);
     height: 50px;
@@ -249,10 +260,6 @@ h2{
 #page1{
     min-height:105vh;
     width:100%;
-    background-image: url("../img/Bgofindex.jpg");
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     padding-top:50px;
 }
 .box-shadow {
@@ -402,6 +409,8 @@ canvas{
     border-color: #848482;
     background-color: #2C3539;
     color: #E5E4E2;
+    height: 50px;
+    width: 150px;
 }
 
 /* gives design to input box of speed(library). */
@@ -445,6 +454,28 @@ canvas{
     display: inline-block;
     width: 100%;
     vertical-align: middle;
+}
+
+/* gives design to the other two pages of games. */
+.puzzle-button{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    border-color: #848482;
+    background-color: #2C3539;
+    color: #E5E4E2;
+}
+
+.puzzle-left-header{
+    background-color: rgba(62,61,61,0.6);
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+}
+
+.puzzle-right-header{
+    float: right;
+    border-radius: 6px;
 }
 
 /* resize the texts and pictures if the pages are viewed in small screen. */

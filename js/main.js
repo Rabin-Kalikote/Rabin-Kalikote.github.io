@@ -7,7 +7,7 @@
   $(document).ready(function(){
     $('dropdown-toggle').dropdown()
    $('body').smoothScroll({
-    delegateSelector: 'ul.nav.main_links a '
+    delegateSelector: 'ul.nav.main_links a'
   });
   
   //Change the link color in the navbar to the location of the page after clicked.
@@ -105,4 +105,28 @@ if ($(window).width() < 768) {
     $('i.fa').removeClass('fa-2x');
     $('i.fa').addClass('fa-3x');
 }
+});
+
+// Js code for background fader.
+  $(document).ready(function(){
+    var count = 0;
+    var images = ["img/backgrounds/a.jpg","img/backgrounds/b.jpg",
+                  "img/backgrounds/c.jpg","img/backgrounds/d.jpg",
+                  "img/backgrounds/e.jpg","img/backgrounds/f.jpg",
+                  "img/backgrounds/g.jpg","img/backgrounds/h.jpg",
+                  "img/backgrounds/i.jpg","img/backgrounds/j.jpg"];
+
+    var image = $(".image-fader");
+
+    image.css("background-image","url("+images[count]+")");
+
+    setInterval(function(){
+      image.fadeOut(0, function(){
+        image.css("background-image","url("+images[count++]+")");
+        image.fadeIn(0);
+      });
+      if(count == images.length){
+        count = 0;
+      }
+    },10000);
 });
