@@ -38,7 +38,7 @@
    $('ul.main_links li a[href^="#"]').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top-40 <= scrollPos && refElement.position().top-40 + refElement.height() > scrollPos) {
             $('navbar-nav ul li ').removeClass("selected");
             currLink.parent('li').addClass("selected");
         }
@@ -69,7 +69,7 @@
 
   // Making navbar shown only below home page.
   $(window).scroll(function(){
-    if($(document).scrollTop()>690){
+    if($(document).scrollTop() > $(window).height()){
       $('nav').removeClass('hidden');
     }
     else{
@@ -99,34 +99,35 @@
 
 $(window).resize(function() {
 if ($(window).width() < 768) {
-    $('i.fa').removeClass('fa-3x');
-    $('i.fa').addClass('fa-2x');
+    $('i.fa.contact-icon').removeClass('fa-3x');
+    $('i.fa.contact-icon').addClass('fa-2x');
 } else {
-    $('i.fa').removeClass('fa-2x');
-    $('i.fa').addClass('fa-3x');
+    $('i.fa.contact-icon').removeClass('fa-2x');
+    $('i.fa.contact-icon').addClass('fa-3x');
 }
 });
 
-// Js code for background fader.
-  $(document).ready(function(){
-    var count = 0;
-    var images = ["img/backgrounds/a.jpg","img/backgrounds/b.jpg",
-                  "img/backgrounds/c.jpg","img/backgrounds/d.jpg",
-                  "img/backgrounds/e.jpg","img/backgrounds/f.jpg",
-                  "img/backgrounds/g.jpg","img/backgrounds/h.jpg",
-                  "img/backgrounds/i.jpg","img/backgrounds/j.jpg"];
+var intervalId = setTimeout(function(){
+    $('h4').addClass('fadeOut');
+    var intervalId2nd = setTimeout(function(){
+      $('h4').removeClass('fadeOut');
+      $('h4').addClass('fadeIn');
+      document.getElementById("homeHeaderSub").innerHTML="HERE IS ME YOUR LUKCY GUY RABIN";
+    },1000);
+},4000);
 
-    var image = $(".image-fader");
 
-    image.css("background-image","url("+images[count]+")");
+function showInterests(){
+  if($('div .interestscontent').hasClass('shown')){
+      $('div .interestscontent').removeClass('shown');
+      $('div .interestscontent').addClass('notShown');
+    }
+    else{
+      $('div .interestscontent').removeClass('notShown');
+      $('div .interestscontent').addClass('shown');
+    }
+}
 
-    setInterval(function(){
-      image.fadeOut(0, function(){
-        image.css("background-image","url("+images[count++]+")");
-        image.fadeIn(0);
-      });
-      if(count == images.length){
-        count = 0;
-      }
-    },10000);
-});
+$(window).scroll(function(){
+
+  });

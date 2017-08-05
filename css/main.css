@@ -4,349 +4,329 @@
 /* Copyright (c): Rabin K. Kalikote*/
 
 /* creates different font family */
-@font-face { font-family:ace; src: url('fonts/ace/Ace.ttf');}
-@font-face { font-family:cartoon; src: url('fonts/cartoon/Cartoon.ttf');}
-@font-face { font-family:national; src: url('fonts/national/National.ttf');}
-@font-face { font-family:bikrant; src: url('fonts/nepali/bikrant_40.TTF');}
-@font-face { font-family:berlin; src: url('fonts/berlin/abc.TTF');}
-@font-face { font-family:airstream; src: url('fonts/airstream/airstream.otf');}
-@font-face { font-family:beantown; src: url('fonts/beantown/beantown.ttf');}
-@font-face { font-family:buffied; src: url('fonts/buffied/buffied.ttf');}
-@font-face { font-family:master; src: url('fonts/master/master.ttf');}
-@font-face { font-family:oxphord; src: url('fonts/oxphord/oxphord.ttf');}
-@font-face { font-family:sport; src: url('fonts/sportsnight/sportsnight.ttf');}
-@font-face { font-family:smile; src: url('fonts/small/smile.otf');}
+@font-face { font-family:areeal; src: url('fonts/arial.ttf');}
+@font-face { font-family:comeec; src: url('fonts/comic.ttf');}
+@font-face { font-family:nepali; src: url('fonts/nepali.ttf');}
 
-/* gives fonts to different selected class.*/
-.aceFont{
-	font-family:ace;
-}
-
-.cartoonFont{
-	font-family:cartoon;
-}
-
-.nationalFont{
-	font-family:national;
-}
-
-.bikrantFont{
-	font-family:bikrant;
-}
-
-.berlinFont{
-	font-family:berlin;
-}
-
-.airstreamFont{
-	font-family:airstream;
-}
-
-.beantown{
-	font-family:beantown;
-}
-
-.buffied{
-	font-family:buffied;
-}
-
-.masterFont{
-	font-family:master;
-}
-
-.oxphordFont{
-	font-family:oxphord;
-}
-
-.sportFont{
-	font-family:sport;
-}
-
-/* gives necessary fontSize to texts */
-.LXXpx{
-    font-size: 70px;
-}
-
-.LXpx{
-    font-size: 60px;
-}
-
-.Lpx{
-    font-size: 50px;
-}
-
-.XLpx{
-	font-size:40px;
-}
-
-.XXXpx{
-	font-size:30px;
-}
-
-.XXVpx{
-	font-size:25px;
-}
-
-.XXpx{
-	font-size:20px;
-}
-
-.XVpx{
-	font-size:15px;
-}
-
-.Xpx{
-	font-size:10px;
-}
-
-/* make the text with class 'centered' in the center. */
+/* basic Css */
 .centered {
     text-align:center;
 }
+.fa-center {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.title{
+    color: #B6B6B4;
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: comeec;
+}
+.text{
+    font-size: 20px;
+    font-family: comeec;
+}
+.tab-title{
+    font-size: 20px;
+    font-family: comeec;
+}
+.tab-text{
+    font-size: 15px;
+    font-family: comeec;
+}
+.notShown {
+  -webkit-animation: slideUp 0.8s;
+  animation: slideUp 0.8s;
+}
+
 
 /* gives vertical scroll bar always in different pages */
 html{
     overflow-y:scroll;
 }
-
-/* makes the background image changing/fading */
-.image-fader{
-    top: 0px;
-    left: 0px;
-    height: 120%;
-    width: 100%;
-    position: absolute;    
-    background-size:cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-}
-
-/* gives design to navbar */
-.navbar{
-    background-color: rgba(0,0,0,0.6);
-    height: 50px;
-    font-size: 20px;
-    padding-top: 0px;
-}
-
-.selected a{
-    background-color: #2C3539;
-}
-
-/* describes about navbar brand */
-.navbar-brand {
-    font-family:berlin; 
-    font-size:25px;       
-}
-
-
-/* gives design to home navgation bar. */
 *{
     margin: 0;
     padding: 0; 
 }
-header{
-    height: 80px;
+
+/* Css to navigation bar */
+#navbar{
+    background-color: rgba(0,0,0,0.8);
+    height: 50px;
+    font-size: 20px;
     padding-top: 0px;
+    padding-right: 6%;
+    -webkit-animation: slideEffect 0.8s;
+    animation: slideEffect 0.8s;
 }
-.nav-container{
-    width: 90%;
-    margin: 0 auto;
+
+.selected a{
+    color: #E5E4E2 !important;
+    font-weight: bold;
+    background-color: transparent;
 }
-.logo-name{
-    display: table;
-    width: 200px;
-    background-color: rgba(62,61,61,0.6);
-    border-radius: 0 20px 0 20px;
+.navbar-default .navbar-nav > li > a {
+  color: #777;
+  font-family: comeec;
+}
+
+/* describes about navbar brand */
+.navbar-brand {
+    font-family:comeec; 
+    font-size:25px;       
+}
+
+/* Css for home page */
+#home{
+    min-height: 110vh;
+    position: relative;
+    background-image: url("../img/background.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+#home-navigation-left{
     float: left;
 }
-.logo-name a{
-    padding-left: 25px;
-    text-decoration: none;
-    color: red;
-}
-.home-navbar{
-    display: table;
-    background-color: rgba(62,61,61,0.6);
+#home-navigation-right{
     float: right;
-    border-radius: 6px;
 }
-.home-navbar li{
+.home-navigation {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 40px;
+  list-style: none;
+}
+.home-navigation > li {
+    position: relative;
     list-style: none;
     float: left;
 }
-.home-navbar a{
+.home-navigation > li > a {
+    position: relative;
     display: table;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
-    color:#fff;
-    padding: 10px 25px;
+    font-family: comeec;
+    font-weight:  bold;
+    color:#BCC6CC;
+    padding-left: 10px;
 }
-.active a{
-    background-color: #2C3539;
-    border-radius: 6px;
+.home-navigation > li > a:hover,
+.home-navigation > li > a:focus {
+  text-decoration: none;
+  color: #B6B6B4;
+}
+#homeHeader{
+    color: purple;
+    margin-top: 25vh;
+    font-size: 70px;
+    font-family: comeec;
+    font-weight: bold;
+}
+#homeHeaderSub{
+    font-family: comeec;
+    color: darkgreen;
+    font-size: 35px;
+    font-weight: bold;
+}
+#iconContainer{
+    margin-top: 30vh;
+}
+#icon-list{
+    float: right;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+#icon-list > li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+#icon-list > li > a {
+    position: relative;
+    display: table; 
+    text-decoration: none;
+    font-family: comeec;
+    font-weight:  bold;
+    padding-left: 40px;
+    color:#2B1B17;
+}
+#icon-list > li > a:hover,
+#icon-list > li > a:focus {
+    font-size: 15px;
+}
+.icon-name{
+    font-size: 10px;
 }
 
-/* gives design to tabs of library. */
-/* Style the tab */
-.position{
-    background-color: rgba(0,255,0,0.0);
-    width: 95%;
-    padding-left: 5%;
+/* Css for about page */
+#about{
+    min-height: 110vh;
+    position: relative;
 }
-div.tab {
+
+/* Css for library page */
+#library{
+    min-height: 110vh;
+    position: relative;
+    background-image: url("../img/background.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+div #tab-nav {
     overflow: hidden;
     width: 100%;
     min-height: 45px;
-    border-radius: 10px 10px 0 0;
-    background-color: rgba(0,0,0,0.5);
-    padding-top: 4px;
-    padding-bottom: 4px;
+    background-color: transparent;
 }
-/* Style the links inside the tab */
-div.tab a {
+div #tab-nav a {
     float: left;
     display: block;
     color: white;
-    font-size: 20px;
+    font-family: comeec;
+    font-size: 15px;
     text-align: center;
-    padding: 8px 16px;
+    padding: 5px 5px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
 }
-/* Create an active/current tablink class */
-div.tab a:focus, .active {
-    background-color: #2C3539;
-    border-radius: 5px;
+div #tab-nav a:focus,
+div #tab-nav a:hover, .active {
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 50px;
 }
-/* Style the tab content */
 .tabcontent {
+    height: auto;
     display: none;
     background-color: rgba(0,0,0,0.2); 
     border:2px solid #6D7B8D;
-    border-radius: 20px;
+    border-radius: 5px;
     padding: 6px 12px;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
+    -webkit-animation: fadeEffect 0.8s;
+    animation: fadeEffect 0.8s;
 }
-/* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* describes about h1 */
-h1{ 
-    margin-top:0px;
-    font-size:65px; 
-    color:red;
-    padding-bottom: 50px;
-    font-family:national;
-}
-
-/* describes about h2 */
-h2{
-    color:purple;
-    font-family: ace;
-    font-size:70px;
-}
-
-/* gives design to home page. */
-#page1{
-    min-height:105vh;
-    width:100%;
-    padding-top:50px;
-}
-.box-shadow {
-    position: relative;
-    box-shadow: 0 -7px 7px -7px #000;
-}
-
-/* gives design to about page. */
-#page2{
-    border-top: 8px solid rgba(62,61,61,1);
-    min-height:120vh;
-    width:100%;
-    background-color: #78866B;
-    padding-top:100px;
-    border-bottom: 4px solid rgba(62,61,61,1);
-}
-
-/* gives design to profile page. */
-#page3{
-    border-top: 4px solid rgba(62,61,61,1);
-    min-height:120vh;
-    width:100%;
-    background-color: #848b79;
-    padding-top:100px;
-    border-bottom: 4px solid rgba(62,61,61,1);
-}
-
-/* gives design to library page. */
-#page4{
-    border-top: 4px solid rgba(62,61,61,1);
-    min-height:120vh;
-    width:100%;
-    background-color: #9CB071;
-    padding-top:100px;
-    border-bottom: 4px solid rgba(62,61,61,1);
-}
-.library-div{
+.library-photo{
     padding-top: 60px;
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 30px;
 }
-.extra-library-div{
-    padding-right: 50px;
-    padding-top: 50px;
+.gameHolder a{
+    color: #E5E4E2;
+    text-decoration: none;
 }
-.carousel{
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 50px;
-    padding-right: 50px;
-    max-height: 300px;
-    max-width: 50%;
-    left: 25%;
-}
-.item{
-    padding-left: 20%;
-}
-
-/* gives design to interests page. */
-#page5{
-    border-top: 4px solid rgba(62,61,61,1);
-    min-height:120vh;
-    width:100%;
-    background-color: #99C68E;
-    padding-top:100px;
-}
-
-/* gives design to contact page. */
-#page6{
-    min-height:250px;
-    width:100%;
-    background-color: #808080;
-    padding-bottom: 0px;
-}
-
-/* gives design to footer. */
-.footer{
+.gamePto{
     height: 250px;
+    width: 50%;
+    margin-left: 25%;
+}
+.gameTxt{
+    font-size: 20px;
+    font-family: comeec;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.codesPto{
+    height: 200px;
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+.tysmPto{
+    height: 200px;
+    width: 60%;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+
+/* Css for interests and aims */
+#interests{
+    height: auto;
+}
+#interestsBtn{
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
+    height: 60px;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: darkgreen;
 }
-.contact-section{
-    padding-top: 60px;
+#interestsBtn a{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    font-family: comeec;
+    font-weight: bold;
 }
-.title{
-    color: #B6B6B4;    
+#interestscontent{
+    height: 75vh;
+    overflow-y: scroll;
+    background-color: rgba(0,0,0,0.2); 
+    border-radius: 0px;
+    padding: 50px;
+    border-left: 20px solid darkgreen;
+    border-right: 20px solid darkgreen;
+    border-bottom: 10px solid darkgreen;
+}
+.shown{
+    display: block;
+    -webkit-animation: fadeEffect 0.8s;
+    animation: fadeEffect 0.8s;
+}
+.notShown{
+    display: none;
+}
+
+#contact{
+    min-height: auto;
+    position: relative;
+    padding: 50px 20px;
+    background-color: #25383C;
+}
+.contact-title{
+    font-size: 20px;
+    color: #E5E4E2;
+    font-family: comeec;
+}
+#bottom-icon-list{
+    float: right;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+#bottom-icon-list > li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+#bottom-icon-list > li > a {
+    position: relative;
+    display: table; 
+    text-decoration: none;
+    font-family: comeec;
+    font-weight:  bold;
+    padding-left: 40px;
+    color: #E5E4E2;
+}
+#bottom-icon-list > li > a:hover,
+#bottom-icon-list > li > a:focus {
+    
+}
+
+/* Css for footer */
+#footer{
+    height: 60px;
+    padding: 15px 15px;
+    background-color: #0C090A;
+}
+#footer-text{
+    font-size: 18px;
+    color: #E5E4E2;
+    font-family: comeec;
 }
 #e-mail a{
     text-decoration: none;
@@ -357,46 +337,88 @@ h2{
     font-size: 16px;
     color: #E5E4E2;
 }
-.facebook{
-    color: #E5E4E2;
-}
-.github{
-    color: #E5E4E2;}
-.mail{
-    color: #E5E4E2;
-}
 .back-icon{
-    color: #E5E4E2;
-}
-.footer-bar{
-    width: 100%;
-    height: 60px;
-    background-color: rgba(0,0,0,0.6);
-    margin-top: 38px;
-    padding-top: 25px;
-    padding-left: 97px;
-    padding-right: 110px;
-}
-#footer-text{
     color: #E5E4E2;
 }
 .footer-navbar{
     display: table;
-    background-color: rgba(62,61,61,0.0);
+    background-color: transparent;
     float: right;
 }
 .footer-navbar li{
     list-style: none;
-    float: left;
+    float: right;
 }
-.footer-navbar a{
-    display: table;
-    font-size: 16px;
+.footer-navbar ul li a{
     text-decoration: none;
+    font-size: 15px;
+    font-family: comeec;
+    display: table;
     color:#E5E4E2;
     padding-left: 5px;
     padding-right: 5px;
 }
+
+/* Css for annimation */
+@-webkit-keyframes slideUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes slideEffect {
+    from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideEffect {
+    from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 /* gives design to canvas(game). */
 canvas{
@@ -449,12 +471,7 @@ canvas{
     padding-left: 15px;
     padding-right: 60px;
 }
-.fa-center {
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-}
+
 
 /* gives design to the other two pages of games. */
 .puzzle-button{
@@ -476,106 +493,4 @@ canvas{
 .puzzle-right-header{
     float: right;
     border-radius: 6px;
-}
-
-/* resize the texts and pictures if the pages are viewed in small screen. */
-@media screen and (max-width: 768px) {
-    .XXpx{
-        font-size: 15px;
-    }
-    .airstreamFont{
-    font-family:smile;
-    font: bold;
-    }
-    .footer-navbar a{
-    font-size: 10px;
-    padding-left: 1px;
-    padding-right: 1px;
-    }
-    #footer-text{
-    font-size: 10px;
-    }
-    .footer-bar{
-    margin-top: 38px;
-    padding-top: 10px;
-    padding-left: 2px;
-    padding-right: 2px;
-    }
-    .title{
-    font-size: 15px;
-    }
-    #e-mail a{
-    text-decoration: none;
-    font-size: 12px;
-    }
-    #phone p{
-    font-size: 12px;
-    }
-    .icon-name{
-    font-size: 12px;
-    text-decoration: none;
-    }
-    .contact-section{
-    padding-top: 30px;
-    }
-    .footer{
-    height: 500px;
-    }
-    .side-image{
-    width: 75%;
-    }
-    h1{
-    font-size: 40px;
-    }
-    #side-text{
-    font-size: 30px;
-    }
-    h2{
-    font-size: 40px;
-    }
-
-    /* gives design to home page. */
-    #page1{
-    padding-bottom:20px;
-    }
-    #home-image{
-    margin-left: 10%;
-    }
-    #welcome-text{
-    font-size: 20px;
-    }
-    h3{
-        font-size: 15px;
-    }
-    .logo-name{
-    height: 20px;
-    width: 125px;
-    }
-    .home-navbar a{
-    font-size: 15px;
-    padding: 10px 10px;
-    }
-
-    /* gives design to about page. */
-    #page2{
-    padding-bottom:20px;
-    }
-
-    /* gives design to profile page. */
-    #page3{
-    padding-bottom:20px;
-    }
-
-    /* gives design to library page. */
-    #page4{
-    padding-top:20px;
-    }
-    .tab-links{
-        font-size: 15px;
-    }
-
-    /* gives design to interests page. */
-    #page5{
-    padding-bottom:20px;
-    }
 }
