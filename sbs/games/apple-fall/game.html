@@ -1,0 +1,175 @@
+<!-- website code -->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Rabin's Games</title>
+    <!-- title logo -->
+    <link rel="icon" type="image/ico" href="../../img/icons/title.ico">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Script library -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+
+    <!-- frame for accordian -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+	</head>
+
+	<body>
+		<p id="head"> Wow Apples!</p>
+
+
+    <br><br><br>
+    <!-- accoardian on left side -->
+    <div id="accordianContainer">
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h3 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                  <p class="title">Play</p>
+                </a>
+              </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body" >
+                <p class="text">
+                  I have designed a special game for you.<br>
+                  Please click the button below and play it.<br><br>
+                  <button onclick="startGame();">Start Game</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                  <p class="title">Levels</p>
+                </a>
+              </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body" >
+                <p class="text">
+                  You can try the followig levels of game!<br>
+                  'Easy' will be selected by the default.<br><br>
+                  <button onclick="easyGame();">Easy</button><br><br>
+                  <button onclick="mediumGame();">Medium</button><br><br>
+                  <button onclick="hardGame();">Hard</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" >
+                  <p class="title">Guide</p>
+                </a>
+              </h3>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body" >
+                <p class="text">
+                  It is very easy to play this game.<br>
+                  Once you start the game, simply the apples will fall down and you have to catch the apples moving the bucket right or left. You should use the arrows in the keyboard to move the bucket. If you cathch one apple your score will increase by 5. If you miss one, your chance to miss apples decreases by 1. Good luck for your highest score...
+
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" >
+                  <p class="title">Highest Score</p>
+                </a>
+              </h3>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body" >
+                <p class="text">
+                  The highest scores are..<br>
+                  <textarea style="margin-top:10px;" class="scoreContainer" id="hstScre1"></textarea><br>
+                  <textarea class="scoreContainer" id="hstScre2"></textarea><br>
+                  <button id="updateButton" onclick="updateHighsocre();">See High Scores</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" >
+                  <p class="title">Store</p>
+                </a>
+              </h3>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body" >
+                <p class="text" style="float:left;">Bucket</p>
+                <button onclick="unlckBuckt();" style="float:right;">Unlock</button><br><br>
+                <p class="text" style="float:left;">Magnet</p>
+                <button onclick="unlckMgnt();" style="float:right;">Unlock</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="button" onclick="basicSetup();">Run Basic Setup<br><p id="innerTxt">(Click this button if you are new!)</p></button>
+    </div>
+    <!-- end of accoardian -->
+
+    <!-- notifications container -->
+    <div id="notificationsContainer">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingNot">
+              <h3 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNot" aria-expanded="false" aria-controls="collapseNot">
+                  <p class="title">Notifications</p>
+                </a>
+              </h3>
+            </div>
+            <div id="collapseNot" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingNot">
+              <div class="panel-body">
+                <p class="text" id="notificationsText">
+                  <textarea id="notifications">No new notifications..</textarea><br>
+                  <input type="text" id="highscorerName" placeholder="Your Name.."></input>
+                  <input type="button" value="Submitt" onclick="submittName();" id="submitt"></input><br><br>
+                  <button onclick="updateNotifications();">See new notifications..</button>
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+      <button id="backToMenuButton">
+        <a href="game.html">Go to Main Menu</a>
+      </button>
+    </div>
+    <!-- end of notifications container -->
+
+    <!-- canvas container -->
+		<center>
+      <div id="canvasContainer">
+			 <canvas id="canvas" width="0" height="0">
+			 </canvas>
+      </div>
+		</center>
+    <!-- end of canvas container -->
+
+    <!-- feedback container -->
+    <div id="feedbackContainer">
+      
+    </div>
+    <!-- end of feedback container -->
+
+    <!-- Js code for game -->
+    <script src="js/game.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,361 @@
+
+/*  Project: Professional Website of Surya Sec. Boarding School.
+    Codes written by Rabin K. Kalikote. 
+    Copyright (c): Rabin K. Kalikote*/
+
+/* creates different font family */
+@font-face { font-family:areeal; src: url('fonts/arial.ttf');}
+@font-face { font-family:comeec; src: url('fonts/comic.ttf');}
+@font-face { font-family:nepali; src: url('fonts/nepali.ttf');}
+
+/* basic Css */
+.centered {
+    text-align:center;
+}
+.fa-center {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.title{
+    color: #4AA02C;
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: comeec;
+    text-align: center;
+    text-shadow:0 0.2em 1em #111;
+}
+.subtitle{
+    color: #4AA02C;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: comeec;
+    text-align: center;
+}
+.text{
+    color: #4AA02C;
+    font-size: 20px;
+    font-family: comeec;
+}
+
+/* gives vertical scroll bar always in different pages */
+html{
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+/* Css for home page */
+
+/* Css for first Nav Element */
+#firstNavRow{
+    height: 30vh;
+    padding: 3vh 3vh;
+}
+#logo a{
+    float: left;
+}
+#logo img {
+    height:150px;
+    width:150px;
+    box-shadow:0 0.2em 1em #111;
+}
+.home-navigation {
+  padding-left: 0;
+  float:right;
+  list-style: none;
+}
+.home-navigation > li {
+    text-align:right;
+    position:relative;
+    list-style:none;
+    position:relative;
+    display:block;
+    text-decoration:none;
+    font-family:comeec;
+    font-weight:bold;
+    color:#4E9258;
+}
+.home-navigation > #mainHeader{
+    font-size: 40px;
+}
+.home-navigation > #subHeader{
+    font-size: 20px;
+    float: right;
+}
+#home-icons {
+    margin-top:18vh;
+}
+#home-icons > li {
+    position:relative;
+    list-style:none;
+    float:right;
+    position:relative;
+    display:inline-block;
+    padding-left: 30px;
+}
+#home-icons > li > i {
+    color:#4E9258;
+    text-decoration:none;
+}
+#phoneText  {
+    font-family:comeec !important;
+    font-size:18px;
+    color:#00FF00;
+}
+/* =================================== */
+
+/* Css for Navigation bar. */
+#secondRow{
+    margin:0;
+    padding: 0;
+    width:100%;
+    min-height: 80vh;
+    position:relative;
+    overflow:hidden;
+}
+#mainNavigation{
+    height:50px;
+    background:#4AA02C;
+    width:100%;
+    margin:0;
+}
+#mainlinks li {
+    list-style:none;
+    display:inline-block;
+    padding-left:4%;
+    padding-top: 10px;
+}
+#mainlinks li a{
+    text-decoration:none;
+    font-size:20px;
+    color:#E5E4E2;
+    font-family:comeec;
+}
+#mainlinks li a:hover,
+#mainlinks li a:focus{
+    text-decoration:none;
+    color:#B6B6B4;
+    text-shadow:0 0.2em 0.5em #111;
+}
+#mainlinks li a .active{
+    color:#B6B6B4;
+    text-shadow:0 0.2em 0.5em #111;
+}
+
+#feature-wrapper{
+    width:100%;
+    min-height: 100vh;
+    margin:0;
+    padding: 40px;
+    background-image: url("../img/background.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+}
+.slide-Main{
+    min-height:90vh;
+    width:100%;
+    left: 0;
+    position: absolute;
+    text-align:center;
+}
+
+.slide-Main > .left-section {
+    margin-top: 5vh;
+    width: 40%;
+    float: left;
+}
+.slide-Main > .right-section {
+    width: 60%;
+    float: left;
+}
+.slide-Main .left-section h1{
+    opacity: 1;
+    color: #B6B6B4;
+    font-weight: bold;
+    font-size: 80px;
+    font-family: comeec;
+    text-shadow:0 0.2em 1em #111;
+}
+.slide-Main .left-section h5{
+    opacity: 1;
+    color: #B6B6B4;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: comeec;
+    text-shadow:0 0.2em 1em #111;
+}
+.slide-Main .left-section h6{
+    opacity: 1;
+    color: #4AA02C;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: comeec;
+    transform: translateY(0);
+    transition: all 0.5s 0.5s;
+    text-shadow:0 0.2em 1em #111;
+}
+.slide-Main .right-section img{
+    width: 500px;
+    height: 300px;
+    margin-top: 5vh;
+    box-shadow:0 0.2em 1em #111;
+}
+
+
+
+#iconContainer{
+   width: 100%;
+}
+#iconContainer i{
+    color: #4AA02C;
+    z-index: 900;
+    position: fixed;
+    margin-left:95%;
+    text-shadow:0 0.2em 1em #111;
+}
+
+
+#thirdRow{
+    height: 80vh;
+    background: #E5E4E2;
+    box-shadow:0 0.2em 1em #111;
+}
+#thirdRow .container .col-md-6{
+    margin-top: 15vh;
+}
+
+
+.carousel-title{
+    color: #4AA02C;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: comeec;
+    text-align: center;
+}
+#carouselHolder{
+    float: right;
+    height: 33vh !important;
+    width: 90% !important;
+    border: 2px solid #4AA02C;
+    box-shadow:0 0.2em 1em #111;
+}
+#carouselHolder > .li {
+    width: 100%;
+    min-height: 40px;
+    top: 0;
+    bottom: 0;
+    text-decoration: none;
+    font-family: comeec;
+    display: block;
+}
+#carouselHolder > #carouselHeader {
+    color: #4AA02C;
+    padding-top: 1vh;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: comeec;
+    text-align: center;
+    border-bottom:2px solid #4AA02C;
+}
+#carousel-content{
+    height: 26vh;
+}
+.carousel-txt{
+    color: orange;
+    padding-top: 5vh;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: comeec;
+    text-align: center;
+}
+
+#map{
+    height: 45vh;
+    width: 90%;
+    box-shadow:0 0.2em 1em #111;
+}
+
+
+#gap{
+    height: 20px;
+}
+#fourthRow{
+    height: 50vh;
+    background: #E5E4E2;
+    box-shadow:0 0.2em 1em #111;
+}
+#fourthRow .container .col-md-6{
+    margin-top: 8vh;
+}
+#contacts > li {
+    position:relative;
+    list-style:none;
+    float:left;
+    position:relative;
+    display:inline-block;
+    padding-left: 30px;
+}
+#contacts > li > i {
+    color:#4E9258;
+    text-decoration:none;
+}
+#phoneTextBottom  {
+    font-family:comeec !important;
+    font-size:18px;
+    font-weight: bolder;
+    color:#00FF00;
+}
+#contacts-list > li {
+    position:relative;
+    list-style:none;
+    float:left;
+    position:relative;
+    display:inline-block;
+    padding-left: 30px;
+}
+#contacts-list > li > i {
+    color:#4E9258;
+    text-decoration:none;
+}
+#phoneTextBottom  {
+    font-family:comeec !important;
+    font-size:18px;
+    font-weight: bolder;
+    color:#00FF00;
+}
+
+#bottom-icons > li {
+    position:relative;
+    list-style:none;
+    float:right;
+    position:relative;
+    display:inline-block;
+    padding-right: 30px;
+}
+#bottom-icons > li > i {
+    color:#4E9258;
+    text-decoration:none;
+}
+
+#footer{
+    height: 10vh;
+    background: #B6B6B4;
+    box-shadow:0 0.2em 1em #111;
+}
+#footer .container .col-md-6{
+    margin-top: 3vh;
+}
+#footerText{
+    float: right;
+}
+#footerText:hover{
+    text-decoration: none;
+    color: #4AA02C;
+    float: right;
+}

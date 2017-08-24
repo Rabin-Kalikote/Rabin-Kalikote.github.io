@@ -1,0 +1,112 @@
+@font-face { font-family: title; src : url('fonts/text.otf');}
+
+body{
+    background-image: url("../img/bck.png");
+    background-size:cover;
+}
+
+canvas { 
+    border: 5px solid #008000; border-radius: 10px;
+}
+
+p #head{ 
+	color:#F2BB66;
+	text-align: center;
+    font-size: 50px;
+    font-family: title;
+}
+
+#accordianContainer{
+	width: 25%;
+	float: left;
+	margin-left: 10%;
+}
+.title{
+	color: #FFA62F;
+	font-size: 20px;
+	font-family: title;
+}
+.text{
+	color: #7FE817;
+	font-size: 15px;
+	font-family: title;
+}
+#notifications{
+	width: 100%;
+	color: #7FE817;
+	padding: 10px;
+	min-height: 100px;
+	font-size: 15px;
+	font-family: title;
+}
+.scoreContainer{
+	width: 100%;
+	height:0px;
+	color: #7FE817;
+	font-size: 15px;
+	visibility: hidden;
+	font-family: title;
+}
+#button{
+	width: 100%;
+	color: #FFA62F;
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: title;
+}
+#innerTxt{
+	color: #FFA62F;
+	font-size: 15px;
+	font-family: title;
+}
+#notificationsContainer{
+	width: 20%;
+	float: right;
+	margin-right: 10%;
+}
+#highscorerName{
+	height: 0px;
+	visibility: hidden;
+	float: left;
+	color: #7FE817;
+	width: 60%;
+}
+#submitt{
+	width: 30%;
+	float: right;
+	visibility: hidden;
+}
+#backToMenuButton{
+	width: 100%;
+	visibility: hidden;
+	border-radius: 5px;
+	font-size: 20px;
+	font-family: title;
+}
+#backToMenuButton a{
+	text-decoration: none;
+	color: #FFA62F;
+}
+#updateButton{
+	width: 100%;
+}
+#feedbackContainer{
+	width: 50%;
+	float: left;
+	padding:30px;
+	border-radius: 5px;
+	margin-left: 10%;
+}
+h2{
+	text-align: center;
+	font-size: 30px;
+	color: darkorange;
+	font-family: title;
+	border-color: rgba(0,0,0,0.5);
+}
+h5{
+	text-align: center;
+	color: darkred;
+	font-size: 20px;
+	font-family: title;
+}
