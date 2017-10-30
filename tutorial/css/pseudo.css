@@ -1,0 +1,95 @@
+
+/* codes for my MATTRAB.edu project */
+
+/*************************************
+==> Webfonts
+==> Fontsizes
+==> Animation
+==> Backgrounds
+==> Fontcolors
+*************************************/
+
+
+/* Webfonts */
+.Mr-arial {font-family:areeal;}@font-face{font-family:areeal;src:url('fonts/arial.ttf');}
+.Mr-corbel {font-family:corbel;}@font-face{font-family:corbel;src:url('fonts/corbel.ttf');}
+.Mr-nepali {font-family:kantipur;}@font-face{font-family:kantipur;src:url('fonts/kantipur.ttf');}
+.Mr-logo {font-family:textLogo !important;}@font-face{font-family:textLogo;src:url('fonts/logo.ttf');}
+
+/* Fontsizes */
+.Mr-14 {font-size:14px;}
+.Mr-16 {font-size:16px;}
+.Mr-18 {font-size:18px;}
+.Mr-20 {font-size:20px;}
+.Mr-22 {font-size:22px;}
+.Mr-25 {font-size:25px;}
+.Mr-28 {font-size:28px;}
+.Mr-30 {font-size:30px;}
+.Mr-35 {font-size:35px;}
+.Mr-40 {font-size:40px;}
+.Mr-bold {font-weight:bold;}
+.Mr-bolder {font-weight:bolder;}
+.Mr-italic {font-style:italic;}
+.Mr-h1,h1 {font-size:35px;}
+.Mr-h2,h2 {font-size:30px;}
+.Mr-h3,h3 {font-size:25px;}
+.Mr-h4,h4 {font-size:20px;}
+.Mr-h5,h5 {font-size:18px;}
+.Mr-h6,h6 {font-size:16px;}
+
+/* Annimations */
+.Mr-spin{animation:Mr-spin 2s infinite linear}@keyframes Mr-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.Mr-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.Mr-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.Mr-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.Mr-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.Mr-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.Mr-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.Mr-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.Mr-animate-bitzoom {animation:animatezoom 0.4s}@keyframes animatezoom{from{transform:scale(0.8)} to{transform:scale(1)}}
+.Mr-animate-input{transition:width 0.4s ease-in-out}.Mr-animate-input:focus{width:100%!important}
+
+/* Backgrounds */
+.Mr-background-main{background:#4BE9C4;}
+.Mr-background-darkgrey{background:#D1D0CE;}
+.Mr-background-lightgrey{background:#E5E4E2}
+
+
+/* Fontcolors */
+.Mr-font-main{color:#00b38f;}
+.Mr-font-light{color:#4BE9C4;}
+.Mr-font-black{color:#1d6354;}
+.Mr-font-grey{color:#ddd;}
+.Mr-font-white{color:#FFFFFF;}
+
+
+.Mr-text-shadow{text-shadow:0 .06em .4em #aaa;}
+.Mr-text-centered{text-align:center;}
+.Mr-text-right{text-align:right;}
+.Mr-text-left{text-align:left;}
+.Mr-object-centered{vertical-align:middle;margin:0 auto;}
+.Mr-object-right{float:right;}
+.Mr-object-left{float:left;}
+.Mr-link:hover{color:#4BE9C4;text-decoration:none;}
+.Mr-dark-link{color:#00b38f;text-decoration:none;}
+.Mr-dark-link:hover{color:#008066;text-decoration:none;}
+.Mr-darker-link{color:#008066;text-decoration:none;}
+.Mr-darker-link:hover{color:#008066;text-decoration:none;}
+.close {color: #000;float:right;font-size:28px;font-weight:bold;margin-top:5px;}
+.close:hover,.close:focus {color: #000;text-decoration: none;cursor: pointer;}
+.Mr-modal{display: none;position: fixed;z-index:9;padding-top: 150px;left: 0;top: 0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4);}
+.Mr-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:60%;}
+.Mr-vertical-menu{width:100%;float:left;background-color:transparent;}
+.Mr-alert-modal{display: none;position: fixed;z-index:9;padding-top: 150px;left: 0;top: 0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4);}
+.Mr-alert-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:60%;}
+.Mr-vertical-menu p{display: block;text-decoration:none;}
+.Mr-vertical-menu a{display: block;text-decoration:none;}
+.profile-label-box{padding:0;margin:0;}
+.profile-label-box img{width:20%;height:40px;border-radius:25px;float:left;}
+.fa-center {text-align: center;display: inline-block;width: 100%;vertical-align: middle;}
+.Mr-Rmargin5{margin-right:5px !important;}
+.Mr-Lmargin5{margin-left:5px;}
+.Mr-Tmargin5{margin-top:5px;}
+.Mr-Bmargin5{margin-bottom:5px;}
+.Mr-fixed{position:fixed;}
+.Mr-hidden{display:none;}

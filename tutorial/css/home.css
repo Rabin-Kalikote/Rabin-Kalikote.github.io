@@ -1,0 +1,183 @@
+
+/*  Project: Professional Website of Surya Sec. Boarding School.
+    Codes written by Rabin K. Kalikote. 
+    Copyright (c): Rabin K. Kalikote*/
+
+/* creates different font family */
+@font-face { font-family:areeal; src: url('fonts/arial.ttf');}
+@font-face { font-family:corbel; src: url('fonts/corbel.ttf');}
+@font-face { font-family:kantipur; src: url('fonts/kantipur.ttf');}
+
+
+.fa-center {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* gives vertical scroll bar always in different pages */
+html{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    font-family: corbel;
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+/* Css for home page */
+
+/* Css for Navigation bar. */
+#navRow{
+    margin:0;
+    padding: 0;
+    width:100%;
+    z-index: 99;
+    height: auto;
+    position:relative;
+    overflow:hidden;
+}
+#mainNavigation{
+    z-index: 6;
+    height: 100px;
+    background:#4BE9C4;
+    width:100%;
+    margin:0;
+    position: fixed;
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.2);
+}
+#mainNavigation img{
+    height: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+#mainNavigation #formBox form{
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
+    font-size: 12px;
+    font-family: corbel;
+}
+#mainNavigation #formBox form label{
+    margin-left: 5px;
+}
+#mainNavigation #formBox form input{
+    height: 25px;
+    font-size: 12px;
+}
+#mainNavigation #formBox form select{
+    height: 25px;
+    font-size: 12px;
+    padding-top: 4px !important;
+}
+#mainNavigation #formBox form select option{
+    height: 30px !important;
+}
+#mainNavigation #formBox form button{
+    width: auto !important;
+    padding-top: 4px !important;
+    height: 25px;
+    font-size: 12px;
+    margin-top: 22px;
+    float: left;
+}
+
+
+
+
+
+#bodyRow{
+    height:auto;
+    width: 100%;
+    padding-top: 100px;
+}
+#bodyRow #bodyRow-overlay{
+    top: 0;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    margin-top: 120px;
+    padding-bottom:8vh;
+    padding-top: 4vh;
+}
+.container-inner{
+    padding-left:30px;
+    padding-right:30px;
+}
+.container-inner h2{
+    font-weight: bolder;
+    font-family: corbel;
+}
+.container-inner p{
+    font-size: 20px;
+    font-family: corbel;
+}
+
+
+.form-body{
+    font-family: corbel;
+}
+.form-top-right{
+    width : 20%;
+    float:left;
+    padding-top:30px;
+    font-size: 50px;
+}
+.form-top-left{
+    width : 80%;
+    float:left;
+}
+.form-top-left h3{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: corbel;
+}
+.form-top-left p{
+    font-size: 0.9em;
+    font-family: corbel;
+}
+
+
+
+#footer{
+    height: 25vh;
+    font-family: corbel;
+    background: #E5E4E2;
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+#footer .container .col-md-3{
+    margin-top: 3vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.w3-modal{z-index:3;font-family:corbel;display:none;padding-top:150px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px;z-index:10}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-50px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+
+.w3-card-4,.w3-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
+.w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,
+.w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+.w3-teal{color:#4BE9C4!important;background-color:#fff!important},.w3-teal:hover{color:red!important;background-color:#4BE9C4!important}
+.w3-btn,.w3-button{border:none;display:inline-block;outline:0;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.w3-large{font-size:18px!important}
+.w3-display-topright{position:absolute;right:0;top:0}
