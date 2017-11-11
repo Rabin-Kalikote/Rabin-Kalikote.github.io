@@ -63,6 +63,11 @@ html{
     animation: slideEffect 0.8s;
 }
 
+.goog-te-gadget-simple span{
+    text-decoration:none;
+    float:right;
+}
+
 .selected a{
     color: #E5E4E2 !important;
     font-weight: bold;
