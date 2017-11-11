@@ -63,10 +63,6 @@ html{
     animation: slideEffect 0.8s;
 }
 
-.skiptranslate.goog-te-gadget{
-    float:right;
-}
-
 .goog-te-gadget-simple span{
     text-decoration:none;
 }
