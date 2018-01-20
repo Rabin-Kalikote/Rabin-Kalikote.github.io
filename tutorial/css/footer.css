@@ -1,0 +1,74 @@
+
+/* codes for my MATTRAB.edu project/Shared css */
+/* 8. Shared Css for BottomFooter */
+#footer{z-index:2;height:auto;width:100%;font-family:"Lato";padding:2em 4em;}
+#footer >.container.topCont{
+    width:100%;padding:.8em 0;
+    border-top:1px solid #e6e6e6;
+    border-bottom:1px solid #e6e6e6;
+}
+#footer > .container.topCont > .col-md-3{
+    text-align:center;
+}
+#footer > .container.topCont > .col-md-3 > a{
+    font-size:13px;
+}
+#footer > .container.topCont > .col-md-3 > a:hover{
+    cursor: pointer;
+}
+#footer >.container{
+    width:100%;padding:2em 0;
+    border-bottom:1px solid #e6e6e6;
+}
+#footer >.container > .menuCont{
+    position:relative;
+    text-align:center;
+}
+#footer >.container > .menuCont > h3{
+    font-size:20px;
+    margin-top:0;
+    margin-bottom:.5em;
+    letter-spacing:0;
+}
+#footer >.container > .menuCont > ul{
+    margin: 0;
+    list-style: none;
+    position: relative;
+    text-align: center;
+}
+#footer >.container > .menuCont > ul > li.menu{
+    list-style:none;
+}
+#footer >.container > .menuCont > ul > li.menu > a{
+    font-size: 13px;
+    color: #404040;
+    text-decoration: none;
+    font-family:"Lato";
+    font-weight: normal;
+}
+#footer > .container > .menuCont > ul > li.menu > a:hover{
+    color: #00b38f;
+    text-decoration:underline;
+}
+#footer > .footer-text{
+    font-size:15px;
+    margin-top:2em;
+    font-family:"Lato";
+    text-align: center;
+    color: #a6a6a6;
+    letter-spacing:0;
+}
+#footer > .footer-text > a.Mr-link{
+    color: #a6a6a6;
+    text-decoration:none;
+}
+#footer > .footer-text > a.Mr-link:hover{
+    color: #00b38f;
+    text-decoration:underline;
+}
+#footer > img.footer-img{
+    width:16%;
+    margin-left:42%;
+    height: auto;
+}
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/

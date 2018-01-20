@@ -1,4 +1,4 @@
-<?php 
+<?php
 #require 'includes/db.inc.php';
 session_start();
 ?>
@@ -8,7 +8,7 @@ session_start();
 <head>
 
     <title>
-        MATTRAB.edu | Study Tutorials
+        Mattrab | Study Tutorials
     </title>
 
     <!-- title logo -->
@@ -19,7 +19,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- JQuery Libraries -->
-    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 
     <!-- Boostrap -->
     <script src="js/bootstrap.min.js"></script>
@@ -29,17 +29,19 @@ session_start();
     <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
 
     <!-- Custom css -->
-    <link rel="stylesheet" href="css/mr.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/mrshared.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 
     <!-- Custom js -->
-    <script src="js/mr.js"></script>
+    <script src="js/mrshared.js"></script>
     <style type="text/css">
         /* Css for home page/Personal css */
         /* styles for Body */
         #bodyRow{
             height: auto;
             width: 100%;
-            padding-top: 100px;
         }
         .container-inner{
             width:100%;
@@ -55,8 +57,8 @@ session_start();
             background:#f5f5f5;
         }
         .large-title{
-            font-family: corbel;
-            font-size: 50px;
+            font-family:corbel;
+            font-size: 40px;
             letter-spacing:1px;
             color:#00b38f;
             text-align: center;
@@ -64,7 +66,7 @@ session_start();
         }
         .side-window{
             z-index:3;
-            background: #d9d9d9;
+            background: #e6e6e6;
             height: 400px;
             width: 80%;
             padding: 2em 1.5em;
@@ -102,15 +104,29 @@ session_start();
             padding-top:7em;
             padding-left:2em;
             padding-right:2em;
-            background:#d9d9d9;
+            background:#e6e6e6;
             position: relative;
         }
         .twond-window:after{
             background: inherit;
         }
     </style>
-</head>
 
+</head>
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+    if (isset($_POST['login'])) { //user logging in
+        require 'includes/login.inc.php';
+    }
+    elseif (isset($_POST['register'])) { //user registering
+        require 'includes/register.inc.php';
+    }
+    elseif (isset($_POST['report'])) { //user reporting
+        require 'includes/report.inc.php';
+    }
+}
+?>
 <body>
 
   <div id="page-wrap">
@@ -119,10 +135,10 @@ session_start();
 
     <a name="home"></a>
     <div class="page-padding"></div>
-    
+
         <!--Main Navigation-->
         <?php
-          include_once 'navigation.php';
+          include_once 'nav/home.nav.php';
         ?>
 
         <div id="bodyRow">
@@ -131,16 +147,14 @@ session_start();
                 <div class="top-window  bottom-slanted">
                     <div class="container">
                         <div class="col-md-6">
-                            <div class="trans-container" style="padding-top:6em;">
+                            <div class="trans-container" style="padding-top:8em;">
                                 <p class="large-title">MATTRAB.edu</p>
-                                <p class="Mr-corbel Mr-25 Mr-font-black" style="color:#1d6354;text-align:center;">The largest store of learning materials</p>
-                                <p class="Mr-corbel Mr-20 Mr-font-black" style="color:#1d6354;">We have library of thousands of studying materisls including the books accoarding to the sylabulas Nepalese School. Choose the appropriate items for you and learn more. We hope learning at MATTRAB.edu is not only helpful but also enjoyable.</p>
+                                <p class="Mr-corbel Mr-22 Mr-font-black" style="color:#1d6354;text-align:center;">The largest store of learning materials</p>
+                                <p class="Mr-corbel centered Mr-20 Mr-font-black" style="color:#1d6354;">We have library of thousands of studying materials including the textbooks accoarding to the sylabulas Nepalese School. Choose the appropriate items for you and learn more. We hope learning at MATTRAB.edu is not only helpful but also enjoyable.</p>
 
-                                <div class="button-container">
-                                    <ul class="horizantal-buttons">
-                                        <li><a href="#" class="button">SEE MATTRAB DEMO <span>&raquo;</span></a></li>
-                                        <li><a href="#" class="button">CREATE NOTES <span>&raquo;</span></a></li>
-                                    </ul>
+                                <div class="button-container horizantal-buttons">
+                                    <a href="about/aboutmrschool.abt.php" class="button">SEE ABOUT MATTRAB <i class="fa fa-3x fa-angle-double-right"></i></a>
+                                    <a href="about/aboutmrschool.abt.php" class="button">JOIN MATTRAB TEAM <i class="fa fa-3x fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -195,34 +209,28 @@ session_start();
                     <div class="container">
                         <div class="col-md-4 box-card-container">
                             <div class="box-card">
-                                <p class="window-title Mr-bolder Mr-text-centered">TEXTBOOKS</p>
-                                <p class="Mr-corbel Mr-22 Mr-text-centered" style="color:#1d6354;">A collection of school textbooks of all grades</p><br>
-                                <div class="button-container">
-                                    <div class="horizantal-buttons">
-                                        <a href="#">Choose my Books <span>&raquo;</span></a>
-                                    </div>
+                                <p class="window-title Mr-bolder Mr-text-centered"><i class="fa fa-4x fa-book"></i>&nbsp; TEXTBOOKS</p>
+                                <p class="Mr-corbel Mr-22 Mr-text-centered" style="color:#1d6354;">A collection of school textbooks of all grades</p>
+                                <div class="button-container horizantal-buttons">
+                                    <a href="#" class="button">Choose my Books <i class="fa fa-3x fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 box-card-container">
                             <div class="box-card">
-                                <p class="window-title Mr-bolder Mr-text-centered">LIBRARY</p>
-                                <p class="Mr-corbel Mr-22 Mr-text-centered" style="color:#1d6354;">A libraries of different extra studybooks</p><br>
-                                <div class="button-container">
-                                    <div class="horizantal-buttons">
-                                        <a href="#">Find Practice Books <span>&raquo;</span></a>
-                                    </div>
+                                <p class="window-title Mr-bolder Mr-text-centered"><i class="fa fa-4x fa-list-alt"></i>&nbsp; LIBRARY</p>
+                                <p class="Mr-corbel Mr-22 Mr-text-centered" style="color:#1d6354;">A libraries of different extra studybooks</p>
+                                <div class="button-container horizantal-buttons">
+                                    <a href="#" class="button">Find Practice Books <i class="fa fa-3x fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 box-card-container">
                             <div class="box-card">
-                                <p class="window-title Mr-bolder Mr-text-centered">QUIZS</p>
-                                <p class="Mr-corbel Mr-22 Mr-text-centered" style="color:#1d6354;">A collection of questions that helps to learn more</p><br>
-                                <div class="button-container">
-                                    <div class="horizantal-buttons">
-                                        <a href="#">Start Quizs <span>&raquo;</span></a>
-                                    </div>
+                                <p class="window-title Mr-bolder Mr-text-centered"><i class="fa fa-4x fa-question-circle"></i>&nbsp;QUIZS</p>
+                                <p class="Mr-corbel Mr-22 Mr-text-centered" style="color:#1d6354;">A collection of questions that helps to learn more</p>
+                                <div class="button-container horizantal-buttons">
+                                    <a href="#" class="button">Start Quizs <i class="fa fa-3x fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +242,8 @@ session_start();
 
         <!--footer-->
         <?php
-          include_once 'footer.php';
+            include_once 'footer/home.foot.php';
         ?>
+
     </body>
 </html>
