@@ -1,538 +1,1015 @@
-<!-- Project: Personal Website of Rabin K. Kalikote.
-     Codes written by Rabin K. Kalikote.
-     Copyright (c): Rabin K. Kalikote  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>
-        Rabin Kalikote
-    </title>
-
-    <!-- title logo -->
-    <link rel="icon" type="image/ico" href="img/icons/title.ico">
-
-    <!-- meta -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- JQuery Libraries -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.smooth-scroll.js"></script>
-    <script src="js/wow.js"></script>
-
-    <!-- Boostrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
-
-    <!-- fontAwesome stuff -->
-    <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
-
-    <!-- Use of wow animation -->
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!-- Custom css -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/tab.css">
-    <link rel="stylesheet" href="css/mobile.css">
-
-    <!-- Custom js -->
-    <script src="js/main.js"></script>
-
-    <!--Ads-->
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-5799968087163374",
-        enable_page_level_ads: true
-      });
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Title Logo -->
+    <link rel="icon" type="image/png" href="img/title.png">
+    <title>Rabin Kalikote</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
 
+    <!--Main Navigation-->
+    <header>
 
-<!-- Codes for navbar -->
-<div id="header">
-    <nav id="navbar" class="navbar navbar-default navbar-inverse navbar-fixed-top hidden">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+
+                <!-- Navbar brand -->
+                <a class="navbar-brand" href="#">
+                    <img src="img/brand.png" height="35" alt="R< Kalikote">
+                </a>
+
+                <!-- Collapse button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand scroll-link" href="#home">Rabin Kalikote</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right main_links">
-                    <li class="selected"><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#library">Library</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-</div>
+                <!-- Collapsible content -->
+                <div class="collapse navbar-collapse" id="basicExampleNav">
 
-<div id="page-wrap">
-
-	<div id="home">
-
-		<a name="home"></a>
-		<div class="page-padding"></div>
-		<div class= "container">
-            <div class="row">
-
-            	<div id="google_translate_element"></div><script type="text/javascript">
-				function googleTranslateElementInit() {
-				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-				}
-				</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
-                <div class="col-md-4">
-                    <ul class="home-navigation" id="home-navigation-left">
-                        <li><a href="#home">R< Kalikote</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    <ul class="home-navigation" id="home-navigation-right">
-                        <li><a class="scroll-link" href="#home">Home |</a></li>
-                        <li><a class="scroll-link" href="#about">About |</a></li>
-                        <li><a class="scroll-link" href="#library">Library |</a></li>
-                        <li><a class="scroll-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-            	<h2 class="centered wow slideInDown" id="homeHeader">RABIN K. KALIKOTE</h2>
-            	<h4 class="centered wow" id="homeHeaderSub">WELCOME TO MY WEBSITE</h4>
-            </div>
-            <div class ="row" id="iconContainer">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6">
-                    <ul id="icon-list">
-                        <li>
-                            <a href="https://www.facebook.com/KalikoteRabin">
-                                <i class="fa fa-facebook-square fa-2x fa-center wow fadeIn"></i><br>
-                                <p class="centered icon-name">Facebook</p>
-                            </a>
+                    <!-- Links -->
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#intro">HOME</a>
                         </li>
-
-                        <li>
-                            <a href="https://www.github.com/Rabin-Kalikote">
-                                <i class="fa fa-github-square fa-2x fa-center wow fadeIn"></i><br>
-                                <p class="centered icon-name">Github</p>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#about">ABOUT</a>
                         </li>
-
-                        <li>
-                            <a href="mailto:rabinkalikote33@gmail.com">
-                                <i class="fa fa-envelope-square fa-2x fa-center wow fadeIn"></i><br>
-                                <p class="centered icon-name">Gmail</p>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#resume">RESUME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#portfolio">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#gallery">YOUTUBE GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-       	</div>
+                    <!-- Links -->
 
-	</div> <!--END home-->
-
-	<!-- This is code for about page. -->
-	<div id="about">
-		<a name="about"></a>
-		<div class="page-padding"></div>
-		<div class= "container">
-            <div class="row">
-            	<h1 class="centered wow slideInDown title">ABOUT ME</h1>
-            </div>
-            <div class ="row">
-            	<div class="col-md-5">
-                     <img src= "img/+home.jpg" width="60%" class="centered wow slideInUp img-thumbnail" id="aboutPhoto">
-
-               	</div>
-                <div class="col-md-7">
-                  <i>
-                        <p class="wow slideInUp text" id="aboutText">
-                        Hello everybody! I'm Rabin. I was born on May 2, 2001 AD. I'm from Syabun, Sankhuwasabha that is a beautiful village of Nepal. During my childhood I was in the same place playing and enjoying with the nature of my beautiful Village. With my great luck, I was admitted in <a href="http://https://www.ssbs.edu.np" style="text-decoration:none; color:#463E3F">Surya Sec. Boarding School</a>. I didn't know why I was there but when I studied there for some years I realized that what I can do. I have been continiously learning in the same school. Now I'm 10th grader at SSBS. During my some year of learing, I have learned many things in the diverse subjects. Among them arts, science and computer are my favourites.<br>
-                        Though I left my beautiful village, I a'm not so sad because I got many things being in Khandbari. I was able to write a story book expressed all by poems (Jindagiko Baato) that is my own creation. I have learned a lot about scientifical experiences and facts. In the other side computer programming is equally exciting. So, I'm much excited with my student life.
-                        </p>
-                    </i>
+                    <!-- Social Icon  -->
+                    <ul class="navbar-nav nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.facebook.com/KalikoteRabin"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mailto:rabinkalikote33@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/Rabin-Kalikote"><i class="fa fa-github"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.instagram.com/lucky_rabin"><i class="fa fa-instagram"></i></a>
+                        </li>
+                    </ul>
 
                 </div>
+                <!-- Collapsible content -->
+
             </div>
+        </nav>
+        <!--/.Navbar-->
+
+        <!--Mask-->
+        <div id="intro" class="view">
+
+            <div class="mask rgba-black-strong">
+
+                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+                    <div class="row d-flex justify-content-center text-center">
+
+                        <div class="col-md-10">
+
+                            <!-- Heading -->
+                            <h2 class="display-3 font-weight-bold white-text pt-5 mb-2">RABIN K. KALIKOTE</h2>
+
+                            <!-- Description -->
+                            <h4 class="white-text my-4">Here is me your <b>LUCKY GUY RABIN.</b> I welcome you all to my <b>Personal Website.</b></h4>
+                            <a class="nav-link scroll-link" href="#about"><button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-	</div> <!--END about-->
+        <!--/.Mask-->
 
+    </header>
+    <!--Main Navigation-->
 
-	<!-- This is code for library page. -->
-	<div id="library">
-		<a name="library"></a>
-		<div class="page-padding"></div>
-		<div class= "container">
-            <div class="row">
-                <h1 class="centered wow slideInDown title">LIBRARY</h1>
-            </div>
-            <div class ="row">
-            	<div class="tab wow fadeIn" id="tab-nav">
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'poems')">MY POEMS |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'games')">MY GAMES |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'codes')">MY CODES |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'projects')">MY PROJECTS |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'challenges')">M2R CHALLENGES |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'thanks')">TYSM MATT SIR |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'inspirations')">LEADING INSPIRATIONS |</a>
-                    <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'updates')">RECENT UPDATES</a>
+    <!--Main layout-->
+    <main class="mt-5">
+        <div class="container">
+
+            <!--Section: About-->
+            <section id="about">
+                <div class="col-sm-12 col-md-12 col-lg-12 mb-5">
+                    <h1 class="display-4 text-center">A Little About Me</h1>
+                    <p class="lead text-center"><b>I'm the best friend of Computer &amp; Programs</b></p>
+                    <hr class="my-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="img/title.png" width="75%" class="mt-3">
+                            </div>
+                            <div class="col-md-7">
+                                <b><p>Hey, I'm Rabin. I love <strong>Web Designing</strong>, <strong>Programming</strong>, <strong>Art/Literature</strong> and <strong>YouTube Vlogging</strong>. <strong>'CODE BRAiN'</strong> channel on YouTube, <strong>'Jindagiko Baato'</strong> in the field of literature and art, <strong>'MattRab Tutorial Website'</strong> in the field of Web Design are some items where my creativity can be found.</p>
+                                <p>I was born in the beautiful village of Nepal, Syabun and enjoyed my childhood days with friends and nature. I was interested in art, literature and science since my childhood days but my interest get diverted into the world of <strong>Computer Programming</strong> in recent few years.</p>
+                                <p>Learning the different life facts, I have decided to make some effort for the improvement of <strong>Nepalese Technology</strong>. Therefore, to contribute something to the country, balancing the life events, I have been working very hard with my interest in the field of Technology.</p></b>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <!-- poems tab-->
-                <div id="poems" class="tabcontent">
-                    <div class= "container">
+            </section>
+            <!--Section: About-->
+
+            <hr class="my-5">
+
+            <!--Section: Resume-->
+            <section id="resume">
+
+                <!-- Heading -->
+                <h1 class="display-4 text-center">Resume</h1>
+
+                <!-- Nav tabs -->
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-3">
+                        <ul class="nav md-pills pills-default flex-column" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#skills" role="tab">SKILLS
+                                <i class="fa fa-lightbulb-o ml-2" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#experience" role="tab">EXPERIENCE
+                                <i class="fa fa-suitcase ml-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#education" role="tab">EDUCATION
+                                <i class="fa fa-graduation-cap ml-2"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#services" role="tab">SERVICES
+                                <i class="fa fa-tasks ml-2"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-9">
+                        <!-- Tab panels -->
+                        <div class="tab-content vertical">
+                            <div class="tab-pane fade in show active" id="skills" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="my-2 h5">PROGRAMMING SKILLS</h5>
+                                        <hr>               
+                                        <div class="chip chip-md">
+                                            <img src="img/html.png" alt="HTML"> HTML
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/js.png" alt="Javascript"> JAVASCRIPT
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/css.png" alt="CSS"> CSS
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/php.png" alt="Php"> PHP
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/sql.png" alt="Sql"> SQL
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/jquery.png" alt="JQuery"> JQUERY
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/bootstrap.png" alt="Bootstrap"> BOOTSTRAP
+                                        </div>
+                                        <div class="chip chip-md">
+                                            <img src="img/qbasic.png" alt="QBasic"> QBASIC
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="my-2 h5">PERSONAL SKILLS</h5>
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-sm-6 col-xs-6">
+                                                <br>
+                                                <ul class="icon-list">
+                                                    <li>Web Developer</li>
+                                                    <li>Web Desiger</li>
+                                                    <li>YouTuber</li>
+                                                    <li>Blogger</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-xs-6">
+                                                <br>
+                                                <ul class="icon-list">
+                                                    <li>Social Worker</li>
+                                                    <li>Audio Video Editor</li>
+                                                    <li>Teacher</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="experience" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="my-2 h5">EXPERIENCE</h5>
+                                        <hr>
+                                        <label class="progress-bar-label">Web Designing - <span>2 years experience</span></label>
+                                        <div class="progress">
+                                            <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                <span>85%</span>
+                                            </div>
+                                        </div>
+                                        <label class="progress-bar-label">Programming - <span>3 years experience</span></label>
+                                        <div class="progress">
+                                            <div style="width: 89%;" class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                                                <span>89%</span>
+                                            </div>
+                                        </div>
+                                        <label class="progress-bar-label">Video Editing - <span>5 months experience</span></label>
+                                        <div class="progress">
+                                            <div style="width: 48%;" class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                                                <span>48%</span>
+                                            </div>
+                                        </div>
+                                        <label class="progress-bar-label">Vlogging - <span>1 years experience</span></label>
+                                        <div class="progress">
+                                            <div style="width: 57%;" class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100">
+                                                <span>57%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="education" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="my-2 h5 mb-3">EDUCATION</h5>
+                                        <hr>
+                                        <ul class="list-group col-md-12">
+                                            <li class="list-group-item justify-content-between align-items-center">
+                                                <span class="font-weight-bold">Surya Sec. Boarding School - Khandbari</span>
+                                                <p class="mt-3">I did my schooling from Surya Sec. Boarding School, Khandbari. During the time I spent in Surya, I got chance to learn many life changing knwledges.</p>
+                                                <span class="badge badge-default badge-pill"><i class="fa fa-calendar"></i> "May 2008 - April 2018"</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>              
+                            </div>
+                            <div class="tab-pane fade" id="services" role="tabpanel">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 class="my-2 h5">SERVICES</h5>
+                                        <hr>
+                                        <!--Grid row-->
+                                        <div class="row text-center">
+                                            <!--Grid column-->
+                                            <div class="col-md-4 mb-1">
+                                                <i class="fa fa-picture-o fa-4x orange-text"></i>
+                                                <h5 class="my-2">WEB DESIGN</h5>
+                                                <p class="grey-text">Web designing is one of my favourite things I do.</p>
+                                            </div>
+                                            <!--Grid column-->
+
+                                            <!--Grid column-->
+                                            <div class="col-md-4 mb-1">
+                                                <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                                                <h5 class="my-2">AUDIO/VIDEO</h5>
+                                                <p class="grey-text">I can edit any Audios/Videos using Wondershare Filmora.</p>
+                                            </div>
+                                            <!--Grid column-->
+
+                                            <!--Grid column-->
+                                            <div class="col-md-4 mb-1">
+                                                <i class="fa fa-medkit fa-4x orange-text"></i>
+                                                <h5 class="my-2">CODING SUPPORT</h5>
+                                                <p class="grey-text">I can help any body to start coding journey with CODE BRAiN.</p>
+                                            </div>
+                                            <!--Grid column-->
+
+                                        </div>
+                                        <!--Grid row-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nav tabs -->
+            </section>
+            <!--Section: Resume-->
+
+            <hr class="my-5">
+
+            <!--Section: Portfolio-->
+            <section id="portfolio" class="text-center">
+
+                <!-- Heading -->
+                <h1 class="display-4 mb-4 text-center">Portfolio</h1>
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#codes" role="tab">My Codes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#projects" role="tab">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#games" role="tab">My Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#m2r" role="tab">M2R Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#store" role="tab">Store</a>
+                    </li>
+                </ul>
+                <!-- Tab panels -->
+                <div class="tab-content card">
+                    <!--Panel 1-->
+                    <div class="tab-pane fade in show active" id="codes" role="tabpanel">
                         <br>
-                        <div class ="row">
-                            <div class="col-md-8">
-                                <p class="text">
-                                    Welcome to my library to you all. Here are my special gifts for you all.
-                                </p><br>
-                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingOne">
-                                        <h4 class="panel-title">
-                                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="small_font_size">
-                                                <i class="tab-title">Books</i>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                                        <div class="panel-body tab-text">
-                                            <i>I have written the special book that is found everywhere in the market. Again, it is specially for you all! So everybody please try reading it. You will belive how much exciting it is.<br>
-                                            It is the collection of different and diverse stories based on a single and complete story that is all expressed with different sweet poems. It is my special creation in the feild of arts for you all. So, try finding it in the market, read it and get the different inspirations of happiness and sadness. Don't forget that it is the book that can bring great and positive change in your attitide!</i>
-                                        </div>
-                                    </div>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 mb-4">   
+                            <!-- Card -->
+                            <div class="card">
+
+                              <!-- Card image -->
+                              <div class="view overlay">
+                                <img class="card-img-top" src="img/codes.jpg" alt="Card image cap">
+                                <a>
+                                  <div class="mask rgba-white-slight"></div>
+                                </a>
+                              </div>
+
+                              <!-- Button -->
+                              <a class="btn-floating btn-action ml-auto mr-4 default-color lighten-3" href="https://github.com/Rabin-Kalikote/Rabin-Kalikote.github.io"><i class="fa fa-chevron-right pl-1"></i></a>
+
+                              <!-- Card content -->
+                              <div class="card-body">
+
+                                <!-- Title -->
+                                <h4 class="card-title">Rabin-Kalikote.github.io</h4>
+                                <hr>
+                                <!-- Text -->
+                                <p class="card-text">This includes the different pages and codes for my webpages. (Website)</p>
+
+                              </div>
+
+                              <!-- Card footer -->
+                              <div class="rounded-bottom default-color lighten-3 text-center pt-3">
+                                <ul class="list-unstyled list-inline font-small">
+                                  <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/06/2018</li>
+                                  <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-user-circle-o pr-1"></i>1</a></li>
+                                  <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-facebook pr-1"> </i>18</a></li>
+                                </ul>
+                              </div>
+
+                            </div>
+                            <!-- Card -->
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 mb-4">
+                                <!-- Card -->
+                                <div class="card">
+
+                                  <!-- Card image -->
+                                  <div class="view overlay">
+                                    <img class="card-img-top" src="img/codes2.jpg" alt="Card image cap">
+                                    <a>
+                                      <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                  </div>
+
+                                  <!-- Button -->
+                                  <a class="btn-floating btn-action ml-auto mr-4 default-color lighten-3" href="https://github.com/Rabin-Kalikote/Cplusplus-Stack-Problem"><i class="fa fa-chevron-right pl-1"></i></a>
+
+                                  <!-- Card content -->
+                                  <div class="card-body">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title">Cplusplus-Stack-Problem</h4>
+                                    <hr>
+                                    <!-- Text -->
+                                    <p class="card-text">This includes the solution of stack problem. (Second challenge assigned by Matt Sir)</p>
+
+                                  </div>
+
+                                  <!-- Card footer -->
+                                  <div class="rounded-bottom default-color lighten-3 text-center pt-3">
+                                    <ul class="list-unstyled list-inline font-small">
+                                      <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/06/2018</li>
+                                      <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-user-circle-o pr-1"></i>1</a></li>
+                                      <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-facebook pr-1"> </i>22</a></li>
+                                    </ul>
+                                  </div>
+
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="small_font_size">
-                                                <i class="tab-title">Extra poems for entertainment</i>
-                                            </a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            <p class="tab-text" style="font-family:nepali !important;">
-                                                !_ afcfdfaf6 agfO{ 6f9f k7fpg' x'Fb}g,
-                                                ;fg} 5 5f]/f vf]nf / 8fF8f s6fpg x'Fb}g .<br>
-                                                @_ x] d]/f] 5f]/f zx/ ltdL hfg' g} kg{]5,
-                                                k'?if dfG5] kl;gf kf]vL kf}/v ug]{5 .<br>
-                                                #_ x] ;fyL d}n] :s'n 5f8\g afWotf kl/uf],
-                                                ;kgf d]/f] :s'n k9\g] kftem}F eml/uf] .<br>
-                                                $_ tF ;Fu k};f 5f]Og eg] ck|]zg\ x'Fb}g,
-                                                Tof] k};f lagf 8fS6/ s'g} la/fdL 5F'b}g .<br>
-                                                %_ casf] lbg Tof] cfFvf lagf s;/L latfpg],
-                                                d]/f] nflu t eof] lg ca hLGbuL lgbfpg].<br>
-                                                ^_ sfF8fdf klg km"Nb5 km"n a;Gt ;Dem]/,
-                                                /ftdf klg lx8\b5 jL/ cufl8 nDs]/ .
-                                            </p>
-                                            <p class="tab-text" style="font-family:nepali !important;text-align:right">
-                                                ;fef/  -lhGbuLsf] af6f]_
-                                            </p>
-                                        </div>
-                                    </div>
+                                <!-- Card -->
+                            </div>
+                            <!--Grid column-->
+                            <div class="col-md-1"></div>
+                        </div> 
+                    </div>
+                    <!--/.Panel 1-->
+                    <!--Panel 2-->
+                    <div class="tab-pane fade" id="projects" role="tabpanel">
+                        <br>
+                        <div class="row">
+                            <div class="col-md-1"></div>
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 mb-4">
+
+                                <div class="view overlay z-depth-1-half">
+                                    <img src="img/mattrab.jpg" class="img-fluid" alt="">
+                                    <div class="mask rgba-white-slight"></div>
                                 </div>
+
+                                <h5 class="my-3">MATTRAB TUTORIAL WEBSITE</h5>
+                                <a href="https://mattrab.000webhostapp.com/"><button type="button" class="btn btn-default btn-sm">Live Preview<i class="fa fa-eye ml-2"></i></button></a>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-5 col-md-5 mb-4">
+
+                                <div class="view overlay z-depth-1-half">
+                                    <img src="img/ssbs.jpg" class="img-fluid" alt="">
+                                    <div class="mask rgba-white-slight"></div>
                                 </div>
+
+                                <h5 class="my-3">SSBS OFFICIAL WEBSITE</h5>
+                                <a href="ssbs/index.html"><button type="button" class="btn btn-default btn-sm">Live Preview<i class="fa fa-eye ml-2"></i></button></a>
+
+                            </div>
+                            <!--Grid column-->
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                    <!--/.Panel 2-->
+                    <!--Panel 3-->
+                    <div class="tab-pane fade" id="games" role="tabpanel">
+                        <br>
+                        <div class="row">
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 mb-4">
+
+                                <div class="view overlay z-depth-1-half">
+                                    <img src="img/apple-fall.jpg" class="img-fluid" alt="">
+                                    <div class="mask rgba-white-slight"></div>
+                                </div>
+
+                                <h5 class="my-3">APPLE FALL</h5>
+                                <p class="grey-text">Apple Fall is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com">Matt Sir</a>.</p>
+                                <a href="games/apple-fall/game.html"><button type="button" class="btn btn-default btn-sm">Play<i class="fa fa-play ml-2"></i></button></a>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <div class="view overlay z-depth-1-half">
+                                    <img src="img/facepuzzle.jpg" class="img-fluid" alt="">
+                                    <div class="mask rgba-white-slight"></div>
+                                </div>
+
+                                <h5 class="my-3">FACE PUZZLE</h5>
+                                <p class="grey-text">Face Puzzle is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com">Matt Sir</p>
+                                <a href="games/face-puzzle.html"><button type="button" class="btn btn-default btn-sm">Play<i class="fa fa-play ml-2"></i></button></a>
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-4">
+
+                                <div class="view overlay z-depth-1-half">
+                                    <img src="img/birthday.jpg" class="img-fluid" alt="">
+                                    <div class="mask rgba-white-slight"></div>
+                                </div>
+
+                                <h5 class="my-3">HAPPY BIRTHDAY</h5>
+                                <p class="grey-text">Happy Birthday is the new Game I'm working with. It will be released soon and You will be able to play it.</p>
+                                <button type="button" class="btn btn-default btn-sm" disabled>Play<i class="fa fa-play ml-2"></i></button>
+                            </div>
+                            <!--Grid column-->
+                        </div> 
+                    </div>
+                    <!--/.Panel 3-->
+
+                    <!--Panel 4-->
+                    <div class="tab-pane fade" id="m2r" role="tabpanel">
+                        <br>
+                        <div class="row text-center" style="min-height:300px;">
+                            
+                        </div>
+                    </div>
+                    <!--/.Panel 4-->
+
+                    <!--Panel 5-->
+                    <div class="tab-pane fade" id="store" role="tabpanel">
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                
+                                <!-- Card -->
+                                <div class="card card-cascade wider reverse">
+
+                                  <!-- Card image -->
+                                  <div class="view overlay">
+                                    <img class="card-img-top" src="img/poem.jpg" alt="Card image cap">
+                                    <a href="#!">
+                                      <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                  </div>
+
+                                  <!-- Card content -->
+                                  <div class="card-body text-center">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>My Arts</strong></h4>
+                                    <!-- Text -->
+                                    <p class="card-text">I have writtten many poems...... I have writtten many poems......</p>
+
+                                    <button type="button" class="btn btn-default btn-sm">See More<i class="fa fa-play ml-2"></i></button></a>
+
+                                  </div>
+
+                                </div>
+                                <!-- Card -->
+            
                             </div>
                             <div class="col-md-4">
-                                <img src= "img/poem.jpg" class="img-thumbnail library-photo">
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--END poems tab-->
+                                <!-- Card -->
+                                <div class="card card-cascade wider reverse">
 
-                <!-- games tab-->
-                <div id="games" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <div class="col-md-6 gameHolder">
-                                <a href="games/apple-fall/game.html">
-                                    <img src="img/apple.jpg" class="gamePto img-thumbnail">
-                                    <p class="gameTxt centered">APPLE FALL</p>
-                                </a>
-                            </div>
-                            <div class="col-md-6 gameHolder">
-                                <a href="games/face-puzzle.html">
-                                    <img src="img/facepuzzle.jpg" class="gamePto img-thumbnail">
-                                    <p class="gameTxt centered">FACE PUZZLE</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--END games tab-->
+                                  <!-- Card image -->
+                                  <div class="view overlay">
+                                    <img class="card-img-top" src="img/mattsir.jpg" alt="Card image cap">
+                                    <a href="#!">
+                                      <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                  </div>
 
-                <!-- codes tab-->
-                <div id="codes" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <div class="col-md-7 gameHolder">
-                                <!-- Codes contents -->
-                            </div>
-                            <div class="col-md-5 gameHolder">
-                                <a href="https://www.github.com/Rabin-Kalikote">
-                                    <img src="img/codes.png" class="codesPto img-thumbnail">
-                                    <p class="gameTxt centered">SEE IN GITHUB</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--END codes tab-->
+                                  <!-- Card content -->
+                                  <div class="card-body text-center">
 
-                <!-- projects tab-->
-                <div id="projects" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <div class="col-md-6 gameHolder">
-                                <a href="sbs/index.html">
-                                    <img src="img/ssbs.jpg" class="gamePto img-thumbnail">
-                                    <p class="gameTxt centered">SSBS WEBSITE</p>
-                                </a>
-                            </div>
-                            <div class="col-md-6 gameHolder">
-                                <a href="tutorial/index.php">
-                                    <img src="img/mattrab.jpg" class="gamePto img-thumbnail">
-                                    <p class="gameTxt centered">MATTRAB.edu</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--END projects tab-->
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>TYSM Matt Sir</strong></h4>
+                                    <!-- Text -->
+                                    <p class="card-text">The days I enjoyed with you together,<br> Will be memorable for me forever!</p>
 
-                <!-- m2r challanges tab-->
-                <div id="challenges" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <p class="centered text"><br><br>UPLOADING SOON !<br><br></p>
-                        </div>
-                    </div>
-                </div> <!--END m2r challenges tab-->
+                                    <button type="button" class="btn btn-default btn-sm">See More<i class="fa fa-play ml-2"></i></button></a>
 
-                <!-- tysm tab-->
-                <div id="thanks" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <div class="col-md-8 gameHolder">
-                                <div class="col-md-6">
-                                    <p class="tab-text">
-                                        1. I was unknown that you would be here,<br>
-                                        I heard the first day, Matt Sir appear !<br>
-                                        I asked my sister, who is the Matt Sir,<br>
-                                        She replied to me, god as a teacher !<br>
-                                        The first day you come in our class,<br>
-                                        Class became so clear, like a mirror glass!<br>
-                                        The days I learn with you together,<br>
-                                        Will be missing for me forever !<br><br>
+                                  </div>
 
-                                        2. The trips with you was so enjoyable,<br>
-                                        From the traces box to connective cable!<br>
-                                        Laptops with power, robert with some love,<br>
-                                        Friday with frizbee , fun with the art club !<br>
-                                        Sometime picnic making friend nature,<br>
-                                        We worked together brightening future !<br>
-                                        The days I enjoyed with you together,<br>
-                                        Will be memorable  for me forever !!
-                                    </p>
                                 </div>
-                                <div class="col-md-6">
-                                    <p class="tab-text">
-                                        3. The  days we sat on the chair together,<br>
-                                        Helps me to make my computer site better !<br>
-                                        Those happy days with we two programmer,<br>
-                                        I gonna miss you very much Matt Sir !<br>
-                                        You showed a seed of happy computer ,<br>
-                                        This seed will germinate and will give a flower !!<br>
-                                        The days I played with you together,<br>
-                                        Will be very sweet  for me forever !!
-                                    </p>
-                                    <p class="text">
-                                        <br><br>I'm missing you so much Matt Sir!
-                                    </p>
+                                <!-- Card -->
+                            </div>
+                            <div class="col-md-4">
+                                <!-- Card -->
+                                <div class="card card-cascade wider reverse">
+
+                                  <!-- Card image -->
+                                  <div class="view overlay">
+                                    <img class="card-img-top" src="img/update.jpg" alt="Card image cap">
+                                    <a href="#!">
+                                      <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                  </div>
+
+                                  <!-- Card content -->
+                                  <div class="card-body text-center">
+
+                                    <!-- Title -->
+                                    <h4 class="card-title"><strong>Recent Updates</strong></h4>
+                                    <!-- Text -->
+                                    <p class="card-text">Personal Website development tutorial series has been uploaded to YouTube.</p>
+
+                                    <a href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA"><button type="button" class="btn btn-default btn-sm">Visit YouTube<i class="fa fa-external-link ml-2"></i></button></a>
+
+                                  </div>
+
                                 </div>
-                            </div>
-                            <div class="col-md-4 gameHolder">
-                                <a href="">
-                                    <img src="img/mattsir.jpg" class="tysmPto img-thumbnail">
-                                    <p class="gameTxt centered">TYSM MATT SIR</p>
-                                </a>
+                                <!-- Card -->
                             </div>
                         </div>
                     </div>
-                </div> <!--END tysm tab-->
+                    <!--/.Panel 5-->
+                </div>
 
-                <!-- leading inspirations tab-->
-                <div id="inspirations" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <div class="col-md-7 gameHolder">
-                                <p class="text">
-                                    <br><br>
-                                    Life of every people is inspired by somebody. A person can be good or bad as per the person whom they are inspired by. Luckily, I got the chance to be inspired by great peoples. I feel so lucky for that..<br>
-                                    After my some years of study at SSBS, I have been inspired lot with the support of the school for my success. The care and support form Sir <b>Narayan Shrestha</b> let me realize the meaning and importance of life. And the encouragement and support from Sir <a href="https://www.mattbubernak.com"><b>Matt Bubbernak</b></a> make me able to utilize the importance of life..<br>
-                                    I am able feel the real happiness only because of my Great Sir. So I want to thank them so much..
-                                </p>
-                            </div>
-                            <div class="col-md-5 gameHolder">
-                                <a href="">
-                                    <img src="img/inspirations.jpg" class="tysmPto img-thumbnail">
-                                    <p class="gameTxt centered">LEADING INSPIRSTIONS</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--END leading inspirations tab-->
+            </section>
+            <!--Section: Portfolio-->
 
-                <!-- recent updates tab-->
-                <div id="updates" class="tabcontent">
-                    <div class= "container">
-                        <br>
-                        <div class ="row">
-                            <div class="col-md-8 gameHolder">
-                                <p class="centered title">MATTRAB.edu is updated with lot of improvements.</p>
+            <hr class="my-5">
+
+            <!--Section: Gallery-->
+            <section id="gallery">
+
+                <!-- Heading -->
+                <h1 class="display-4 mb-4 text-center">YouTube Gallery</h1>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4">
+
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner z-depth-1-half" role="listbox">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="img/youtube1.jpg" alt="First slide">
+                                </div>
+                                <!--/First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/youtube2.jpg" alt="Second slide">
+                                </div>
+                                <!--/Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="img/youtube3.jpg" alt="Third slide">
+                                </div>
+                                <!--/Third slide-->
                             </div>
-                            <div class="col-md-4 gameHolder">
-                                <a href="">
-                                    <img src="img/update.jpg" class="tysmPto img-thumbnail">
-                                    <p class="gameTxt centered">RECENT UPDATES</p>
-                                </a>
-                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
                         </div>
+                        <!--/.Carousel Wrapper-->
+
                     </div>
-                </div> <!--END recent updates tab-->
-            </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+
+                        <!--Excerpt-->
+                        <a href="" class="teal-text">
+                            <h5 class="pb-1">
+                                <i class="fa fa-youtube-square"></i>
+                                <strong> CODE BRAiN </strong>
+                            </h5>
+                        </a>
+                        <h4 class="mb-3">
+                            <strong>This is little about my Channel</strong>
+                        </h4>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
+                            debitis aut rerum.</p>
+
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
+                            debitis aut rerum.</p>
+                        <p>Something more</p>
+                        <a class="btn btn-default btn-md" href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA">Visit My Channel<i class="fa fa-external-link ml-2"></i></a>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Gallery-->
+
+            <hr class="my-5">
+
+            <!--Section: Contact-->
+            <section id="contact">
+
+                <!-- Heading -->
+                <h1 class="display-4 mb-4 text-center">Contact Me</h1>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-5 col-md-12">
+
+                        <!-- Form contact -->
+                        <form class="p-5" method="POST" action="https://formspree.io/rabinkalikote33@gmail.com">
+
+                          <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+                            <input name="name" type="text" id="form3" class="form-control form-control-sm">
+                            <label for="form3">Your name</label>
+                          </div>
+
+                          <div class="md-form form-sm"> <i class="fa fa-envelope prefix grey-text"></i>
+                            <input name="email" type="email" id="form2" class="form-control form-control-sm">
+                            <label for="form2">Your email</label>
+                          </div>
+
+                          <div class="md-form form-sm"> <i class="fa fa-tag prefix grey-text"></i>
+                            <input name="subject" type="text" id="form32" class="form-control form-control-sm">
+                            <label for="form34">Subject</label>
+                          </div>
+
+                          <div class="md-form form-sm"> <i class="fa fa-pencil prefix grey-text"></i>
+                            <textarea name="message" type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
+                            <label for="form8">Your message</label>
+                          </div>
+
+                          <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-default">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+                          </div>
+                        </form>
+                        <!-- Form contact -->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-7 col-md-12">
+
+                        <!--Grid row-->
+                        <div class="row text-center">
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-12 mb-3">
+
+                                <p>
+                                    <i class="fa fa-map fa-1x mr-2 grey-text"></i>Kathmandu, Nepal</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-3">
+
+                                <p>
+                                    <i class="fa fa-building fa-1x mr-2 grey-text"></i>Sun - Fri, 10:00-18:00</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                            <!--Grid column-->
+                            <div class="col-lg-4 col-md-6 mb-3">
+
+                                <p>
+                                    <i class="fa fa-phone fa-1x mr-2 grey-text"></i>+ 977 9811 014014</p>
+
+                            </div>
+                            <!--Grid column-->
+
+                        </div>
+                        <!--Grid row-->
+
+                        <!--Google map-->
+                        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height:400px"></div>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Contact-->
+
         </div>
-    </div>
-    </div> <!--END library-->
+    </main>
+    <!--Main layout-->
 
+    <!--Footer-->
+    <footer class="page-footer font-small unique-color-dark pt-0">
 
-    <!-- This is code for interests page. -->
-    <div id="interests">
-    <a name="interests"></a>
-    <div id="interestsBtn" class="tab wow fadeIn">
-        <a href="javascript:void(0)" onclick="showInterests();">SEE MY INTERESTS AND AIMS</a>
-    </div>
-    <div class="page-padding"></div>
-        <div id="interestscontent" class="interestscontent notShown">
+        <!-- Social buttons -->
+        <div class="default-color">
             <div class="container">
-                <div class="col-md-6">
-                    <p class="text">
-                        I think life is a valueable opportunity to do the great things that can make great contributions for the welfare of others. So, we must be dealing with our life in a good way enjoying and exciting with it. <br>
-                        I'm the one who wants to play with nature and get some inspirations from them. I love nature very much. I want to realize the connections of nature with science and of science with computer technology. I have deep interest to learn nature. So I'm woking hard to do something in my future that describes Nepal in the world.<br>
-                        I'm highly interested in my study and arts. I'm equally interested in Computer programming also. I like to identify the new scientifical facts because I enjoy with it. The setup of programing has already been the part of my mind. I like to study different things without any limitations, just not to pass certain degrees.
-                    </p>
-                </div>
-                <div class="col-md-6" id="interestsPto">
-                    <img src="img/aims.jpg" class="img-thumbnail">
-                </div>
-                <div class="col-md-12">
-                    <p class="text">
-                        More in other side, I want to be closed to Nature, get some inspirations from them. I'm also interested to learn the different arts and get the diverse ideas from them. Therefore learning by having great  interest is really interesting.<br>
-                        In future, I want to do something for my nation contributing something to my community. Nepal is a developing country. I want to speed up the developing speed of my nation making it able to stand with advanced technology and science.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div> <!--END interests-->
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
 
-	<div id="contact">
-		<a name="contact"></a>
-		<div class="page-padding"></div>
-		<div class= "container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h4 class="wow fadeIn contact-title"><b>CONTACT ME</b></h4>
-                    <!-- section containing email address.-->
-                    <div id="e-mail" class="wow fadeIn tab-text">
-                        <a href="mailto:rabinkalikote33@gmail.com" data-toggle="tooltip" data-placement="top" title="Gmail">
-                            rabinkalikote33@gmail.com
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">GET CONNECTED WITH ME ON SOCIAL NETWORKS!</h6>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+                        <!--Facebook-->
+                        <a href="https://www.facebook.com/KalikoteRabin" class="fb-ic ml-0">
+                            <i class="fa fa-facebook white-text mr-4"> </i>
+                        </a>
+                        <!--Google +-->
+                        <a href="https://plus.google.com/117116963754715013919" class="gplus-ic">
+                            <i class="fa fa-google-plus white-text mr-4"> </i>
+                        </a>
+                        <!--GitHub-->
+                        <a href="https://github.com/Rabin-Kalikote" class="gi-ic">
+                            <i class="fa fa-github white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a href="https://www.instagram.com/lucky_rabin" class="ins-ic">
+                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
+                        </a>
+                        <!--Gmail-->
+                        <a href="mailto:rabinkalikote33@gmail.com" class="gm-ic">
+                            <i class="fa fa-envelope-square white-text mr-lg-4"> </i>
+                        </a>
+                        <!--YouTube-->
+                        <a href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA" class="yt-ic">
+                            <i class="fa fa-youtube-square white-text mr-lg-4"> </i>
                         </a>
                     </div>
-                    <!-- section containing phone no.-->
-                    <div id="phone" class="wow fadeIn tab-text">
-                        <p data-toggle="tooltip" data-placement="top" title="Phone">
-                            (+977) 9811014014
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <a href="#home" class="back-icon scroll-link">
-                        <i class="fa fa-arrow-circle-up fa-3x fa-center  wow zoomIn" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Back to Top"></i>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <ul id="bottom-icon-list">
-                        <li>
-                            <a href="https://www.facebook.com/KalikoteRabin">
-                                <i class="fa fa-facebook-square fa-3x fa-center wow fadeIn" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Facebook"></i><br>
-                                <p class="centered icon-name">Facebook</p>
-                            </a>
-                        </li>
+                    <!--Grid column-->
 
-                        <li>
-                            <a href="https://www.github.com/Rabin-Kalikote">
-                                <i class="fa fa-github-square fa-3x fa-center wow fadeIn" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Github"></i><br>
-                                <p class="centered icon-name">Github</p>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="mailto:rabinkalikote33@gmail.com">
-                                <i class="fa fa-envelope-square fa-3x fa-center wow fadeIn" aria-hidden="true"  data-toggle="tooltip" data-placement="top" title="Gmail"></i><br>
-                                <p class="centered icon-name">Gmail</p>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
+                <!--Grid row-->
             </div>
         </div>
-    </div> <!--END contact-->
+        <!-- Social buttons -->
 
-    <!-- This are codes for the footer. -->
-    <div id="footer">
-        <a name="footer"></a>
-        <div class="page-padding"></div>
-        <div class= "container">
-            <div class="row">
-                <!-- first left section-->
-                <div class="text-content col-md-6 wow fadeIn">
-                    <p id="footer-text">&copy Copyright Rabin K. Kalikote 2016</p>
+        <!--Footer Links-->
+        <div class="container mt-5 mb-4 text-center text-md-left">
+            <div class="row mt-3">
+
+                <!--First column-->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>My Aims &amp; Interests</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
+                        amet, consectetur adipisicing elit.</p>
                 </div>
-                <!-- second right section-->
-                <div class="footer-navbar col-md-6">
-                    <!-- Contents for different links-->
-                    <ul class="wow fadeIn">
-                        <li><a href="#library" class="scroll-link" data-toggle="tooltip" data-placement="top" title="Goto Library">LIBRARY</a></li>
-                        <li><a href="#about" class="scroll-link" data-toggle="tooltip" data-placement="top" title="Goto About">ABOUT |</a></li>
-                        <li><a href="#home" class="scroll-link" data-toggle="tooltip" data-placement="top" title="Goto Home">HOME |</a></li>
-                    </ul>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>YouTube Videos</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://www.youtube.com/playlist?list=PLLepE3KtgoOHvdV_fv9DvXtrANHE6WfQO">Personal Website Tutorial</a>
+                    </p>
+                    <p>
+                        <a href="#!">HTML Tutorials<br><span style="font-size:10px;">(COMMING SOON)</span></a>
+                    </p>
+                    <p>
+                        <a href="#!">Learn How To<br><span style="font-size:10px;">(COMMING SOON)</span></a>
+                    </p>
                 </div>
+                <!--/.Second column-->
+
+                <!--Third column-->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA">My YouTube Channel</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/Rabin-Kalikote">GitHub</a>
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/KalikoteRabin">Facebook</a>
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/lucky_rabin">Instagram</a>
+                    </p>
+                </div>
+                <!--/.Third column-->
+
+                <!--Fourth column-->
+                <div class="col-md-4 col-lg-3 col-xl-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <strong>Contact</strong>
+                    </h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fa fa-home mr-3"></i> Kathmandu, Nepal</p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> rabinkalikote33@gmail.com</p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 977 9811 014014</p>
+                    <p>
+                        <i class="fa fa-print mr-3"></i> + 977 9862 280103</p>
+                </div>
+                <!--/.Fourth column-->
+
             </div>
         </div>
-    </div> <!--END footer-->
+        <!--/.Footer Links-->
 
-</div> <!--END page-wrap-->
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright: Rabin K. Kalikote
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!--Google Maps-->
+    <script src="https://maps.google.com/maps/api/js"></script>
+
+    <!-- Google Maps settings -->
+    <script>
+        // Regular map
+        function regular_map() {
+            var var_location = new google.maps.LatLng(27.7062, 85.3151);
+
+            var var_mapoptions = {
+                center: var_location,
+                zoom: 14
+            };
+
+            var var_map = new google.maps.Map(document.getElementById("map-container"),
+                var_mapoptions);
+
+            var var_marker = new google.maps.Marker({
+                position: var_location,
+                map: var_map,
+                title: "New York"
+            });
+        }
+
+        // Initialize maps
+        google.maps.event.addDomListener(window, 'load', regular_map);
+    </script>
+
+    <!-- Carousel options -->
+    <script>
+        $('.carousel').carousel({
+            interval: 3000,
+        })
+
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top-100}, 750);
+        });
+    </script>
 </body>
+
 </html>
