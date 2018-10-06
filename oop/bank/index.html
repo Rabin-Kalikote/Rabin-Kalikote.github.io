@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>
+			MR Bank :: Object OP
+		</title>
+
+		<!-- Meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Javascript Libraries -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+
+		<!-- Bootstrap Libraries -->
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+
+	</head>
+	<body>
+		<h1 style="text-align:center; padding-top:2em;">BANK ACCOUNT</h1>
+		<div class="container" style="padding:3em 2em;">
+			<a href="#" class="btn btn-info btn-sm">
+	          NOTE
+	        </a>
+	        <span>Currently, there are three accounts in the bank with ID '1988', '1109' and '2058' with the balance in each $50. The account name are 'Surya', 'Matt', 'Rabin' respectively. You can now CREATE new account, transfer balance among accounts, check the balance and deposit/withdraw the balance.</span>
+	        <br><br><br>
+
+
+
+	        <form style="max-width:50%;margin:auto;">
+			 	<div class="form-row">
+				  	<div class="form-group col-md-12">
+				      <label for="action">Select Action</label>
+				      <select id="action" class="form-control" onchange="actionTracker();">
+				        <option selected value="create-account">Create Account</option>
+				        <option value="check-balance">Check Balance</option>
+				        <option value="transfer-balance">Transfer Balance</option>
+				        <option value="deposit-money">Deposit Money</option>
+				        <option value="withdraw-money">Withdraw Money</option>
+				      </select>
+				    </div>
+				</div>
+			</form>
+
+			<form id="create-acc">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="acc-id">Account ID</label>
+			      <input type="text" class="form-control" id="acc-id" placeholder="ID">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="acc-name">Account Name</label>
+			      <input type="text" class="form-control" id="acc-name" placeholder="Account Name">
+			    </div>
+			  </div>
+
+			  <p class="notify"></p>
+
+			  <button type="button" class="btn btn-info btn-block" onclick="createNow();">Create Now</button>
+			</form>
+
+			<form id="check-blc" style="display:none;">
+				<div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="acc-id">Account ID</label>
+			      <input type="text" class="form-control" id="ch-acc-id" placeholder="Enter Account ID">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="acc-name">Account Name</label>
+			      <input type="text" class="form-control" id="ch-acc-name" placeholder="Enter Account Name">
+			    </div>
+			  </div>
+
+			  <p class="ch-notify"></p>
+
+			  <button type="button" class="btn btn-info btn-block" onclick="checkNow();">Check Balance Now</button>
+			</form>
+
+			<form id="transfer-blc" style="display:none;">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="acc-id">From: Account ID</label>
+			      <input type="text" class="form-control" id="from-acc-id" placeholder="Enter Account ID">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="acc-name">From: Account Name</label>
+			      <input type="text" class="form-control" id="from-acc-name" placeholder="Enter Account Name">
+			    </div>
+			  </div>
+
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="acc-id">To: Account ID</label>
+			      <input type="text" class="form-control" id="to-acc-id" placeholder="Enter Account ID">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="acc-name">To: Account Name</label>
+			      <input type="text" class="form-control" id="to-acc-name" placeholder="Enter Account Name">
+			    </div>
+			  </div>
+
+			  <div class="form-row">
+			    <div class="form-group col-md-12">
+			      <label for="amount">Amount</label>
+			      <input type="number" class="form-control" id="amount" placeholder="$...">
+			    </div>
+			  </div>
+
+			  <p class="tr-notify"></p>
+
+			  <button type="button" class="btn btn-info btn-block" onclick="transferNow();">Transfer Balance Now</button>
+			</form>
+
+			<form id="deposit-blc" style="display:none;">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="acc-id">Account ID</label>
+			      <input type="text" class="form-control" id="de-acc-id" placeholder="Enter Account ID">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="acc-name">Account Name</label>
+			      <input type="text" class="form-control" id="de-acc-name" placeholder="Enter Account Name">
+			    </div>
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-12">
+			      <label for="amount">Amount</label>
+			      <input type="number" class="form-control" id="de-amount" placeholder="$...">
+			    </div>
+			  </div>
+
+			  <p class="de-notify"></p>
+
+			  <button type="button" class="btn btn-info btn-block" onclick="depositNow();">Deposit Balance Now</button>
+			</form>
+
+			<form id="withdraw-blc" style="display:none;">
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="acc-id">Account ID</label>
+			      <input type="text" class="form-control" id="wi-acc-id" placeholder="Enter Account ID">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="acc-name">Account Name</label>
+			      <input type="text" class="form-control" id="wi-acc-name" placeholder="Enter Account Name">
+			    </div>
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-12">
+			      <label for="amount">Amount</label>
+			      <input type="number" class="form-control" id="wi-amount" placeholder="$...">
+			    </div>
+			  </div>
+
+			  <p class="wi-notify"></p>
+
+			  <button type="button" class="btn btn-info btn-block" onclick="withdrawNow();">Withdraw Balance Now</button>
+			</form>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">
+	// for tracking the action input.
+	function actionTracker(){
+		$('.notify').empty(); // clearing notification.
+		$('.ch-notify').empty();
+		$('.tr-notify').empty();
+		$('.de-notify').empty();
+		$('.wi-notify').empty();
+		var action = $('#action').val();
+		if(action == "create-account"){
+			$('#check-blc').hide();
+			$('#transfer-blc').hide();
+			$('#deposit-blc').hide();
+			$('#withdraw-blc').hide();
+			$('#create-acc').show();
+		}else if(action == "check-balance"){
+			$('#check-blc').show();
+			$('#transfer-blc').hide();
+			$('#deposit-blc').hide();
+			$('#withdraw-blc').hide();
+			$('#create-acc').hide();
+		}else if(action == "transfer-balance"){
+			$('#check-blc').hide();
+			$('#transfer-blc').show();
+			$('#deposit-blc').hide();
+			$('#withdraw-blc').hide();
+			$('#create-acc').hide();
+		}else if(action == "deposit-money"){
+			$('#check-blc').hide();
+			$('#transfer-blc').hide();
+			$('#deposit-blc').show();
+			$('#withdraw-blc').hide();
+			$('#create-acc').hide();
+		}else{
+			$('#check-blc').hide();
+			$('#transfer-blc').hide();
+			$('#deposit-blc').hide();
+			$('#withdraw-blc').show();
+			$('#create-acc').hide();
+		}
+	}
+
+	// Objects declaration.
+	class account{
+      constructor(accId, accName, balance) {
+        this.accId = accId;
+        this.accName = accName;
+        this.balance = balance;
+      }
+    }
+
+	// Object Array.
+	var accounts = [];
+
+
+    accounts.push(new account(1988,"Surya",50));
+    accounts.push(new account(1109,"Matt",50));
+    accounts.push(new account(2058,"Rabin",50));
+
+
+	// WHen button is clicked.
+	function createNow(){
+		$('.notify').empty(); // clearing notification.
+		$('.ch-notify').empty();
+		$('.tr-notify').empty();
+		$('.de-notify').empty();
+		$('.wi-notify').empty();
+
+		var accId = $('#acc-id').val();
+		var accName = $('#acc-name').val();
+
+		accounts.push(new account(accId,accName,0));
+		$('.notify').append('Successfully Created!');
+	}
+	function checkNow(){
+		$('.notify').empty(); // clearing notification.
+		$('.ch-notify').empty();
+		$('.tr-notify').empty();
+		$('.de-notify').empty();
+		$('.wi-notify').empty();
+
+		var accId = $('#ch-acc-id').val();
+		var accName = $('#ch-acc-name').val();
+
+		for(i = 0; i <= accounts.length; i++){
+			if (accounts[i].accId == accId && accounts[i].accName == accName){
+				$('.ch-notify').append('Your current balance is $' + accounts[i].balance);
+			}
+		}
+	}
+	function transferNow(){
+		$('.notify').empty(); // clearing notification.
+		$('.ch-notify').empty();
+		$('.tr-notify').empty();
+		$('.de-notify').empty();
+		$('.wi-notify').empty();
+
+		var fromAccId = $('#from-acc-id').val();
+		var fromAccName = $('#from-acc-name').val();
+		var toAccId = $('#to-acc-id').val();
+		var toAccName = $('#to-acc-name').val();
+		var amount = parseInt($('#amount').val());
+
+		for(i = 0; i < accounts.length; i++){
+			if (accounts[i].accId == fromAccId && accounts[i].accName == fromAccName){
+				var from = true;
+				var fromNum = i;
+			}
+		}
+
+		for(i = 0; i < accounts.length; i++){
+			if (accounts[i].accId == toAccId && accounts[i].accName == toAccName){
+				var to = true;
+				var toNum = i;
+			}
+		}
+
+		if(from == true && to == true && accounts[fromNum].balance >= amount){
+			accounts[fromNum].balance = accounts[fromNum].balance - amount;
+			accounts[toNum].balance = accounts[toNum].balance + amount;
+			$('.tr-notify').append('Transfer Success! Current balance in ' + accounts[fromNum].accName + ' is $' + accounts[fromNum].balance + ' and current balance in ' + accounts[toNum].accName + ' is $' + accounts[toNum].balance + '.');
+		}else if(from == true && to == true){
+			$('.tr-notify').append('Not enough balance in ' + accounts[fromNum].accName);
+		}else if(from != true && to != true){
+			$('.tr-notify').append('From and To Account do not exist.');
+		}else if(from != true){
+			$('.tr-notify').append('From Account do not exists.');
+		}else if(to != true){
+			$('.tr-notify').append('To Account do not exists.');
+		}
+	}
+	function depositNow(){
+		$('.notify').empty(); // clearing notification.
+		$('.ch-notify').empty();
+		$('.tr-notify').empty();
+		$('.de-notify').empty();
+		$('.wi-notify').empty();
+
+		var AccId = $('#de-acc-id').val();
+		var AccName = $('#de-acc-name').val();
+		var amount = parseInt($('#de-amount').val());
+
+		for(i = 0; i < accounts.length; i++){
+			if (accounts[i].accId == AccId && accounts[i].accName == AccName){
+				var existance = true;
+				var existanceNum = i;
+			}
+		}
+
+		if(existance == true){
+			accounts[existanceNum].balance = accounts[existanceNum].balance + amount;
+			$('.de-notify').append('Deposit Success! Current balance in ' + accounts[existanceNum].accName + ' is $' + accounts[existanceNum].balance + '.');
+		}else{
+			$('.de-notify').append('No Account exists with ID ' + AccId + '.');
+		}
+	}
+
+	function withdrawNow(){
+		$('.notify').empty(); // clearing notification.
+		$('.ch-notify').empty();
+		$('.tr-notify').empty();
+		$('.de-notify').empty();
+		$('.wi-notify').empty();
+
+		var AccId = $('#wi-acc-id').val();
+		var AccName = $('#wi-acc-name').val();
+		var amount = parseInt($('#wi-amount').val());
+
+		for(i = 0; i < accounts.length; i++){
+			if (accounts[i].accId == AccId && accounts[i].accName == AccName){
+				var existance = true;
+				var existanceNum = i;
+			}
+		}
+
+		if(existance == true && accounts[existanceNum].balance >= amount){
+			accounts[existanceNum].balance = accounts[existanceNum].balance - amount;
+			$('.wi-notify').append('Withdraw Success! Current balance in ' + accounts[existanceNum].accName + ' is $' + accounts[existanceNum].balance + '.');
+		}else if(existance == true && accounts[existanceNum].balance < amount){
+			$('.wi-notify').append('Not enough balance in Account with ID ' + AccId + '.');
+		}else{
+			$('.wi-notify').append('No Account exists with ID ' + AccId + '.');
+		}
+	}
+
+</script>

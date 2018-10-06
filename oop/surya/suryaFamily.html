@@ -1,0 +1,116 @@
+<!-- website code -->
+<html>
+
+  <head>
+    <title> Game ^_^ </title>
+      <style type="text/css">
+          canvas { border: 5px solid #008000;}
+          p{ color: red; font-size: 50px;}
+      </style>
+  </head>
+
+  <body>
+    <h1 style="text-align:center;font:bold;">SURYA FAMILY</h1>
+    <center>
+      <canvas id="canvas" width="800" height="500">
+      </canvas>
+    </center>
+  </body>
+
+</html>
+
+
+
+<!-- game code --> 
+<script type="text/javascript">
+
+    //global variables.
+    var canvas = document.getElementById("canvas");
+    var c = canvas.getContext("2d");
+
+    class infrastructure{
+      constructor(name, xPos, yPos, length, height) {
+        this.name = name;
+        this.xPos = xPos;
+        this.yPos = yPos;
+        this.length = length;
+        this.height = height;
+      }
+    }
+
+    class Class extends infrastructure{
+      constructor(name, xPos, yPos) {
+        super(name, xPos, yPos, 250, 150);
+      }1
+      draw(){
+        c.fillStyle = '#78866B';
+        c.fillRect(this.xPos, this.yPos, this.length, this.height);
+
+        c.fillStyle = '#F70D1A';
+        c.font = '15px Helvetica';
+        c.fillText(this.name, this.xPos+10, this.yPos+20);
+      }
+    }
+
+    class Playground extends infrastructure{
+      constructor(name, xPos, yPos) {
+        super(name, xPos, yPos, 350, 250);
+      }
+      draw(){
+        c.fillStyle = '#78866B';
+        c.fillRect(this.xPos, this.yPos, this.length, this.height);
+
+        c.fillStyle = '#F70D1A';
+        c.font = '15px Helvetica';
+        c.fillText(this.name, this.xPos+10, this.yPos+20);
+      }
+    }
+
+    class Gate extends infrastructure{
+      constructor(name, xPos, yPos) {
+        super(name, xPos, yPos, 10, 160);
+      }
+      draw(){
+        c.fillStyle = '#78866B';
+        c.fillRect(this.xPos, this.yPos, this.length, this.height);
+
+        c.fillStyle = '#F70D1A';
+        c.font = '15px Helvetica';
+        c.fillText(this.name, this.xPos+2, this.yPos+20);
+      }
+    }
+
+    var Class10 = new Class("Class10",10,10);
+    Class10.draw();
+
+    var gate = new Gate("Gate",10,170);
+    gate.draw();
+
+    var Class9 = new Class("Class9",10,340);
+    Class9.draw();
+
+    var Office = new Class("Office",540,10);
+    Office.draw();
+
+    var playground = new Playground("Playground",440,240);
+    playground.draw();
+
+    class familyMember{
+      constructor(name, xPos, yPos) {
+        this.name = name;
+        this.xPos = xPos;
+        this.yPos = yPos;
+      }
+      draw(){
+        c.beginPath();// a
+        c.arc(this.brandX,this.bappleY, 10, 0, Math.PI * 2, false);
+        c.fillStyle = '#F70D1A';
+        c.fillRect(this.xPos, this.yPos, this.length, this.height);
+
+        c.fillStyle = '#F70D1A';
+        c.font = '15px Helvetica';
+        c.fillText(this.name, this.xPos+2, this.yPos+20);
+      }
+    }
+
+</script>
