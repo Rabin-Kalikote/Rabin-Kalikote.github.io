@@ -1,0 +1,226 @@
+/* Required height of parents of the Full Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+p{
+  font-family: 'gsfont';
+}
+
+/* Full Page Carousel itself*/
+.carousel {
+  height: 100%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Navbar animation */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.top-nav-collapse {
+  background-color: #1C2331; }
+
+/* Adding color to the Navbar on mobile */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #1C2331; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #1C2331; }
+
+
+
+
+
+/*Costum CSS*/
+
+/*Google Font*/
+@font-face{font-family:'gsfont';src:url('../font/GoogleSans-Regular.ttf');}
+
+/*Header Row*/
+#page-wrap{
+  width: 100%;
+  height: auto;
+  min-height:58vh;
+  background:#f7f7f7;
+}
+#firstRow{
+  width: 100%;
+  height: 25vh;
+  padding: 3vh;
+}
+#firstRow .col-md-2 #headLogo{
+  margin-left: 33%;
+  z-index: 11!important;
+  max-width: 173px;
+  max-height: 19vh;
+  border-radius: 50%;
+}
+#firstRow .row > .col-md-10{
+  padding-right: 3.7em;
+}
+#firstRow .col-md-10 h1#headTitle{
+  color:#fff;
+  font-size: 47px;
+  text-align:right;
+  font-family: 'gsfont';
+}
+#firstRow .col-md-10 h5#headsubTitle{
+  color:#fff;
+  font-size: 23px;
+  text-align:right;
+  font-family: 'gsfont';
+}
+
+#secondRow > nav.navbar{
+  /*background:#212227;*/
+}
+.nav-bar{
+  width: 100%;
+  height: 50px;
+  background: #2c3e50;
+  box-sizing: border-box;
+  border-bottom: 1px solid #1a252f;
+}
+ 
+.nav-bar ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  float: right;
+  padding-right: 3.7%;
+  font-family: 'gsfont';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+ 
+.nav-bar ul li{
+  max-width: 220px;
+  float: right;
+  margin-right: 22px;
+  text-align: center;
+  padding-top: 13px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.nav-bar ul li.nav-icons{
+  width: 27px;
+  text-align: right;
+}
+.nav-bar ul li > a{
+  color: #fff;
+}
+.nav-bar ul li:first-child{
+  margin-right: 0;
+}
+ 
+.nav-bar ul li > a.active{
+  color: #18bc9c;
+}
+.nav-bar ul li:hover > a{
+  color: #18bc9c;
+}
+/*---------------------------------------------*/
+.nav-bar ul li:hover .mega-menu{
+  color: #fff;
+}
+ 
+.nav-bar ul li .mega-menu p:hover{
+   color: #18bc9c;
+}
+ 
+.header-banner{
+  background: #18bc9c;
+  width: 100%;
+  height: 350px;
+}
+ 
+.mega-menu{
+  position: absolute;
+  top: 47px;
+  left: 0;
+  width: 100%;
+  min-height: 250px;
+  background: #2c3e50;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  box-sizing: border-box;
+  padding: 40px;
+}
+ 
+.nav-bar ul li:hover .mega-menu{
+  opacity: 1;
+  visibility: visible;
+}
+ 
+.inner-mega-menu{
+  width: 24%;
+  float: left;
+  margin-right: 1%;
+}
+.inner-mega-menu h3.menu-title{
+  font-size: 18px;
+  font-family: 'gsfont';
+}
+ 
+.inner-mega-menu p{
+  padding: 10px 0;
+  transition: all 0.4s ease;
+}
+ 
+.inner-mega-menu:last-child{
+  margin-right: 0%;
+}
+
+
+/*Carousel*/
+div.carousel-container{
+  margin-top: 1.1rem!important;
+  height: 51vh;
+}
+
+/*Notice*/
+div.notice-container{
+  width: 100%;
+  margin-top: 1.1rem!important;
+}
+div.notice-container > .jumbotron-fluid{
+  padding: 1rem 0 !important;
+}
+div.notice-container > .jumbotron-fluid h2.display-5,
+div.notice-container > .jumbotron-fluid p.lead{
+  font-family: 'gsfont';
+}
+
+/*Massege*/
+div.message-container{
+  width: 100%;
+  margin-top: 1.1rem!important;
+}
+/*div.message-container > p.welcome-title{
+  font-size: 20px;
+  font-family:'gsfont';
+}*/
+div.message-container .col-md-3 > img{
+  width:100%;
+}
+div.message-row{
+  width: 100%;
+  padding: 0; margin: 0;
+}
+
+
+/*About Page*/
+.view img{
+  width: 100%!important;
+  max-height: 150px;
+}
