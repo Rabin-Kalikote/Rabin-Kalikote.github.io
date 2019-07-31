@@ -1,1054 +1,459 @@
+
+<!-- Codes written by Rabin K. Kalikote for the Personal Website.
+Copyright (c): Rabin K. Kalikote. -->
+
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- Title -->
+        <title>Rabin Kalikote</title>
+        <link rel="icon" type="image/png" href="img/logo0.png">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="google-site-verification" content="cNP_EYsBZaCEXpvWANhi-Sx3N-YrWwaP6ExSjCkXjyQ" />
-    <!-- Title Logo -->
-    <link rel="icon" type="image/png" href="img/title.png">
-    <title>Rabin Kalikote</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+        <!-- Metas -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
+        <!-- Css Libraries -->
+        <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
 
-    <!--Main Navigation-->
-    <header>
+        <!-- Js Libraries -->
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/smooth-scroll.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/wow.js"></script>
+    </head>
+    <body>
+        <!-- Header/Navigation -->
+        <header>
+            <nav class="nav">
+              <div class="nav-container">
+                  <a class="hamburger-button " aria-label="Navigation Menu">
+                    <span class="line line01"></span>
+                		<span class="line line02"></span>
+                		<span class="line line03"></span>
+                  </a>
 
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                  <ul class="nav-list">
+                      <li class="nav-item nav-item-logo">
+                          <a class="scroll-link nav-link" href="#face"><img src="img/logo.png" alt="R<"> <span>Kalikote</span></a>
+                      </li>
+
+                      <li class="nav-item nav-item-secondary ">
+                        <a class="nav-link nav-link-about " href="#about">About</a>
+                      </li>
+
+                      <li class="nav-item nav-item-secondary ">
+                        <a class="scroll-link nav-link nav-link-resume " href="#resume">Resume</a>
+                      </li>
+
+                      <li class="nav-item nav-item-secondary ">
+                        <a class="scroll-link nav-link nav-link-portfolio " href="#portfolio">Portfolio</a>
+                      </li>
+
+                      <li class="nav-item nav-item-secondary ">
+                        <a class="scroll-link nav-link nav-link-contact " href="#contact">Contact</a>
+                      </li>
+
+                      <li class="nav-item nav-item-tcb-world nav-item-mobile">
+                        <a class="nav-link nav-link-tcb-world nav-link-mobile" href="https://www.youtube.com/thecodingbrain">TCB World</a>
+                      </li>
+                  </ul>
+              </div>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section class="face">
+          <div class="background">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <div class="background-rvs"></div>
+          <div class="container-fluid" id="face">
             <div class="container">
-
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="#">
-                    <img src="img/brand.png" height="35" alt="R< Kalikote">
-                </a>
-
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Collapsible content -->
-                <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                    <!-- Links -->
-                    <ul class="navbar-nav mr-auto smooth-scroll">
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#intro">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#resume">RESUME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#gallery">YOUTUBE GALLERY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link scroll-link" href="#contact">CONTACT</a>
-                        </li>
-                    </ul>
-                    <!-- Links -->
-
-                    <!-- Social Icon  -->
-                    <ul class="navbar-nav nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.facebook.com/KalikoteRabin"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA"><i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mailto:rabinkalikote33@gmail.com"><i class="fa fa-envelope-o"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/Rabin-Kalikote"><i class="fa fa-github"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/lucky_rabin"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-
+              <div class="col-md-7 intro-title">
+                <div class="content text-center">
+                  <h4 id="face-heaer" class="wow ">WELCOME TO MY WEBSITE</h4>
+                  <p>Coder · YouTuber · Blogger · Designer · Artist <br> *** Friend of Computer ***</p>
+                  <a class="nav-link-about" href="#about">
+                    <button type="button" class="wow bounceIn btn">Read More <i class="fa fa-book ml-2"></i></button>
+                  </a>
                 </div>
-                <!-- Collapsible content -->
-
+              </div>
+              <div class="col-md-5 intro-slider hidden-sm hidden-xs">
+                <div class="slider">
+                  <a class="slide" href="#tcb"><img src="img/tcb.jpg" alt="TCB World"></a>
+                  <a class="slide" href="codes2.jpg"><img src="img/codes2.jpg" alt=""></a>
+                  <a class="slide" href="codes2.jpg"><img src="img/codes2.jpg" alt=""></a>
+                </div>
+              </div>
             </div>
-        </nav>
-        <!--/.Navbar-->
-
-        <!--Mask-->
-        <div id="intro" class="view">
-
-            <div class="mask rgba-black-strong">
-
-                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-
-                    <div class="row d-flex justify-content-center text-center">
-
-                        <div class="col-md-10">
-
-                            <!-- Heading -->
-                            <h2 class="display-3 font-weight-bold white-text pt-5 mb-2">RABIN K. KALIKOTE</h2>
-
-                            <!-- Description -->
-                            <h4 class="white-text my-4">Here is me your <b>LUCKY GUY RABIN.</b> I welcome you all to my <b>Personal Website.</b></h4>
-                            <a class="nav-link scroll-link" href="#about"><button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button></a>
-
-                        </div>
-
-                    </div>
-
+          </div>
+        </section>
+        <!-- About Section -->
+        <section class="about">
+          <div class="container-fluid" id="about">
+            <div class="container">
+              <div class="col-md-5">
+                <div class="profile-card">
+                  <img src="img/profile.jpg" alt="Rabin's Profile Image">
                 </div>
-
+              </div>
+              <div class="col-md-7 about-me">
+                <h3 class="card-title wow slideInUp">A Little About Me</h3>
+                <p class="title wow fadeIn">I'm the best friend of Computer &amp; Programs</p>
+                <p class="wow fadeIn">Hey, I'm Rabin. I love <strong>Web Designing</strong>, <strong>Programming</strong>, <strong>Art/Literature</strong> and <strong>YouTube Vlogging</strong>. <strong>'The Coding Brain'</strong> channel on YouTube, <strong>'Jindagiko Baato'</strong> in the field of literature and art, <strong>'MattRab Tutorial Website'</strong> in the field of Web Design are some items where my creativity can be found.</p>
+                <p class="wow fadeIn">I was born in the beautiful village of Nepal, Syabun and enjoyed my childhood days with friends and nature. I was interested in art, literature and science since my childhood days but my interest get diverted into the world of <strong>Computer Programming</strong> in recent few years.</p>
+              </div>
             </div>
-
-        </div>
-        <!--/.Mask-->
-
-    </header>
-    <!--Main Navigation-->
-
-    <!--Main layout-->
-    <main class="mt-5">
-        <div class="container">
-
-            <!--Section: About-->
-            <section id="about">
-                <div class="col-sm-12 col-md-12 col-lg-12 mb-5">
-                    <h1 class="display-4 text-center">A Little About Me</h1>
-                    <p class="lead text-center"><b>I'm the best friend of Computer &amp; Programs</b></p>
-                    <hr class="my-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-5">
-                                <img src="img/title.png" width="75%" class="mt-3">
-                            </div>
-                            <div class="col-md-7">
-                                <b><p>Hey, I'm Rabin. I love <strong>Web Designing</strong>, <strong>Programming</strong>, <strong>Art/Literature</strong> and <strong>YouTube Vlogging</strong>. <strong>'CODE BRAiN'</strong> channel on YouTube, <strong>'Jindagiko Baato'</strong> in the field of literature and art, <strong>'MattRab Tutorial Website'</strong> in the field of Web Design are some items where my creativity can be found.</p>
-                                <p>I was born in the beautiful village of Nepal, Syabun and enjoyed my childhood days with friends and nature. I was interested in art, literature and science since my childhood days but my interest get diverted into the world of <strong>Computer Programming</strong> in recent few years.</p>
-                                <p>Learning the different life facts, I have decided to make some effort for the improvement of <strong>Nepalese Technology</strong>. Therefore, to contribute something to the country, balancing the life events, I have been working very hard with my interest in the field of Technology.</p></b>
-                            </div>
-                        </div>
+          </div>
+        </section>
+        <!-- Resume Section -->
+        <section class="resume">
+          <div class="container-fluid" id="resume">
+            <div class="container">
+              <div class="col-md-7 my-resume">
+                <h3 class="card-title wow slideInUp">Resume</h3>
+                <p class="title wow fadeIn">I can develop online Games.</p>
+                <div class="accordion wow fadeIn">
+                  <li class="acc-item" id="skills">
+                    <a href="#skills" class="acc-btn first"><i class="fa fa-check-circle"></i> Skills</a>
+                    <div class="submenu">
+                      <div class="row">
+                          <div class="col-md-12" style="padding:1rem;">
+                              <div class="chip chip-md">
+                                  <img src="img/html.png" alt="HTML"> HTML
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/js.png" alt="Javascript"> JAVASCRIPT
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/css.png" alt="CSS"> CSS
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/php.png" alt="Php"> PHP
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/sql.png" alt="Sql"> SQL
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/jquery.png" alt="JQuery"> JQUERY
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/bootstrap.png" alt="Bootstrap"> BOOTSTRAP
+                              </div>
+                              <div class="chip chip-md">
+                                  <img src="img/qbasic.png" alt="QBasic"> QBASIC
+                              </div>
+                          </div>
+                      </div>
                     </div>
-                </div>
-            </section>
-            <!--Section: About-->
-
-            <hr class="my-5">
-
-            <!--Section: Resume-->
-            <section id="resume">
-
-                <!-- Heading -->
-                <h1 class="display-4 text-center">Resume</h1>
-
-                <!-- Nav tabs -->
-                <div class="row mt-5 mb-5">
-                    <div class="col-md-3">
-                        <ul class="nav md-pills pills-default flex-column" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#skills" role="tab">SKILLS
-                                <i class="fa fa-lightbulb-o ml-2" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#experience" role="tab">EXPERIENCE
-                                <i class="fa fa-suitcase ml-2"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#education" role="tab">EDUCATION
-                                <i class="fa fa-graduation-cap ml-2"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#services" role="tab">SERVICES
-                                <i class="fa fa-tasks ml-2"></i>
-                                </a>
-                            </li>
-                        </ul>
+                  </li>
+                  <li class="acc-item" id="experience">
+                    <a href="#experience" class="acc-btn"><i class="fa fa-check-circle"></i> Experience</a>
+                    <div class="submenu">
+                      <div class="row">
+                          <div class="col-md-12" style="padding:1rem 1.8rem;">
+                              <label class="progress-bar-label">Web Designing - <span>2 years experience</span></label>
+                              <div class="progress">
+                                  <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                      <span>85%</span>
+                                  </div>
+                              </div>
+                              <label class="progress-bar-label">Programming - <span>3 years experience</span></label>
+                              <div class="progress">
+                                  <div style="width: 89%;" class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                                      <span>89%</span>
+                                  </div>
+                              </div>
+                              <label class="progress-bar-label">Video Editing - <span>5 months experience</span></label>
+                              <div class="progress">
+                                  <div style="width: 48%;" class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
+                                      <span>48%</span>
+                                  </div>
+                              </div>
+                              <label class="progress-bar-label">Vlogging - <span>1 years experience</span></label>
+                              <div class="progress">
+                                  <div style="width: 57%;" class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100">
+                                      <span>57%</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
                     </div>
-                    <div class="col-md-9">
-                        <!-- Tab panels -->
-                        <div class="tab-content vertical">
-                            <div class="tab-pane fade in show active" id="skills" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h5 class="my-2 h5">PROGRAMMING SKILLS</h5>
-                                        <hr>               
-                                        <div class="chip chip-md">
-                                            <img src="img/html.png" alt="HTML"> HTML
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/js.png" alt="Javascript"> JAVASCRIPT
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/css.png" alt="CSS"> CSS
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/php.png" alt="Php"> PHP
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/sql.png" alt="Sql"> SQL
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/jquery.png" alt="JQuery"> JQUERY
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/bootstrap.png" alt="Bootstrap"> BOOTSTRAP
-                                        </div>
-                                        <div class="chip chip-md">
-                                            <img src="img/qbasic.png" alt="QBasic"> QBASIC
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h5 class="my-2 h5">PERSONAL SKILLS</h5>
-                                        <hr>
-                                        <div class="row">
-                                            <div class="col-sm-6 col-xs-6">
-                                                <br>
-                                                <ul class="icon-list">
-                                                    <li>Web Developer</li>
-                                                    <li>Web Desiger</li>
-                                                    <li>YouTuber</li>
-                                                    <li>Blogger</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-6">
-                                                <br>
-                                                <ul class="icon-list">
-                                                    <li>Social Worker</li>
-                                                    <li>Audio Video Editor</li>
-                                                    <li>Teacher</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="experience" role="tabpanel">
-                                <div class="row">
+                  </li>
+                  <li class="acc-item" id="education">
+                    <a href="#education" class="acc-btn"><i class="fa fa-check-circle"></i> Education</a>
+                    <div class="submenu">
+                      <div class="row">
                                     <div class="col-md-12">
-                                        <h5 class="my-2 h5">EXPERIENCE</h5>
-                                        <hr>
-                                        <label class="progress-bar-label">Web Designing - <span>2 years experience</span></label>
-                                        <div class="progress">
-                                            <div style="width: 85%;" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                                <span>85%</span>
-                                            </div>
-                                        </div>
-                                        <label class="progress-bar-label">Programming - <span>3 years experience</span></label>
-                                        <div class="progress">
-                                            <div style="width: 89%;" class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
-                                                <span>89%</span>
-                                            </div>
-                                        </div>
-                                        <label class="progress-bar-label">Video Editing - <span>5 months experience</span></label>
-                                        <div class="progress">
-                                            <div style="width: 48%;" class="progress-bar" role="progressbar" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">
-                                                <span>48%</span>
-                                            </div>
-                                        </div>
-                                        <label class="progress-bar-label">Vlogging - <span>1 years experience</span></label>
-                                        <div class="progress">
-                                            <div style="width: 57%;" class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100">
-                                                <span>57%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="education" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="my-2 h5 mb-3">EDUCATION</h5>
-                                        <hr>
-                                        <!--Grid column-->
                                         <div class="col-lg-12 col-md-12 px-4">
-
-                                        <!--First row-->
                                         <div class="row">
-                                          <div class="col-1 mr-3">
-                                            <i class="fas fa-book fa-2x indigo-text"></i>
-                                          </div>
-                                          <div class="col-10">
-                                            <h5 class="feature-title">Surya Sec. Boarding School - Khandbari <span class="badge badge-default badge-pill" style="font-size:10px;"><i class="fa fa-calendar"></i> "July 2018 - Still"</span></h5>
-                                            <p class="grey-text">I did my schooling from Surya Sec. Boarding School, Khandbari. During the time I spent in Surya, I got chance to learn many life changing knwledges.</p>
-                                          </div>
+                                            <h5 class="feature-title"><img src="img/sbslogo.jpg" alt="SBS">Surya Sec. Boarding School - Khandbari <span class="badge badge-default badge-pill" style="font-size:10px;"><i class="fa fa-calendar"></i> "May 2008 - April 2018"</span></h5>
+                                            <p class="grey-text">I did my schooling from Surya Sec. Boarding School, Khandbari. As a Suryan, I got chance to learn many life changing knowledges.</p>
                                         </div>
-                                        <!--/First row-->
-
-                                        <div style="height:30px"></div>
-
-                                        <!--Second row-->
+                                        <br>
                                         <div class="row">
-                                          <div class="col-1 mr-3">
-                                            <i class="fas fa-graduation-cap fa-2x blue-text"></i>
-                                          </div>
-                                          <div class="col-10">
-                                            <h5 class="feature-title">St. Xavier's College - Kathmandu <span class="badge badge-default badge-pill" style="font-size:10px;"><i class="fa fa-calendar"></i> "July 2018 - Still"</span></h5>
+                                            <h5 class="feature-title"><img src="img/sxclogo.jpg" alt="SXC">St. Xavier's College - Kathmandu <span class="badge badge-default badge-pill" style="font-size:10px;"><i class="fa fa-calendar"></i> "July 2018 - Still"</span></h5>
                                             <p class="grey-text">I am currently studying at SXC, Maithighar. I have been getting the opportunity to practically learn the practical way to live a meaningful and happy life.
                                             </p>
-                                          </div>
                                         </div>
-                                        <!--/Second row-->
                                       </div>
-                                      <!--/Grid column-->
-                                    </div>
-                                </div>              
-                            </div>
-                            <div class="tab-pane fade" id="services" role="tabpanel">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <h5 class="my-2 h5">SERVICES</h5>
-                                        <hr>
-                                        <!--Grid row-->
-                                        <div class="row text-center">
-                                            <!--Grid column-->
-                                            <div class="col-md-4 mb-1">
-                                                <i class="fa fa-picture-o fa-4x orange-text"></i>
-                                                <h5 class="my-2">WEB DESIGN</h5>
-                                                <p class="grey-text">Web designing is one of my favourite things I do.</p>
-                                            </div>
-                                            <!--Grid column-->
-
-                                            <!--Grid column-->
-                                            <div class="col-md-4 mb-1">
-                                                <i class="fa fa-camera-retro fa-4x orange-text"></i>
-                                                <h5 class="my-2">AUDIO/VIDEO</h5>
-                                                <p class="grey-text">I can edit any Audios/Videos using Wondershare Filmora.</p>
-                                            </div>
-                                            <!--Grid column-->
-
-                                            <!--Grid column-->
-                                            <div class="col-md-4 mb-1">
-                                                <i class="fa fa-medkit fa-4x orange-text"></i>
-                                                <h5 class="my-2">CODING SUPPORT</h5>
-                                                <p class="grey-text">I can help any body to start coding journey with CODE BRAiN.</p>
-                                            </div>
-                                            <!--Grid column-->
-
-                                        </div>
-                                        <!--Grid row-->
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <!-- Nav tabs -->
-            </section>
-            <!--Section: Resume-->
-
-            <hr class="my-5">
-
-            <!--Section: Portfolio-->
-            <section id="portfolio" class="text-center">
-
-                <!-- Heading -->
-                <h1 class="display-4 mb-4 text-center">Portfolio</h1>
-
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs nav-justified">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#codes" role="tab">My Codes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#projects" role="tab">My Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#games" role="tab">My Games</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#m2r" role="tab">M2R Challenges</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#store" role="tab">Store</a>
-                    </li>
-                </ul>
-                <!-- Tab panels -->
-                <div class="tab-content card">
-                    <!--Panel 1-->
-                    <div class="tab-pane fade in show active" id="codes" role="tabpanel">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <!--Grid column-->
-                            <div class="col-lg-5 col-md-5 mb-4">   
-                            <!-- Card -->
-                            <div class="card">
-
-                              <!-- Card image -->
-                              <div class="view overlay">
-                                <img class="card-img-top" src="img/codes.jpg" alt="Card image cap">
-                                <a>
-                                  <div class="mask rgba-white-slight"></div>
-                                </a>
+                  </li>
+                  <li class="acc-item" id="service">
+                    <a href="#service" class="acc-btn last"><i class="fa fa-check-circle"></i> Services</a>
+                    <div class="submenu last">
+                      <div class="row">
+                          <div class="col-md-12" style="padding:1rem 1.8rem;">
+                              <div class="row centered">
+                                  <div class="col-md-4 mb-1">
+                                      <i class="fa fa-picture-o fa-3x orange-text"></i>
+                                      <h5 class="my-2">WEB DESIGN</h5>
+                                      <p class="grey-text">Web designing is one of my favourite things I do.</p>
+                                  </div>
+                                  <div class="col-md-4 mb-1">
+                                      <i class="fa fa-camera-retro fa-3x orange-text"></i>
+                                      <h5 class="my-2">AUDIO/VIDEO</h5>
+                                      <p class="grey-text">I can edit any Audios/Videos using Wondershare Filmora.</p>
+                                  </div>
+                                  <div class="col-md-4 mb-1">
+                                      <i class="fa fa-medkit fa-3x orange-text"></i>
+                                      <h5 class="my-2">CODING SUPPORT</h5>
+                                      <p class="grey-text">I can help any body to start coding journey with The Coding Brain.</p>
+                                  </div>
                               </div>
-
-                              <!-- Button -->
-                              <a class="btn-floating btn-action ml-auto mr-4 default-color lighten-3" href="https://github.com/Rabin-Kalikote/Rabin-Kalikote.github.io"><i class="fa fa-chevron-right pl-1"></i></a>
-
-                              <!-- Card content -->
-                              <div class="card-body">
-
-                                <!-- Title -->
-                                <h4 class="card-title">Rabin-Kalikote.github.io</h4>
-                                <hr>
-                                <!-- Text -->
-                                <p class="card-text">This includes the different pages and codes for my webpages. (Website)</p>
-
-                              </div>
-
-                              <!-- Card footer -->
-                              <div class="rounded-bottom default-color lighten-3 text-center pt-3">
-                                <ul class="list-unstyled list-inline font-small">
-                                  <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/06/2018</li>
-                                  <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-user-circle-o pr-1"></i>1</a></li>
-                                  <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-facebook pr-1"> </i>18</a></li>
-                                </ul>
-                              </div>
-
-                            </div>
-                            <!-- Card -->
-
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-5 col-md-5 mb-4">
-                                <!-- Card -->
-                                <div class="card">
-
-                                  <!-- Card image -->
-                                  <div class="view overlay">
-                                    <img class="card-img-top" src="img/codes2.jpg" alt="Card image cap">
-                                    <a>
-                                      <div class="mask rgba-white-slight"></div>
-                                    </a>
-                                  </div>
-
-                                  <!-- Button -->
-                                  <a class="btn-floating btn-action ml-auto mr-4 default-color lighten-3" href="https://github.com/Rabin-Kalikote/Cplusplus-Stack-Problem"><i class="fa fa-chevron-right pl-1"></i></a>
-
-                                  <!-- Card content -->
-                                  <div class="card-body">
-
-                                    <!-- Title -->
-                                    <h4 class="card-title">Cplusplus-Stack-Problem</h4>
-                                    <hr>
-                                    <!-- Text -->
-                                    <p class="card-text">This includes the solution of stack problem. (Second challenge assigned by Matt Sir)</p>
-
-                                  </div>
-
-                                  <!-- Card footer -->
-                                  <div class="rounded-bottom default-color lighten-3 text-center pt-3">
-                                    <ul class="list-unstyled list-inline font-small">
-                                      <li class="list-inline-item pr-2 white-text"><i class="fa fa-clock-o pr-1"></i>05/06/2018</li>
-                                      <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-user-circle-o pr-1"></i>1</a></li>
-                                      <li class="list-inline-item pr-2"><a href="#!" class="white-text"><i class="fa fa-facebook pr-1"> </i>22</a></li>
-                                    </ul>
-                                  </div>
-
-                                </div>
-                                <!-- Card -->
-                            </div>
-                            <!--Grid column-->
-                            <div class="col-md-1"></div>
-                        </div> 
+                          </div>
+                      </div>
                     </div>
-                    <!--/.Panel 1-->
-                    <!--Panel 2-->
-                    <div class="tab-pane fade" id="projects" role="tabpanel">
-                        <br>
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-4 mb-4">
-
-                                <div class="view overlay z-depth-1-half">
-                                    <img src="img/mattrab.jpg" class="img-fluid" alt="">
-                                    <div class="mask rgba-white-slight"></div>
-                                </div>
-
-                                <h5 class="my-3">MATTRAB TUTORIAL WEBSITE</h5>
-                                <a href="https://mattrab.000webhostapp.com/"><button type="button" class="btn btn-default btn-sm">Live Preview<i class="fa fa-eye ml-2"></i></button></a>
-
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-4 mb-4">
-
-                                <div class="view overlay z-depth-1-half">
-                                    <img src="img/sbs.jpg" class="img-fluid" alt="">
-                                    <div class="mask rgba-white-slight"></div>
-                                </div>
-
-                                <h5 class="my-3">SSBS OFFICIAL WEBSITE</h5>
-                                <a href="ssbs/index.html"><button type="button" class="btn btn-default btn-sm">Live Preview<i class="fa fa-eye ml-2"></i></button></a>
-
-                            </div>
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-4 mb-4">
-
-                                <div class="view overlay z-depth-1-half">
-                                    <img src="img/sx3c.jpg" class="img-fluid" alt="">
-                                    <div class="mask rgba-white-slight"></div>
-                                </div>
-
-                                <h5 class="my-3">SX3C OFFICIAL WEBSITE</h5>
-                                <a href="sx3c/index.html"><button type="button" class="btn btn-default btn-sm">Live Preview<i class="fa fa-eye ml-2"></i></button></a>
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--/.Panel 2-->
-                    <!--Panel 3-->
-                    <div class="tab-pane fade" id="games" role="tabpanel">
-                        <br>
-                        <div class="row">
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-12 mb-4">
-
-                                <div class="view overlay z-depth-1-half">
-                                    <img src="img/apple-fall.jpg" class="img-fluid" alt="">
-                                    <div class="mask rgba-white-slight"></div>
-                                </div>
-
-                                <h5 class="my-3">APPLE FALL</h5>
-                                <p class="grey-text">Apple Fall is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com">Matt Sir</a>.</p>
-                                <a href="games/apple-fall/game.html"><button type="button" class="btn btn-default btn-sm">Play<i class="fa fa-play ml-2"></i></button></a>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-
-                                <div class="view overlay z-depth-1-half">
-                                    <img src="img/face-puzzle.jpg" class="img-fluid" alt="">
-                                    <div class="mask rgba-white-slight"></div>
-                                </div>
-
-                                <h5 class="my-3">FACE PUZZLE</h5>
-                                <p class="grey-text">Face Puzzle is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com">Matt Sir</p>
-                                <a href="games/face-puzzle.html"><button type="button" class="btn btn-default btn-sm">Play<i class="fa fa-play ml-2"></i></button></a>
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-
-                                <div class="view overlay z-depth-1-half">
-                                    <img src="img/birthday.jpg" class="img-fluid" alt="">
-                                    <div class="mask rgba-white-slight"></div>
-                                </div>
-
-                                <h5 class="my-3">HAPPY BIRTHDAY</h5>
-                                <p class="grey-text">Happy Birthday is the new Game I'm working with. It will be released soon and You will be able to play it.</p>
-                                <button type="button" class="btn btn-default btn-sm" disabled>Play<i class="fa fa-play ml-2"></i></button>
-                            </div>
-                            <!--Grid column-->
-                        </div> 
-                    </div>
-                    <!--/.Panel 3-->
-
-                    <!--Panel 4-->
-                    <div class="tab-pane fade" id="m2r" role="tabpanel">
-                        <br>
-                        <div class="row text-center" style="min-height:300px;">
-                            <div class="container">
-                                <br><br><br><br>
-                                <a href="oop/bank/index.html" target="_blank"><button type="button" class="btn btn-default btn-md">BANK ACCOUNT<i class="fa fa-play ml-2"></i></button></a>
-                                <a href="oop/surya/index.html" target="_blank"><button type="button" class="btn btn-default btn-md">SURYA FAMILY<i class="fa fa-play ml-2"></i></button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.Panel 4-->
-
-                    <!--Panel 5-->
-                    <div class="tab-pane fade" id="store" role="tabpanel">
-                        <br>
-                        <div class="row">
-                            <div class="col-md-4">
-                                
-                                <!-- Card -->
-                                <div class="card card-cascade wider reverse">
-
-                                  <!-- Card image -->
-                                  <div class="view overlay">
-                                    <img class="card-img-top" src="img/poem.jpg" alt="Card image cap">
-                                    <a href="#!">
-                                      <div class="mask rgba-white-slight"></div>
-                                    </a>
-                                  </div>
-
-                                  <!-- Card content -->
-                                  <div class="card-body text-center">
-
-                                    <!-- Title -->
-                                    <h4 class="card-title"><strong>My Arts</strong></h4>
-                                    <!-- Text -->
-                                    <p class="card-text">I have writtten a book with the story expressed in poems.</p>
-
-                                    <button type="button" class="btn btn-default btn-sm">See More<i class="fa fa-play ml-2"></i></button></a>
-
-                                  </div>
-
-                                </div>
-                                <!-- Card -->
-            
-                            </div>
-                            <div class="col-md-4">
-                                <!-- Card -->
-                                <div class="card card-cascade wider reverse">
-
-                                  <!-- Card image -->
-                                  <div class="view overlay">
-                                    <img class="card-img-top" src="img/matt-sir.jpg" alt="Card image cap">
-                                    <a href="#!">
-                                      <div class="mask rgba-white-slight"></div>
-                                    </a>
-                                  </div>
-
-                                  <!-- Card content -->
-                                  <div class="card-body text-center">
-
-                                    <!-- Title -->
-                                    <h4 class="card-title"><strong>TYSM Matt Sir</strong></h4>
-                                    <!-- Text -->
-                                    <p class="card-text">The days I enjoyed with you together,<br> Will be memorable for me forever!</p>
-
-                                    <button type="button" class="btn btn-default btn-sm">See More<i class="fa fa-play ml-2"></i></button></a>
-
-                                  </div>
-
-                                </div>
-                                <!-- Card -->
-                            </div>
-                            <div class="col-md-4">
-                                <!-- Card -->
-                                <div class="card card-cascade wider reverse">
-
-                                  <!-- Card image -->
-                                  <div class="view overlay">
-                                    <img class="card-img-top" src="img/updates.jpg" alt="Card image cap">
-                                    <a href="#!">
-                                      <div class="mask rgba-white-slight"></div>
-                                    </a>
-                                  </div>
-
-                                  <!-- Card content -->
-                                  <div class="card-body text-center">
-
-                                    <!-- Title -->
-                                    <h4 class="card-title"><strong>Recent Updates</strong></h4>
-                                    <!-- Text -->
-                                    <p class="card-text">Personal Website development tutorial series has been uploaded to YouTube.</p>
-
-                                    <a href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA"><button type="button" class="btn btn-default btn-sm">Visit YouTube<i class="fa fa-external-link ml-2"></i></button></a>
-
-                                  </div>
-
-                                </div>
-                                <!-- Card -->
-                            </div>
-                        </div>
-                    </div>
-                    <!--/.Panel 5-->
+                  </li>
                 </div>
-
-            </section>
-            <!--Section: Portfolio-->
-
-            <hr class="my-5">
-
-            <!--Section: Gallery-->
-            <section id="gallery">
-
-                <!-- Heading -->
-                <h1 class="display-4 mb-4 text-center">YouTube Gallery</h1>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6 mb-4">
-
-                        <!--Carousel Wrapper-->
-                        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-                            <!--Indicators-->
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                            </ol>
-                            <!--/.Indicators-->
-                            <!--Slides-->
-                            <div class="carousel-inner z-depth-1-half" role="listbox">
-                                <!--First slide-->
-                                <div class="carousel-item active">
-                                    <img class="d-block w-100" src="img/youtube1.jpg" alt="First slide">
-                                </div>
-                                <!--/First slide-->
-                                <!--Second slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/youtube2.jpg" alt="Second slide">
-                                </div>
-                                <!--/Second slide-->
-                                <!--Third slide-->
-                                <div class="carousel-item">
-                                    <img class="d-block w-100" src="img/youtube3.jpg" alt="Third slide">
-                                </div>
-                                <!--/Third slide-->
-                            </div>
-                            <!--/.Slides-->
-                            <!--Controls-->
-                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                            <!--/.Controls-->
-                        </div>
-                        <!--/.Carousel Wrapper-->
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-
-                        <!--Excerpt-->
-                        <a href="" class="teal-text">
-                            <h5 class="pb-1">
-                                <i class="fa fa-youtube-square"></i>
-                                <strong> CODE BRAiN </strong>
-                            </h5>
-                        </a>
-                        <h4 class="mb-3">
-                            <strong>This is little about my Channel</strong>
-                        </h4>
-                        <p>CODE BRAiN is the channel that gives you the Basics to Advanced guidance for your Coding Passion.</p>
-
-                        <p>This channel helps you to be the professional programmer in short time. We have the included the video related to the creation of different interesting websites. This will help you a lot to increase your programming abilities. You give us a subscribe, we'll make you a successful person. We guarantee that you enjoy coding with us.</p>
-                        <p>#ANY BODY CAN CODE :)</p>
-                        <a class="btn btn-default btn-md" href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA">Visit My Channel<i class="fa fa-external-link ml-2"></i></a>
-
-                    </div>
-                    <!--Grid column-->
-
+              </div>
+              <div class="col-md-5" style="padding-right:0!important;">
+                <div class="tcb-profile-card">
+                  <img src="img/tcblogo.png" alt="TCB's Profile Image">
+                  <p class="title wow fadeIn">Learn Coding with one Click!</p>
+                  <p class="text wow fadeIn">Coding · Programming · What · How · All</p>
+                  <a class="scroll-link" href="https://www.youtube.com/thecodingbrain">
+                    <button type="button" class="wow bounceIn btn">Visit TCB World <i class="fa fa-chevron-right"></i></button>
+                  </a>
                 </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Gallery-->
-
-            <hr class="my-5">
-
-            <!--Section: Contact-->
-            <section id="contact">
-
-                <!-- Heading -->
-                <h1 class="display-4 mb-4 text-center">Contact Me</h1>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-lg-5 col-md-12">
-
-                        <!-- Form contact -->
-                        <form class="p-5" method="POST" action="https://formspree.io/rabinkalikote33@gmail.com">
-
-                          <div class="md-form form-sm">
-                            <input name="name" type="text" id="form3" class="form-control form-control-sm">
-                            <label for="form3">Your name</label>
-                          </div>
-
-                          <div class="md-form form-sm">
-                            <input name="email" type="email" id="form2" class="form-control form-control-sm">
-                            <label for="form2">Your email</label>
-                          </div>
-
-                          <div class="md-form form-sm">
-                            <input name="subject" type="text" id="form32" class="form-control form-control-sm">
-                            <label for="form34">Subject</label>
-                          </div>
-
-                          <div class="md-form form-sm">
-                            <textarea name="message" type="text" id="form8" class="md-textarea form-control form-control-sm" rows="4"></textarea>
-                            <label for="form8">Your message</label>
-                          </div>
-
-                          <div class="text-center mt-4">
-                            <button type="submit" class="btn btn-default">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
-                          </div>
-                        </form>
-                        <!-- Form contact -->
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-lg-7 col-md-12">
-
-                        <!--Grid row-->
-                        <div class="row text-center">
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-12 mb-3">
-
-                                <p>
-                                    <i class="fa fa-map fa-1x mr-2 grey-text"></i>Kathmandu, Nepal</p>
-
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-3">
-
-                                <p>
-                                    <i class="fa fa-building fa-1x mr-2 grey-text"></i>Sun - Fri, 10:00-18:00</p>
-
-                            </div>
-                            <!--Grid column-->
-
-                            <!--Grid column-->
-                            <div class="col-lg-4 col-md-6 mb-3">
-
-                                <p>
-                                    <i class="fa fa-phone fa-1x mr-2 grey-text"></i>+ 977 9811 014014</p>
-
-                            </div>
-                            <!--Grid column-->
-
-                        </div>
-                        <!--Grid row-->
-
-                        <!--Google map-->
-                        <div id="map-container" class="z-depth-1-half map-container mb-5" style="height:400px"></div>
-
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-            </section>
-            <!--Section: Contact-->
-
-        </div>
-    </main>
-    <!--Main layout-->
-
-    <!--Footer-->
-    <footer class="page-footer font-small unique-color-dark pt-0">
-
-        <!-- Social buttons -->
-        <div class="default-color">
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="portfolio">
+          <div class="container-fluid" id="portfolio">
             <div class="container">
-                <!--Grid row-->
-                <div class="row py-4 d-flex align-items-center">
+              <div class="row" style="padding-top:5rem;">
+                <div class="port-container">
+                  <h3 class="card-title wow slideInUp">Portfolio</h3>
+                  <div class="port-tab wow fadeIn">
+                    <div class="container">
 
-                    <!--Grid column-->
-                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                        <h6 class="mb-0 white-text">GET CONNECTED WITH ME ON SOCIAL NETWORKS!</h6>
+                      <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#codes">My Codes</a></li>
+                        <li><a data-toggle="tab" href="#projects">My Projects</a></li>
+                        <li><a data-toggle="tab" href="#games">My Games</a></li>
+                        <li><a data-toggle="tab" href="#store">Store</a></li>
+                      </ul>
+
+                      <div class="tab-content">
+                        <div id="codes" class="tab-pane fade in active">
+                          <br>
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="hero-image">
+                                  <div class="hero-text">
+                                    <h1>Rabin-Kalikote.github.io</h1>
+                                    <p>This includes the different pages and codes for my webpages. (Website)</p>
+                                    <a class="scroll-link" target="_blank" href="https://github.com/Rabin-Kalikote/Rabin-Kalikote.github.io">
+                                      <button type="button" class="wow bounceIn btn">View Codes <i class="fa fa-chevron-right"></i></button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="hero-image">
+                                  <div class="hero-text">
+                                    <h1>Cplusplus-Stack-Problem</h1>
+                                    <p>This includes the solution of stack problem. (Second challenge assigned by Matt Sir)</p>
+                                    <a class="scroll-link" target="_blank" href="https://github.com/Rabin-Kalikote/Cplusplus-Stack-Problem">
+                                      <button type="button" class="wow bounceIn btn">View Codes <i class="fa fa-chevron-right"></i></button>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div id="projects" class="tab-pane fade">
+                          <br>
+                          <div class="row">
+                              <div class="col-lg-4 col-md-4 mb-4">
+                                <div class="laptop">
+                                  <div class="content">
+                                    <img src="img/mattrab.jpg" class="img-fluid" alt="">
+                                  </div>
+                                </div>
+                                <h5 class="my-3">MATTRAB TUTORIAL WEBSITE</h5>
+                                <a href="https://mattrab.000webhostapp.com/"><button type="button" class="btn btn-default btn-sm">Live Preview <i class="fa fa-eye ml-2"></i></button></a>
+                              </div>
+                              <div class="col-lg-4 col-md-4 mb-4">
+                                <div class="laptop">
+                                  <div class="content">
+                                    <img src="img/sbs.jpg" class="img-fluid" alt="">
+                                  </div>
+                                </div>
+                                  <h5 class="my-3">SSBS OFFICIAL WEBSITE</h5>
+                                  <a href="ssbs/index.html"><button type="button" class="btn btn-default btn-sm">Live Preview <i class="fa fa-eye ml-2"></i></button></a>
+                              </div>
+                              <div class="col-lg-4 col-md-4 mb-4">
+                                <div class="laptop">
+                                  <div class="content">
+                                    <img src="img/sx3c.jpg" class="img-fluid" alt="">
+                                  </div>
+                                </div>
+                                  <h5 class="my-3">SX3C OFFICIAL WEBSITE</h5>
+                                  <a href="sx3c/index.html"><button type="button" class="btn btn-default btn-sm">Live Preview <i class="fa fa-eye ml-2"></i></button></a>
+                              </div>
+                          </div>
+                        </div>
+                        <div id="games" class="tab-pane fade">
+                          <br>
+                          <div class="row">
+                              <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="hero-image">
+                                  <div class="hero-text">
+                                    <h1>Apple Fall</h1>
+                                    <p>Apple Fall is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com" style="color:#fff;">Matt Sir</a>.</p>
+                                    <a href="games/apple-fall/game.html"><button type="button" class="btn btn-default btn-sm">Play Now <i class="fa fa-play ml-2"></i></button></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="hero-image">
+                                  <div class="hero-text">
+                                    <h1>Face Puzzle</h1>
+                                    <p>Face Puzzle is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com" style="color:#fff;">Matt Sir</a>.</p>
+                                    <a href="games/face-puzzle.html"><button type="button" class="btn btn-default btn-sm">Play Now <i class="fa fa-play ml-2"></i></button></a>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div id="store" class="tab-pane fade">
+                          <br>
+                          <div class="row">
+                            <div class="col-lg-4 col-md-4 mb-4">
+                              <div class="container">
+                                <img src="img/poem.jpg" alt="Jindagiko Baato" class="image">
+                                <div class="overlay">
+                                  <div class="text">'Jindagiko Baato' is a play with the story expressed in poems.</div>
+                                </div>
+                              </div>
+                              <h5 class="my-3">My Arts</h5>
+                              <a href="#"><button type="button" class="btn btn-default btn-sm">See More <i class="fa fa-play ml-2"></i></button></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 mb-4">
+                              <div class="container">
+                                <img src="img/matt-sir.jpg" alt="Matt Sir" class="image">
+                                <div class="overlay">
+                                  <div class="text">The days I enjoyed with you together, Will be memorable for me forever!</div>
+                                </div>
+                              </div>
+                              <h5 class="my-3">TYSM Matt Sir</h5>
+                              <a href="#"><button type="button" class="btn btn-default btn-sm">See More <i class="fa fa-play ml-2"></i></button></a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 mb-4">
+                              <div class="container">
+                                <img src="img/updates.jpg" alt="New Update" class="image">
+                                <div class="overlay">
+                                  <div class="text">Brand new How To Videos has been uploaded to YouTube.</div>
+                                </div>
+                              </div>
+                              <h5 class="my-3">Recent Updates</h5>
+                              <a href="https://www.youtube.com/thecodingbrain"><button type="button" class="btn btn-default btn-sm">Visit YouTube <i class="fa fa-external-link ml-2"></i></button></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6 col-lg-7 text-center text-md-right">
-                        <!--Facebook-->
-                        <a href="https://www.facebook.com/KalikoteRabin" class="fb-ic ml-0">
-                            <i class="fa fa-facebook white-text mr-4"> </i>
-                        </a>
-                        <!--Google +-->
-                        <a href="https://plus.google.com/117116963754715013919" class="gplus-ic">
-                            <i class="fa fa-google-plus white-text mr-4"> </i>
-                        </a>
-                        <!--GitHub-->
-                        <a href="https://github.com/Rabin-Kalikote" class="gi-ic">
-                            <i class="fa fa-github white-text mr-4"> </i>
-                        </a>
-                        <!--Instagram-->
-                        <a href="https://www.instagram.com/lucky_rabin" class="ins-ic">
-                            <i class="fa fa-instagram white-text mr-lg-4"> </i>
-                        </a>
-                        <!--Gmail-->
-                        <a href="mailto:rabinkalikote33@gmail.com" class="gm-ic">
-                            <i class="fa fa-envelope-square white-text mr-lg-4"> </i>
-                        </a>
-                        <!--YouTube-->
-                        <a href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA" class="yt-ic">
-                            <i class="fa fa-youtube-square white-text mr-lg-4"> </i>
-                        </a>
-                    </div>
-                    <!--Grid column-->
-
+                  </div>
                 </div>
-                <!--Grid row-->
+              </div>
             </div>
-        </div>
-        <!-- Social buttons -->
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact">
+          <div class="container-fluid" id="contact">
+            <div class="container">
+              <div class="col-md-12 contact-me">
+                <h3 class="card-title wow slideInUp">Let's Talk</h3>
+                <p class="title wow fadeIn">I will be Happy to hear from you.</p>
+                <form  method="POST" action="https://formspree.io/rabinkalikote33@gmail.com">
+                  <div class="col-md-6 left"style="padding-left: 0px;">
+                    <input type="text" id="name"  class="wow fadeIn" name="name" placeholder="Your name.." style="width:49%; float:left;">
 
-        <!--Footer Links-->
-        <div class="container mt-5 mb-4 text-center text-md-left">
-            <div class="row mt-3">
+                    <input type="email" id="email"  class="wow fadeIn" name="email" placeholder="Your email.." style="width:49%; float:left; margin-left:2%;">
 
-                <!--First column-->
-                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>My Aims &amp; Interests</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>In future, I want to do something for my nation contributing something to my community. Nepal is a developing country. I want to speed up the developing speed of my nation making it able to stand with advanced technology and science.</p>
-                </div>
-                <!--/.First column-->
-
-                <!--Second column-->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>YouTube Videos</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="https://bit.ly/2NrjV7S">Personal Website Tutorials</a>
-                    </p>
-                    <p>
-                        <a href="https://bit.ly/2ODiKa0">HTML Tutorials<br></a>
-                    </p>
-                    <p>
-                        <a href="https://bit.ly/2RuH508">QBASIC Tutorials<br></a>
-                    </p>
-                    <p>
-                        <a href="https://bit.ly/2NtDdtc">Learn How To - Mixed<br></a>
-                    </p>
-                </div>
-                <!--/.Second column-->
-
-                <!--Third column-->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Useful links</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <a href="https://www.youtube.com/channel/UCyHYpWkzKq3fRhpNOriIkXA">My YouTube Channel</a>
-                    </p>
-                    <p>
-                        <a href="https://github.com/Rabin-Kalikote">GitHub</a>
-                    </p>
-                    <p>
-                        <a href="https://www.facebook.com/KalikoteRabin">Facebook</a>
-                    </p>
-                    <p>
-                        <a href="https://www.instagram.com/lucky_rabin">Instagram</a>
-                    </p>
-                </div>
-                <!--/.Third column-->
-
-                <!--Fourth column-->
-                <div class="col-md-4 col-lg-3 col-xl-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <strong>Contact</strong>
-                    </h6>
-                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                    <p>
-                        <i class="fa fa-home mr-3"></i> Kathmandu, Nepal</p>
-                    <p>
-                        <i class="fa fa-envelope mr-3"></i> rabinkalikote33@gmail.com</p>
-                    <p>
-                        <i class="fa fa-phone mr-3"></i> + 977 9811 014014</p>
-                    <p>
-                        <i class="fa fa-print mr-3"></i> + 977 9816 368568</p>
-                </div>
-                <!--/.Fourth column-->
-
+                    <input type="text" id="subject"  class="wow fadeIn" name="subject" placeholder="Subject..">
+                  </div>
+                  <div class="col-md-6 right"style="padding-right: 0px;">
+                    <textarea id="messeges"  class="wow fadeIn" name="messeges" placeholder="Your Messege.." style="height:92px"></textarea>
+                  </div>
+                  <input type="submit"  class="wow fadeIn" value="Send">
+                </form>
+              </div>
             </div>
-        </div>
-        <!--/.Footer Links-->
-
-        <!--Copyright-->
-        <div class="footer-copyright py-3 text-center">
-            © 2018 Copyright: Rabin K. Kalikote
-        </div>
-        <!--/.Copyright-->
-
-    </footer>
-    <!--/.Footer-->
-
-
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-
-    <!--Google Maps-->
-    <script src="https://maps.google.com/maps/api/js"></script>
-
-    <!-- Google Maps settings -->
-    <script>
-        // Regular map
-        function regular_map() {
-            var var_location = new google.maps.LatLng(27.7062, 85.3151);
-
-            var var_mapoptions = {
-                center: var_location,
-                zoom: 14
-            };
-
-            var var_map = new google.maps.Map(document.getElementById("map-container"),
-                var_mapoptions);
-
-            var var_marker = new google.maps.Marker({
-                position: var_location,
-                map: var_map,
-                title: "New York"
-            });
-        }
-
-        // Initialize maps
-        google.maps.event.addDomListener(window, 'load', regular_map);
-    </script>
-
-    <!-- Carousel options -->
-    <script>
-        $('.carousel').carousel({
-            interval: 3000,
-        })
-
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            $('html,body').animate({scrollTop:$(this.hash).offset().top-100}, 750);
-        });
-    </script>
-</body>
-
+          </div>
+        </section>
+        <!-- Footer Section -->
+        <footer>
+          <div class="container-fluid" id="footer">
+            <div class="container wow fadeIn">
+              <div class="col-md-3 col-sm-6">
+                <img src="img/logo.png" alt="R<"> <span>Kalikote</span>
+                <p class="at-text">© 2019 Rabin Kalikote</p>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <p class="footer-title">Recent TCB Posts</p>
+                <p style="font-family:lig;">TCB Blog is under Construction.</p>
+                <br><br>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <p class="footer-title">TCB on YouTube</p>
+                <ul class="footer-links">
+                  <li><a href="https://youtu.be/YrcpXYpyQxY">Create Website for free.</a></li>
+                  <li><a href="https://youtu.be/-1cTLIFNgGI">Make Brand Logo for free.</a></li>
+                  <li><a href="https://youtu.be/GNOuhEv-Tc4">Recover deleted files fo free.</a></li>
+                  <li><a href="https://youtu.be/LzQuGCksTlA">5 websites to learn Coding.</a></li>
+                </ul>
+                <br>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <p class="footer-title">Meet on Social.</p>
+                <ul class="footer-icons">
+                  <li><a href="https://www.facebook.com/KalikoteRabin"><i class="fa fa-2x fa-facebook-square"></i></a></li>
+                  <li><a href="https://github.com/Rabin-Kalikote"><i class="fa fa-2x fa-github-square"></i></a></li>
+                  <li><a href="https://www.instagram.com/lucky_rabin"><i class="fa fa-2x fa-instagram"></i></a></li>
+                  <li><a href="mailto:rabinkalikote33@gmail.com"><i class="fa fa-2x fa-envelope-square"></i></a></li>
+                  <li><a href="https://www.youtube.com/thecodingbrain"><i class="fa fa-2x fa-youtube-square"></i></a></li>
+                </ul>
+                <p class="at-text">@ 2019 Kalikote Rabin</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </body>
+    <script src="js/main.js"></script>
 </html>
