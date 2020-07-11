@@ -268,7 +268,7 @@ nav .nav-container{
   width: 100%;
   height: 400px;
 }
-.face .col-md-5 > .slider > a {
+.face .col-md-5 > .slider > div {
   position: absolute;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;
@@ -277,7 +277,7 @@ nav .nav-container{
   display: none;
   transform: rotate(8deg);
 }
-.face .col-md-5 > .slider > a img {
+.face .col-md-5 > .slider > div img {
   padding: 4px;
   border: 1px solid #ccc;
   background: #fff;
