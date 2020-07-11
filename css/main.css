@@ -13,7 +13,6 @@ html, body{
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  overflow-y: scroll;
 }
 .centered {
     text-align:center;
@@ -304,25 +303,19 @@ nav .nav-container{
 .face .col-md-7.intro-title .content{
   padding-top: 15vh;
 }
+.face .col-md-7.intro-title .content > h1{
+  font-family: bol;
+  font-size: 58px;
+  text-align: center;
+  color: #fff !important;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.4);
+}
 .face .col-md-7.intro-title .content > h4{
   font-family: bol;
   font-size: 30px;
   text-align: center;
   color: #fff !important;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.4);
-}
-.face .col-md-7.intro-title .content > p{
-  font-family: med;
-  font-size: 20px;
-  text-align: center;
-  margin-top: 3rem;
-  color: #fff !important;
-  text-shadow: 0 0.06em 0.4em rgba(0,0,0,0.5);
-}
-@media screen and (max-width:640px) {
-  .face .col-md-7.intro-title .content > p{
-    font-size: 17px;
-  }
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
 }
 .face .col-md-7.intro-title .content a {
   text-decoration: none;
@@ -395,6 +388,19 @@ nav .nav-container{
   font-size: 15px;
   font-family: boo;
   text-align: right
+}
+@media (max-width: 991.98px) {
+  .container .about-me h3 {font-size: 33px; text-align: center;}
+  .container .about-me p.title { text-align: center;}
+  .container .about-me p { text-align: justify;}
+}
+.container .about-me p a{
+  transition: all .2s ease-in-out;
+  color: #333;
+}
+.container .about-me p a:hover{
+  text-decoration: none;
+  color: #5fcf80;
 }
 
 /* Resume section */
@@ -582,12 +588,10 @@ nav .nav-container{
   font-size: 13px;
 }
 
-
 .tcb-profile-card > img {
   height: 100%;
   width: 50%;
   margin-left: 50%;
-  margin-top: 4%;
 }
 .tcb-profile-card p.title {
   font-family: med;
@@ -612,8 +616,8 @@ nav .nav-container{
   float: right;
   font-family: med;
 }
-  .tcb-profile-card a:hover .btn,
-  .tcb-profile-card a:focus .btn {
+.tcb-profile-card a:hover .btn,
+.tcb-profile-card a:focus .btn {
   margin-top: .9rem;
   padding: 1.1rem 2.1rem;
   font-size: 17px;
@@ -621,22 +625,21 @@ nav .nav-container{
 }
 
 /* Portfolio section */
-.port-container {
-    display: block;
-    background: rgba(56,123,171,1);
-    border-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    border-radius: 0px;
-    width: 100%;
-    position: relative;
-    padding: 4rem;
+#portfolio{
+  margin-top: 5rem;
+  min-height: 62rem;
+  background: rgba(56,123,171,1);
 }
-@media screen and (max-width:640px) {
-  .port-container {
-    padding: 4rem .3rem;
-  }
+.port-container {
+  display: block;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+  position: relative;
+  padding: 4rem 0;
 }
 .port-container h3.card-title {
   font-size: 43px;
@@ -937,6 +940,23 @@ nav .nav-container{
   background: #5fcf80;
 }
 
+#watch .video{
+  width: 100%;
+  height: auto;
+}
+#watch .video > iframe {
+  border: 1px solid #ccc;
+  min-height: 261px;
+  width: 100%;
+  border-radius:3px;
+}
+#watch h5{
+  color: #fff;
+  font-family: med;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 
 /* Contact section */
 .contact-me h3.card-title {

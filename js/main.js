@@ -42,7 +42,7 @@ var intervalId = setTimeout(function(){
     var intervalId2nd = setTimeout(function(){
       $('h4').removeClass('fadeOut');
       $('h4').addClass('fadeIn');
-      document.getElementById("face-heaer").innerHTML="HERE IS ME YOUR LUKCY GUY RABIN";
+      document.getElementById("face-heaer").innerHTML="WELCOME TO MY WORLD";
     },1000);
 },4000);
 
