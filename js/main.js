@@ -8,6 +8,7 @@ if('serviceWorker' in navigator){
     .then(reg => console.log('service worker registered'))
     .catch(err => console.log('service worker not registered', err));
 }
+alert("app");
 
 new WOW().init(); // activation of wow.js
 
