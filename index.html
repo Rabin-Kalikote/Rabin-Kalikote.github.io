@@ -500,4 +500,11 @@ Copyright (c): Rabin K. Kalikote. -->
         </footer>
     </body>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+      if('serviceWorker' in navigator){
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('service worker registered'))
+          .catch(err => console.log('service worker not registered', err));
+      }
+    </script>
 </html>
