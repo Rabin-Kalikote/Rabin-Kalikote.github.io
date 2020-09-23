@@ -2,19 +2,19 @@
 //   /* for the functioning of personal website*/
 //   /* Copyright (c): Rabin K. Kalikote*/
 
+// PWA freatures
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js')
+    .then(reg => console.log('service worker registered'))
+    .catch(err => console.log('service worker not registered', err));
+}
+
 new WOW().init(); // activation of wow.js
 
 $(".hamburger-button").click( function(){
 	$(".hamburger-button").toggleClass("close");
 	$(".nav").toggleClass("opened");
 });
-
-// PWA features
-if('serviceWorker' in navigator){
-  navigator.serviceWorker.register('/sw.js')
-    .then(reg => console.log('service worker registered'))
-    .catch(err => console.log('service worker not registered', err));
-}
 
 // Home Slider
 var slideIndex = 0;

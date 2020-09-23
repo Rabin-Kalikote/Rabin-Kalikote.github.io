@@ -43,7 +43,7 @@ const assets = [
   '/img/tcblogo.jpg',
   '/img/updates.jpg',
   '/library/font-awesome/css/font-awesome.css',
-  '/library/Jindagi-Ko-Bato-By-Rabin-Kalikote.pdf'
+  '/library/Jindagi-Ko-Bato-By-Rabin-Kalikote.pdf',
 ];
 
 // install event
