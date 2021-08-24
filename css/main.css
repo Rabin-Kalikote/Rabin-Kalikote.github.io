@@ -505,51 +505,6 @@ nav .nav-container{
     border-radius: 5rem;
 }
 
-
-.progress {
-    height: 2px;
-    margin-bottom: 20px;
-    background-color: #d9d9d9;
-    border-radius: 0;
-    box-shadow: none;
-    overflow: visible;
-}
-
-.progress-bar {
-    line-height: 8px;
-    background-color: #F34452 !important;
-    box-shadow: none;
-    position: relative;
-}
-
-.progress-bar span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #000;
-    background: #fff;
-    font-weight: 400;
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    box-shadow: 0 3px 6px rgba(0,0,0,.3);
-}
-
-.progress-bar-label {
-    font-weight: 400;
-    font-size: 15px;
-    font-family:lig;
-    margin-bottom: 10px;
-}
-
-.progress-bar-label span {
-	font-size: 13px;
-    font-weight: 400;
-    font-family:lig;
-}
-
 .icon-list li {
     list-style:none;
 }
@@ -562,17 +517,24 @@ nav .nav-container{
     color: #F34452;
 }
 
-#education .feature-title {
+#education .feature-title .badge,
+#experience .feature-title .badge {
+  font-weight: 400;
+}
+#education .feature-title,
+#experience .feature-title {
   font-size: 15px;
   font-family: lig;
 }
-#education .feature-title > img {
+#education .feature-title > img,
+#experience .feature-title > img {
   width: 15px;
   height: 18px;
   margin-right: .7rem;
   border-radius: 2px;
 }
-#education .grey-text {
+#education .grey-text,
+#experience .grey-text {
   font-size: 13px;
   font-family: lig;
 }
