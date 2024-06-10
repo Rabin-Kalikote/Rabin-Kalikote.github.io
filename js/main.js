@@ -30,6 +30,35 @@ function showSlides() {
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
+// Define the roles for the loop
+var roles = ["Founder & CEO of Ask Mattrab", "Honours CS Student at College of Idaho", "Co-President of Coding Club (3CI)", "Former President of Computer Club (SX3C)", "Author of 'Jindagiko Baato'", "YouTuber at Friend of Computer"];
+
+function typeText(text, callback) {
+    var i = 0;
+    var speed = 30;
+
+    var interval = setInterval(function() {
+      $("#roles").text(text.substring(0, i + 1));
+      i++;
+      if (i === text.length) {
+        clearInterval(interval);
+        callback();
+      }
+    }, speed);
+}
+
+var roleIndex = 0;
+function updateRole() {
+    typeText(roles[roleIndex], function() {
+      setTimeout(function() {
+        $("#roles").text("");
+        roleIndex = (roleIndex + 1) % roles.length;
+        updateRole();
+      }, 2000);
+    });
+}
+updateRole(); // Initial call to set the role
+
 // Making the page scrolling when the link is clicked.
  $('.scroll-link').on('click', function(event){
      // prevent the default thing from happening
