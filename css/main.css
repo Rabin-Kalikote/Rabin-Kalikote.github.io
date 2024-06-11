@@ -23,7 +23,6 @@ html, body{
     width: 100%;
     vertical-align: middle;
 }
-.d-none{ display: none!important; }
 
 /* Header/Navigation */
 nav.nav{
@@ -763,6 +762,7 @@ nav .nav-container{
             margin-top: -10px;
         }
     }
+    .d-none{ display: none; }
     .video-container {
         margin: 20px;
         .video-toggle {
