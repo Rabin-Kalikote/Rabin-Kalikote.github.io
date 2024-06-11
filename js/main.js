@@ -59,6 +59,37 @@ function updateRole() {
 }
 updateRole(); // Initial call to set the role
 
+$(".video-toggle button").click(function() {
+    $(".video-toggle button").removeClass("active");
+    var videoId = $(this).data("video");
+    
+    $(this).addClass("active");
+    $(".video-wrapper .video-slider").addClass('d-none');
+    $(".video-wrapper").find('.' + videoId).removeClass('d-none');
+});
+
+$(".next-btn").click(function() {
+    var slider = $(this).closest(".video-slider").find(".slider-container");
+    var currentSlide = slider.find(".slider-item:not(.d-none)");
+    var next = currentSlide.next()
+    if (next.length > 0) {
+        next.removeClass("d-none");
+        currentSlide.addClass("d-none");
+    }
+    
+});
+
+$(".prev-btn").click(function() {
+    var slider = $(this).closest(".video-slider").find(".slider-container");
+    var currentSlide = slider.find(".slider-item:not(.d-none)");
+    var prev = currentSlide.prev()
+    if (prev.length > 0) {
+        prev.removeClass("d-none");
+        currentSlide.addClass("d-none");
+    }
+});
+  
+
 // Making the page scrolling when the link is clicked.
  $('.scroll-link').on('click', function(event){
      // prevent the default thing from happening
@@ -71,22 +102,4 @@ updateRole(); // Initial call to set the role
 $('.nav-link-about').on('click', function(event){
      event.preventDefault();
      $('html,body').animate({scrollTop:$(this.hash).offset().top-170}, 750);
-});
-
-var intervalId = setTimeout(function(){
-    $('h4').addClass('fadeOut');
-    var intervalId2nd = setTimeout(function(){
-      $('h4').removeClass('fadeOut');
-      $('h4').addClass('fadeIn');
-      document.getElementById("face-heaer").innerHTML="WELCOME TO MY WORLD";
-    },1000);
-},4000);
-
-// When Resune Acc. button is cicked.
-$('.acc-btn').on('click', function(event){
-  event.preventDefault(); //Prevents switching submenu view.
-  var currTab = $(this);
-  var refElement = $(currTab.attr("href"));
-  $('.acc-item').removeClass('active');
-  refElement.addClass('active');
 });
