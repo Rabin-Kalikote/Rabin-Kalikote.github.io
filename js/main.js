@@ -16,47 +16,35 @@ $(".hamburger-button").click( function(){
 	$(".nav").toggleClass("opened");
 });
 
-// Home Slider
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("slide");
-  for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
-
 // Define the roles for the loop
-var roles = ["Founder & CEO of Ask Mattrab", "Honours CS Student at College of Idaho", "Co-President of Coding Club (3CI)", "Former President of Computer Club (SX3C)", "Author of 'Jindagiko Baato'", "YouTuber at Friend of Computer"];
-
-function typeText(text, callback) {
-    var i = 0;
-    var speed = 30;
-
-    var interval = setInterval(function() {
-      $("#roles").text(text.substring(0, i + 1));
-      i++;
-      if (i === text.length) {
-        clearInterval(interval);
-        callback();
-      }
-    }, speed);
-}
+var icons = ['fas fa-lightbulb', 'fas fa-gears', 'fas fa-chalkboard', 'fas fa-graduation-cap', 'fas fa-code', 'fab fa-youtube', 'fas fa-feather-pointed', 'fas fa-face-laugh-beam']
+var roles = ["Founder & CEO", "Software Engineer", "Passionate Teacher", "Honors Student", "Coding Club President", "Tech Youtuber", "Author & Poet", "Comedian"];
 
 var roleIndex = 0;
-function updateRole() {
-    typeText(roles[roleIndex], function() {
-      setTimeout(function() {
-        $("#roles").text("");
-        roleIndex = (roleIndex + 1) % roles.length;
-        updateRole();
-      }, 2000);
+
+function pulseText(text, icon, callback) {
+    var $roles = $("#roles");
+    $('#role-icon').removeClass().addClass(icon)
+    $('#role-text').text(text); // Set the text
+    $roles.css({ opacity: 0, transform: "scale(0.8)" }); // Initial pulse state
+
+    // Animate to pulse in
+    $roles.animate({ opacity: 1, transform: "scale(1)" }, 500, "swing", function() {
+        // Hold for 1 seconds
+        setTimeout(function() {
+            // Animate to pulse out
+            $roles.animate({ opacity: 0, transform: "scale(0.8)" }, 500, "swing", callback);
+        }, 1000);
     });
 }
+
+function updateRole() {
+    pulseText(roles[roleIndex], icons[roleIndex], function() {
+        roleIndex = (roleIndex + 1) % roles.length; // Move to the next role
+        updateRole(); // Recursive call to update role
+    });
+}
+
 updateRole(); // Initial call to set the role
 
 $(".video-toggle button").click(function() {

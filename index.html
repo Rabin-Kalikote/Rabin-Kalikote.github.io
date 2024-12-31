@@ -15,7 +15,7 @@ Copyright (c): Rabin K. Kalikote. -->
 
         <!-- Css Libraries -->
         <link rel="stylesheet" href="library/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="library/font-awesome/css/all.min.css">
         <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -46,323 +46,168 @@ Copyright (c): Rabin K. Kalikote. -->
         <script src="js/wow.js"></script>
     </head>
     <body>
-        <!-- Header/Navigation -->
-        <header>
-            <nav class="nav">
-                <div class="nav-container container">
-                    <div class="row">
-                        <div class="col-xs-3 brand">
-                            <a class="scroll-link nav-link" href="#face">
-                                <img src="img/logo.png" alt="R<">
-                                <span class="d-none d-md-inline">Kalikote</span>
-                            </a>
-                        </div>
-                        <div class="col-xs-6 page-links">
-                            <a class="hamburger-button " aria-label="Navigation Menu">
-                                <span class="line line01"></span>
-                                <span class="line line02"></span>
-                                <span class="line line03"></span>
-                            </a>
-                            <ul class="nav-list">
-                                <li class="nav-item nav-item-secondary ">
-                                    <a class="nav-link nav-link-about " href="#resume">Resume</a>
-                                </li>
-        
-                                <li class="nav-item nav-item-secondary ">
-                                    <a class="scroll-link nav-link nav-link-resume " href="#portfolio">Portfolio</a>
-                                </li>
-        
-                                <li class="nav-item nav-item-secondary ">
-                                    <a class="scroll-link nav-link nav-link-portfolio " href="#courses">Courses</a>
-                                </li>
-        
-                                <li class="nav-item nav-item-secondary ">
-                                    <a class="scroll-link nav-link nav-link-contact " href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-3 social">
-                            <ul class="nav-list">
-                                <li class="nav-item nav-item-linkedin">
-                                    <a class="nav-link nav-link-linkedin" href="https://www.linkedin.com/in/kalikoterabin" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                                </li>
-                                <li class="nav-item nav-item-github">
-                                    <a class="nav-link nav-link-linkedin" href="https://github.com/Rabin-Kalikote" target="_blank"><i class="fa fa-github-square"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container-fluid global">
+        <div class="row">
+          <div class="col-lg-2 sticky-nav">
+            <nav class="nav wow pulse">
+              <ul class="nav-list wow fadeIn">
+                <li class="nav-item nav-item-secondary brand">
+                  <a class="scroll-link nav-link nav-link-brand" href="#home">
+                      <img src="img/logo.png" alt="R<">
+                      <span>Kalikote</span>
+                  </a>
+                </li>
+                <li class="nav-item nav-item-secondary">
+                    <a class="nav-link nav-link-about" href="#about">About</a>
+                </li>
+                <li class="nav-item nav-item-secondary">
+                    <a class="scroll-link nav-link nav-link-resume" href="#resume">Resume</a>
+                </li>
+                <li class="nav-item nav-item-secondary ">
+                    <a class="scroll-link nav-link nav-link-library" href="#library">Library</a>
+                </li>
+                <li class="nav-item nav-item-secondary ">
+                    <a class="scroll-link nav-link nav-link-contact" href="#contact">Contact</a>
+                </li>
+            </ul>
             </nav>
-        </header>
-
-        <!-- Home Section -->
-        <section class="face">
-          <div class="background">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
           </div>
-          <div class="background-rvs"></div>
-          <div class="container-fluid" id="face">
-            <div class="container">
-                <div class="intro intro-slider">
-                    <div class="slider">
-                      <div class="slide"><img src="img/foc.jpg" alt="FOC World"></div>
-                      <div class="slide"><img src="img/skills.jpg" alt="Skills"></div>
-                    </div>
-                </div>
-                <div class="intro intro-title">
-                    <div class="content text-center">
-                    <h1 id="face-name" class="wow fadeIn">Rabin K. Kalikote</h1>
-                    <a class="title wow fadeIn" href="https://www.askmattrab.com/" target="_blank">I engineered Nepal's largest Online learning platform</a>
-                    <p class="wow fadeIn"><span class="text-muted">As an LLM, I cannot.. Just kidding!</span> Hi, I'm Rabin. I am <span id="roles"></span>.<br> I'm in 8 of 10 years through my coding journey. I thoroughly enjoy solving problems of society and helping people using computer science and logic. I aim to experience how impacts are driven in big-tech companies. Contributing to my people and country is my ultimate goal.</p>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Resume Section -->
-        <section class="resume">
-            <div class="container-fluid" id="resume">
-              <div class="container">
-                <div class="col-md-12 my-resume">
-                    <h3 class="card-title wow fadeIn"> View my Resume</h3>
-                    <a href="library/RabinBlueResume.pdf" target="_blank" class="tech-company">For Tech Companies</a>
-                    <a href="library/RabinBlueResume.pdf" target="_blank" class="tech-girls hidden-xs">For Tech Girls</a>
+          <div class="col-lg-7 col-lg-offset-1 main">
+            <section class="home" id="home">
+              <div class="video">
+                <video class="video-background" autoplay muted loop playsinline defaultMuted>
+                  <source src="library/teaching.mp4" type="video/mp4">
+                  This browser does not support the video tag. Rabin has a cool video here!
+                </video>
+                <div class="content">
+                  <h1 id="face-name" class="wow fadeIn">Rabin K. Kalikote</h1>
+                  <p id="roles"><i id="role-icon"></i><span id="role-text"></span></p>
                 </div>
               </div>
-            </div>
-          </section>
-
-        <!-- Portfolio Section -->
-        <section class="portfolio">
-            <div class="port-container" id="portfolio">
-                <h3 class="card-title wow slideInUp">Portfolio</h3>
-                <div class="port-tab wow fadeIn">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a data-toggle="tab" href="#projects">My Projects</a></li>
-                    <li><a data-toggle="tab" href="#games">My Games</a></li>
-                    <li><a data-toggle="tab" href="#store">Store</a></li>
-                    <li><a data-toggle="tab" href="#watch">Watch</a></li>
-                </ul>
-                <div class="container">
-                    <div class="tab-content">
-                    <div id="projects" class="tab-pane fade in active">
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="laptop">
-                                <div class="content">
-                                <img src="img/askmattrab.png" class="img-fluid" alt="Ask Mattrab">
-                                </div>
-                            </div>
-                            <h5 class="my-3">ASK MATTRAB WEB APP</h5>
-                            <a href="https://www.askmattrab.com" target="_blank"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-eye ml-2"></i> Visit Application</button></a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="laptop">
-                                <div class="content">
-                                <img src="img/agrinews.png" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <h5 class="my-3">AGRI NEWS WEB APP</h5>
-                            <a href="https://github.com/Rabin-Kalikote/agri-news" target="_blank"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-code ml-2"></i> View Source Code</button></a>
-                            </div>
-                            <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="laptop">
-                                <div class="content">
-                                <img src="img/sx3c.jpg" class="img-fluid" alt="">
-                                </div>
-                            </div>
-                            <h5 class="my-3">SX3C OFFICIAL WEBSITE</h5>
-                            <a href="sx3c/index.html" target="_blank"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-eye ml-2"></i> Live Preview</button></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="games" class="tab-pane fade">
-                        <br>
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="hero-image">
-                                <div class="hero-text">
-                                <h1>Apple Fall</h1>
-                                <p>Apple Fall is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com" style="color:#fff;">Matt Sir</a>.</p>
-                                <a href="games/apple-fall/game.html"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-play ml-2"></i> Play Now</button></a>
-                                </div>
-                            </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="hero-image">
-                                <div class="hero-text">
-                                <h1>Face Puzzle</h1>
-                                <p>Face Puzzle is the game build with Html, Css and Javascript. The project to build this game was assigned to me by <a href="http://www.mattbubernak.com" style="color:#fff;">Matt Sir</a>.</p>
-                                <a href="games/face-puzzle.html"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-play ml-2"></i> Play Now</button></a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="store" class="tab-pane fade">
-                        <br>
-                        <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="container">
-                            <img src="img/poem.jpg" alt="Jindagiko Baato" class="image">
-                            <div class="overlay">
-                                <div class="text">'Jindagiko Baato' is a play with the story expressed in poems.</div>
-                            </div>
-                            </div>
-                            <h5 class="my-3">Jindagiko Baato - My Poems</h5>
-                            <a href="library/Jindagi-Ko-Bato-By-Rabin-Kalikote.pdf" target="_blank"><button type="button" class="btn btn-default btn-sm">Read More <i class="fa fa-play ml-2"></i></button></a>
-                        </div>
-                        <div class="col-lg-4 col-md-4 mb-4">
-                            <div class="container">
-                            <img src="img/matt-sir.jpg" alt="Matt Sir" class="image">
-                            <div class="overlay">
-                                <div class="text">The days I enjoyed with you together, Will be memorable for me forever!</div>
-                            </div>
-                            </div>
-                            <h5 class="my-3">TYSM Matt Sir</h5>
-                            <a href="#"><button type="button" class="btn btn-default btn-sm">See More <i class="fa fa-play ml-2"></i></button></a>
-                        </div>
-                        </div>
-                    </div>
-                    <div id="watch" class="tab-pane fade">
-                        <br>
-                        <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="video">
-                            <iframe src="https://www.youtube.com/embed/zO-uPXgoFpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <h5 class="my-3">Watch About Me.</h5>
-                        </div>
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="video">
-                            <iframe src="https://www.youtube.com/embed/bVckO9Psd1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                            <h5 class="mt-3">Watch About Mattrab.</h5>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
+              <div class="brands">
+                <img src="img/highlights.png" alt="Highlighted Brands">
+              </div>
+            </section>
+            <section class="about" id="about">
+              <p class="about-text brand-green">
+                Steve Jobs said - <em>Everything around you that you call life was made up by people that were no smarter than you. And you can change it, you can influence it, you can build your own things that other people can use.</em>
+              </p>
+              <p class="about-text">
+                Just like he said, I want to influence the world for the good of people. Travelling halfway around the earth via plane and zooming out the Milky way galaxy via books, I have realized that life becomes meaningful if I innovate for people. If you are looking for someone highly motivated to impact the society and exceptionally skilled and experienced in computer science domains, glance into my resume below:
+              </p>
+            </section>
+            <section class="resume" id="resume">
+              <div class="resume-doc">
+                <iframe src="https://docs.google.com/document/d/e/2PACX-1vRYrzW7UJ2LoqS49OanpMZlu8KndglhNXgs68YBF5_C648o9j3cgbjF_bJhQYyIfbEgoZCQlEh14Dn3/pub?embedded=true"></iframe>
+              </div>
+            </section>
+            <section class="library" id="library">
+              <h2 class="library-title">I'm more than a Resume!</h2>
+              <p class="library-text">I love to build solutions that solve real problems. In 2018, I discovered that not all students have access to library with high quality academic materials. So, I decided partner with my academically briliant friends and juniors to create the largerst online library of notes, questions and answers, creative and research articles, and education guides. I created the app, and in few months, it became the popolarly used social learning app with 10,000 registered students.</p>
+              <div class="object row">
+                <div class="col-md-5 image">
+                  <img src="img/askmattrab.png" alt="Ask Mattrab">
                 </div>
-            </div>
-          </div>
-        </section>
-        
-        <!-- Courses Section -->
-        <section class="courses">
-            <div class="container-fluid" id="courses">
-              <div class="container">
+                <div class="col-md-7 description">
+                  <p class="object-text"><b>Ask Mattrab</b> is AI powered social learning platform, offering free high-quality academic notes, question-answers, entrance exam preparation materials, and USA education guides. Imagine an app for students with their school, friends, and learning materials. That's Ask Mattrab.</p>
+                  <a href="https://www.askmattrab.com" target="_blank" class="object-action"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-eye ml-2"></i> Open Application</button></a>
+                </div>
+              </div>
+              <p class="library-text">I like to exercise my coding muscle and brain-cells. In spring 2024, I built AgriNews for some exercises. Interestingly, it brought me an interview to Data and Product Engineering Internship.</p>
+              <div class="object row">
+                <div class="col-md-5 image">
+                  <img src="img/agrinews.png" alt="AgriNews">
+                </div>
+                <div class="col-md-7 description">
+                  <p class="object-text"><b>AgriNews</b> scrapes news from 4 Nepali websites, filters agriculture related news, and hosts the latest news in one website.</p>
+                  <a href="https://github.com/Rabin-Kalikote/agri-news" target="_blank" class="object-action"><button type="button" class="btn btn-default btn-sm"><i class="fa fa-code ml-2"></i> View Source Code</button></a>
+                </div>
+              </div>
+              <p class="library-text">I enjoy teaching what I learn. Isn't it fun to simplify learning by removing complexity and adding humor? In Fall 2024, I instructed "Build-Your-Brand 101" where I taught web development basics as well as guided the creation of personal websites.</p>
+              <div class="object row">
+                <div class="col-md-5 image">
+                  <img src="img/teaching.png" alt="Build-Your-Brand 101">
+                </div>
+                <div class="col-md-7 description">
+                  <p class="object-text"><b>Build-Your-Brand 101</b> is a week long workshop to build and host the personal website online.</p>
+                  <a href="https://www.instagram.com/p/DCknf6YS1ei" target="_blank" class="object-action"><button type="button" class="btn btn-default btn-sm"><i class="fas fa-images ml-2"></i> View Highlights</button></a>
+                </div>
+              </div>
+              <p class="library-text">In my free time, I write poems. I imagine stories. I play with words. This is probably why my girlfriend is imaginary.</p>
+              <div class="object row">
+                <div class="col-md-5 image">
+                  <img src="img/poem.jpg" alt="Jindagi Ko Bato">
+                </div>
+                <div class="col-md-7 description">
+                  <p class="object-text"><b>'Jindagiko Baato'</b> is a multi-act play with the story expressed in poems. I completed wrting it when I was 14 years old.</p>
+                  <a href="library/Jindagi-Ko-Bato-By-Rabin-Kalikote.pdf" target="_blank" class="object-action"><button type="button" class="btn btn-default btn-sm"><i class="fas fa-book-open ml-2"></i> Read Full Book</button></a>
+                </div>
+              </div>
+              <p class="library-text">In my YouTube channel, <a class="inline-link" href="https://www.youtube.com/friendofcomputer" target="_blank">Friend of Computer</a>, I have taught full stack web development to over 70,000 people in Nepali language. Talking to a camera is fun!</p>
+              <div class="row courses">
+                <div class="channel-container">
+                    <a href="https://www.youtube.com/friendofcomputer" target="_blank">
+                        <img src="img/youtube.png" alt="Friend of Computer">
+                    </a>
+                </div>
+              </div>
+              <div class="testimonial-box">
+                  <div class="quote">&#8220;</div>
+                  <div class="review">I have been working with a student for the last few years... since meeting him in Nepal at a school I was teaching at in 2016. He's become a bit of a CS prodigy (in my humble opinion), and while in his first year of school at the College of Idaho, has a very impressive portfolio of work already. This includes developing & deploying a Ruby on Rails application used learning platform used by 1000s or students across Nepal.</div>
+                  <div class="reviewer">Matt Bubernak</div>
+                  <div class="role">Software Engineer, Google</div>
+              </div>
+              <div class="testimonial-box">
+                <div class="quote">&#8220;</div>
+                <div class="review">I've had the absolute pleasure of working with Rabin Kailkote, the amazing president of our college's Coding Club (3CI). If there's one word to describe Rabin, it's “inspiring.” He recently led our "Build Your Brand 101" workshop, and wow, what an incredible event that was! Rabin was the heart and soul of the week, guiding everyone through building personal websites while making web development fun and accessible for everyone.</div>
+                <div class="reviewer">Suthira de Silva</div>
+                <div class="role">Events/Media Manager, 3CI</div>
+              </div>
+              <div class="testimonial-box">
+                <div class="quote">&#8220;</div>
+                <div class="review">Rabin is an immaculate mathematics tutor who takes time to teach hard concepts in such an easy way that you can easily remember. He is very good at analyzing where you don't understand and makes you practice a concept till you understand it. Rabin even takes time from his busy schedule to help when needed and I have greatly benefited from his tutor sessions that have made me pass my Mathematics class with an A. He is a very nice and patient person when it comes to teaching Mathematics and I will always value him as a tutor and a friend.</div>
+                <div class="reviewer">Shannen Muchemwa</div>
+                <div class="role">STEM Student, College of Idaho</div>
+              </div>
+            </section>
+            <section class="contact" id="contact">
+              <h2 class="contact-title">Let's Talk</h2>
+              <!-- <p class="contact-text">I will be Happy to hear from you.</p> -->
+              <form  method="POST" action="https://formspree.io/rabinkalikote33@gmail.com">
+                <div class="col-md-6 left"style="padding-left: 0px;">
+                  <input type="text" required="true" id="name"  class="wow fadeIn" name="name" placeholder="Your name.." style="width:49%; float:left;">
+
+                  <input type="email" required="true" id="email"  class="wow fadeIn" name="email" placeholder="Your email.." style="width:49%; float:left; margin-left:2%;">
+
+                  <input type="text" required="true" id="subject"  class="wow fadeIn" name="subject" placeholder="Subject..">
+                </div>
+                <div class="col-md-6 right"style="padding-right: 0px;">
+                  <textarea id="messeges" required="true" class="wow fadeIn" name="messeges" placeholder="Your Messege.." style="height:92px"></textarea>
+                </div>
+                <input type="submit"  class="wow fadeIn" value="Send">
+              </form>
+            </section>
+
+            <footer id="footer">
                 <div class="row">
-                    <h3 class="card-title wow fadeIn"><img src="img/tcblogo.png" alt="Courses by Rabin Kalikote"> Courses</h3>
-                    <div class="video-container">
-                        <div class="video-toggle">
-                          <button data-video="frontend">Frontend Dev</button>
-                          <button class="active" data-video="full">Full Stack Dev</button>
-                        </div>
-                        <div class="video-wrapper">
-                            <div class="video-slider frontend d-none">
-                                <div class="slider-container">
-                                    <iframe id="video1" class="slider-item" src="https://www.youtube.com/embed/novOo2cjWbs?autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>
-                                    <iframe id="video2" class="slider-item d-none" src="https://www.youtube.com/embed/JXN_NhJFo_M?autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>
-                                  </div>
-                                  <div class="navigation">
-                                    <button class="prev-btn">&#10094;</button>
-                                    <button class="next-btn">&#10095;</button>
-                                  </div>
-                            </div>
-                            <div class="video-slider full">
-                                <div class="slider-container">
-                                    <iframe id="video1" class="slider-item" src="https://www.youtube.com/embed/DcqQLl4u-Cs?autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>
-                                    <iframe id="video2" class="slider-item d-none" src="https://www.youtube.com/embed/xv0dHKDiWc8?autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>
-                                    <iframe id="video3" class="slider-item d-none" src="https://www.youtube.com/embed/XHT2FS1oOy4?autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>
-                                    <iframe id="video3" class="slider-item d-none" src="https://www.youtube.com/embed/iiAHteiPjJk?autoplay=0&controls=0" frameborder="0" allowfullscreen></iframe>
-                                  </div>
-                                  <div class="navigation">
-                                    <button class="prev-btn">&#10094;</button>
-                                    <button class="next-btn">&#10095;</button>
-                                  </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <h3 class="card-title wow slideInUp">Subscribe on YouTube</h3> -->
-                    <div class="channel-container">
-                        <a href="https://www.youtube.com/friendofcomputer" target="_blank">
-                            <img src="img/youtube.png" alt="Friend of Computer">
-                        </a>
-                    </div>
+                  <div class="col-md-12">
+                    <ul class="footer-icons">
+                      <li><a href="https://www.facebook.com/KalikoteRabin" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a></li>
+                      <li><a href="https://www.instagram.com/kalikoterabin" target="_blank"><i class="fab fa-2x fa-instagram"></i></a></li>
+                      <li><a href="https://github.com/Rabin-Kalikote" target="_blank"><i class="fab fa-2x fa-github-square"></i></a></li>
+                      <li><a href="https://www.linkedin.com/in/kalikoterabin" target="_blank"><i class="fab fa-2x fa-linkedin"></i></a></li>
+                      <li><a href="mailto:rabinkalikote33@gmail.com"><i class="fas fa-2x fa-envelope-square"></i></a></li>
+                      <li><a href="https://www.youtube.com/friendofcomputer" target="_blank"><i class="fab fa-2x fa-youtube-square"></i></a></li>
+                    </ul>
+                    <p class="at-text">@ KalikoteRabin</p>
+                    <p class="at-text">© 2025 Rabin Kalikote</p>
+                    <p class="at-text">One more thing: <a class="inline-link" href="https://thingsthatinterest.com/courses.mp4" target="_blank">My girlfriend!</a></p>
+                  </div>
                 </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact">
-          <div class="container-fluid" id="contact">
-            <div class="container">
-              <div class="col-md-12 contact-me">
-                <h3 class="card-title wow slideInUp">Let's Talk</h3>
-                <p class="title wow fadeIn">I will be Happy to hear from you.</p>
-                <form  method="POST" action="https://formspree.io/rabinkalikote33@gmail.com">
-                  <div class="col-md-6 left"style="padding-left: 0px;">
-                    <input type="text" required="true" id="name"  class="wow fadeIn" name="name" placeholder="Your name.." style="width:49%; float:left;">
-
-                    <input type="email" required="true" id="email"  class="wow fadeIn" name="email" placeholder="Your email.." style="width:49%; float:left; margin-left:2%;">
-
-                    <input type="text" required="true" id="subject"  class="wow fadeIn" name="subject" placeholder="Subject..">
-                  </div>
-                  <div class="col-md-6 right"style="padding-right: 0px;">
-                    <textarea id="messeges" required="true" class="wow fadeIn" name="messeges" placeholder="Your Messege.." style="height:92px"></textarea>
-                  </div>
-                  <input type="submit"  class="wow fadeIn" value="Send">
-                </form>
-              </div>
-            </div>
+            </footer>
           </div>
-        </section>
-        <!-- Footer Section -->
-        <footer>
-          <div class="container-fluid" id="footer">
-            <div class="container wow fadeIn">
-              <div class="col-md-3 col-sm-6">
-                <img src="img/logo.png" alt="R<"> <span>Kalikote</span>
-                <p class="at-text">© 2024 Rabin Kalikote</p>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <p class="footer-title">Recent TCB Posts</p>
-                <p style="font-family:lig;">TCB Blog is under Construction.</p>
-                <br><br>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <p class="footer-title">TCB on YouTube</p>
-                <ul class="footer-links">
-                  <li><a href="https://youtu.be/JXN_NhJFo_M" target="_blank">Free Hosting with .com.np Domain.</a></li>
-                  <li><a href="https://youtu.be/YrcpXYpyQxY" target="_blank">Create Website without Coding.</a></li>
-                  <li><a href="https://youtu.be/-1cTLIFNgGI" target="_blank">Make Brand Logo for free.</a></li>
-                  <li><a href="https://youtu.be/HkwzsC1SS-g" target="_blank">Top Resources to learn Coding</a></li>
-                </ul>
-                <br>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                <p class="footer-title">Meet on Social.</p>
-                <ul class="footer-icons">
-                  <li><a href="https://www.facebook.com/KalikoteRabin" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a></li>
-                  <li><a href="https://github.com/Rabin-Kalikote" target="_blank"><i class="fa fa-2x fa-github-square"></i></a></li>
-                  <li><a href="https://www.instagram.com/kalikoterabin" target="_blank"><i class="fa fa-2x fa-instagram"></i></a></li>
-                  <li><a href="https://www.linkedin.com/in/kalikoterabin" target="_blank"><i class="fa fa-2x fa-linkedin-square"></i></a></li>
-                  <li><a href="mailto:rabinkalikote33@gmail.com"><i class="fa fa-2x fa-envelope-square"></i></a></li>
-                  <li><a href="https://www.youtube.com/friendofcomputer" target="_blank"><i class="fa fa-2x fa-youtube-square"></i></a></li>
-                </ul>
-                <p class="at-text">@ KalikoteRabin</p>
-              </div>
-            </div>
-          </div>
-        </footer>
+        </div>
+      </div>
     </body>
     <script src="js/main.js"></script>
 </html>
