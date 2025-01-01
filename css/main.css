@@ -235,12 +235,41 @@ html, body{
         transition: opacity .1s ease-in-out;
         box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.13);
         -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.13);
+        position:relative;
+        a{
+          position: absolute;
+          right: 5px; bottom: 5px;
+          display: inline-block;
+          .btn {
+            width: 100%;
+            color: #fff !important;
+            background: #5fcf80;
+            padding: .7rem 1.3rem;
+            transition: all .1s ease;
+            font-size: 13px;
+            font-family: med;
+            border: none;
+          }
+          &:hover .btn,
+          &:focus .btn{ text-decoration: none;}
+        }
         iframe{
           width: 100%;
           border: none;
           min-height: 1300px;
         }
         &:hover{opacity: 1;}
+      }
+      @media (max-width: 767.98px) {
+        .resume-doc{
+          opacity: 1;
+          a{
+            position: static;
+            width: 100%;
+            .btn{padding: 1.3rem;font-size: 17px;}
+          }
+          iframe{display: none;}
+        }
       }
     }
     .library{
