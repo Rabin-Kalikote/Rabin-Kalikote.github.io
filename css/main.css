@@ -265,6 +265,7 @@ html, body{
         justify-content: center;
         align-items: center;
         .image{
+          max-width: 41.666666667%;
           img{
             width: 100%;
             border-radius: 20px;
@@ -300,6 +301,12 @@ html, body{
               background: #5fcf80;
             }
           }
+        }
+      }
+      @media (max-width: 575.98px) {
+        .object{
+          flex-direction: column;
+          .image{max-width: 80%;margin-bottom: 1rem;}
         }
       }
       .courses{
