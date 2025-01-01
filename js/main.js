@@ -83,11 +83,27 @@ $(".prev-btn").click(function() {
      // prevent the default thing from happening
       event.preventDefault();
       // Instead, we’ll do this.
+      $('.nav-list').toggleClass('closed')
       // Animation on the body of the html, that is a scroll to “this” thing (the id). Take 750 milliseconds to move there.
-      $('html,body').animate({scrollTop:$(this.hash).offset().top-70}, 750);
+      $('html,body').animate({scrollTop:$(this.hash).offset().top}, 750);
 });
-// spacing more for About Section.
-$('.nav-link-about').on('click', function(event){
-     event.preventDefault();
-     $('html,body').animate({scrollTop:$(this.hash).offset().top-170}, 750);
+
+// ScrollSpy functionality
+$(window).on('scroll', function () {
+  const scrollPos = $(document).scrollTop(); // Get current scroll position
+
+  $('.nav-link').each(function () {
+      const target = $(this.hash);
+
+      if (target.length) {
+          const targetTop = target.offset().top;
+          const targetBottom = targetTop + target.outerHeight();
+
+          // Check if current scroll position is within this section
+          if (scrollPos >= targetTop - 10 && scrollPos < targetBottom - 10) {
+              $('.nav-item').removeClass('active');
+              $(this).parents('.nav-item:first').addClass('active');
+          }
+      }
+  });
 });
